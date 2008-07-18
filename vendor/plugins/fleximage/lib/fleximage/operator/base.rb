@@ -134,6 +134,7 @@ module Fleximage
       :left         => Magick::WestGravity,
       :top_left     => Magick::NorthWestGravity,
     } unless defined?(GRAVITIES)
-    
+  rescue NameError, LoadError
+    # RMagick didn't load right
   end # Operator
 end # Fleximage
