@@ -1,0 +1,33 @@
+<p>
+  <b>Title:</b>
+  <%=h @tour_date.title %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @tour_date.location %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @tour_date.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @tour_date.address %>
+</p>
+
+<p>
+  <b>Price ahead:</b>
+  <%=h @tour_date.price_ahead %>
+</p>
+
+<p>
+  <b>Price door:</b>
+  <%=h @tour_date.price_door %>
+</p>
+
+
+<%= link_to 'Edit', edit_tour_date_path(@tour_date) %> |
+<%= link_to 'Back', tour_dates_path %>

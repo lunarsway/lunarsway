@@ -1,0 +1,61 @@
+#main_page {
+  width: 1002px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #main_page #main_header {
+    height: 174px;
+    background-image: URL('/images/structure/bg_header.jpg'); }
+    #main_page #main_header img {
+      margin-left: 50px;
+      margin-top: 70px; }
+      #main_page #main_header img:hover {
+        opacity: .5; }
+  #main_page #main_nav {
+    height: 38px;
+    background-image: URL('/images/structure/bg_nav.jpg'); }
+    #main_page #main_nav img#nav_news {
+      margin-left: 50px;
+      margin-top: 4px;
+      float: left; }
+    #main_page #main_nav img#nav_downloads {
+      margin-left: 17px;
+      margin-top: 3px;
+      float: left; }
+    #main_page #main_nav img#nav_video {
+      margin-left: 17px;
+      margin-top: 3px;
+      float: left; }
+    #main_page #main_nav img#nav_photos {
+      margin-left: 17px;
+      margin-top: 2px;
+      float: left; }
+    #main_page #main_nav img#nav_biography {
+      margin-left: 19px;
+      margin-top: 2px;
+      float: left; }
+    #main_page #main_nav img#nav_philosophy {
+      margin-left: 19px;
+      margin-top: 3px;
+      float: left; }
+    #main_page #main_nav img#nav_links {
+      margin-left: 16px;
+      margin-top: 1px;
+      float: left; }
+    #main_page #main_nav img#nav_tour {
+      margin-left: 12px;
+      margin-top: 1px;
+      float: left; }
+  #main_page #main_content {
+    height: 550px;
+    background-image: URL('/images/structure/bg_content.jpg');
+    padding-top: 20px; }
+    #main_page #main_content #content_box {
+      overflow-y: auto;
+      height: 460px;
+      padding: 0px 5px 0px 55px;
+      margin-right: 40px; }
+    #main_page #main_content #logged_in {
+      padding: 5px 0px 10px 0px;
+      text-align: right; }

@@ -1,0 +1,24 @@
+%h1 Lunar Sway
+
+.home_news
+  - for news_item in @news_items
+    .news_item
+      .title
+        = news_item.created_at.strftime("%M %d, %Y")
+        =h news_item.title
+      .posted_by
+        by
+        =h news_item.author
+        at
+        = news_item.created_at.strftime("%I:%M %p")
+      .body
+        = truncate nl2br(news_item.body), 300
+        %br/
+        = link_to '(read more)', news_item
+        - if logged_in?
+          - if current_user.has_role?('administrator')
+            %br/
+            = link_to "(edit)", edit_news_item_path(news_item)
+            = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
+
+.clear

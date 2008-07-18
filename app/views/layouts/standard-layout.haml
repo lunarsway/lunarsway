@@ -1,0 +1,25 @@
+!!!
+
+%html
+  %head
+    %title Lunar Sway Landing Site
+    = stylesheet_link_tag "main"
+  
+  %body
+    #main_page
+      #main_header
+        = link_to image_tag("/images/structure/logo.png"), home_url
+      #main_nav
+        = link_to image_tag("/images/structure/nav/news.gif", :id => "nav_news"), news_url
+        = link_to image_tag("/images/structure/nav/downloads.gif", :id => "nav_downloads"), downloads_url
+        = link_to image_tag("/images/structure/nav/video.gif", :id => "nav_video"), video_url
+        = link_to image_tag("/images/structure/nav/photos.gif", :id => "nav_photos"), photos_url
+        = link_to image_tag("/images/structure/nav/biography.gif", :id => "nav_biography"), biography_url
+        = link_to image_tag("/images/structure/nav/philosophy.gif", :id => "nav_philosophy"), philosophy_url
+        = link_to image_tag("/images/structure/nav/links.gif", :id => "nav_links"), links_url
+        = link_to image_tag("/images/structure/nav/tour.gif", :id => "nav_tour"), tour_url
+        .clear
+      #main_content
+        #content_box
+          #logged_in= render :partial => "/home/logged_in"
+          = @content_for_layout

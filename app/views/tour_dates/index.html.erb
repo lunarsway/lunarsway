@@ -1,0 +1,30 @@
+<h1>Listing tour_dates</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Price ahead</th>
+    <th>Price door</th>
+  </tr>
+
+<% for tour_date in @tour_dates %>
+  <tr>
+    <td><%=h tour_date.title %></td>
+    <td><%=h tour_date.location %></td>
+    <td><%=h tour_date.description %></td>
+    <td><%=h tour_date.address %></td>
+    <td><%=h tour_date.price_ahead %></td>
+    <td><%=h tour_date.price_door %></td>
+    <td><%= link_to 'Show', tour_date %></td>
+    <td><%= link_to 'Edit', edit_tour_date_path(tour_date) %></td>
+    <td><%= link_to 'Destroy', tour_date, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tour_date', new_tour_date_path %>

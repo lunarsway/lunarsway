@@ -1,0 +1,42 @@
+<h1>Editing tour_date</h1>
+
+<%= error_messages_for :tour_date %>
+
+<% form_for(@tour_date) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Location</b><br />
+    <%= f.text_field :location %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Address</b><br />
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <b>Price ahead</b><br />
+    <%= f.text_field :price_ahead %>
+  </p>
+
+  <p>
+    <b>Price door</b><br />
+    <%= f.text_field :price_door %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tour_date %> |
+<%= link_to 'Back', tour_dates_path %>

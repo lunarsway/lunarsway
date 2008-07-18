@@ -1,0 +1,26 @@
+%h1 Edit News Item
+
+= error_messages_for :news_item
+
+- form_for(@news_item) do |f|
+  %p
+    %b Title
+    %br/
+    = f.text_field :title
+
+  %p
+    %b Author
+    %br/
+    = f.text_field :author
+
+  %p
+    %b Body
+    %br/
+    = f.text_area :body
+
+  %p
+    = f.submit "Update"
+
+= link_to 'Show', @news_item
+|
+= link_to 'Back', news_items_path

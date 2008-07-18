@@ -1,0 +1,14 @@
+.news_item_show
+  .title
+    %h2
+      = @news_item.created_at.strftime("%b %d, %Y")
+      = @news_item.title
+  .posted_by
+    by
+    =h @news_item.author
+    at
+    = @news_item.created_at.strftime("%I:%M %p")
+  .body
+    = nl2br @news_item.body
+
+= link_to 'Back to News', news_items_path

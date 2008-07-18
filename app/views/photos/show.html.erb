@@ -1,0 +1,23 @@
+<p>
+  <b>Caption:</b>
+  <%=h @photo.caption %>
+</p>
+
+<p>
+  <b>Credit:</b>
+  <%=h @photo.credit %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @photo.description %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @photo.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
