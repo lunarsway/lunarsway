@@ -24,6 +24,13 @@
         = link_to image_tag("/images/structure/nav/tour.gif", :id => "nav_tour"), tour_url
         .clear
       #main_content
+        .top_info
+          .mailing_list_join.floatl
+            - form_tag mailing_list_items_path, :id => 'mailing_list_form' do
+              email:
+              = text_field_tag "mailing_list_item[email]", "", :id => 'mailing_list_join'
+              = submit_tag "join!"        
+          #logged_in.floatr= render :partial => "/home/logged_in"
+          .clear
         #content_box
-          #logged_in= render :partial => "/home/logged_in"
           = @content_for_layout

@@ -56,6 +56,8 @@
       height: 460px;
       padding: 0px 5px 0px 55px;
       margin-right: 40px; }
+    #main_page #main_content .top_info {
+      padding: 0px 45px 0px 55px; }
     #main_page #main_content #logged_in {
       padding: 5px 0px 10px 0px;
       text-align: right; }
