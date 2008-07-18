@@ -1,4 +1,7 @@
 class LinksController < ApplicationController
+  
+  layout "standard-layout"
+  
   # GET /links
   # GET /links.xml
   def index

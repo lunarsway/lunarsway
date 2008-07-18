@@ -1,0 +1,22 @@
+<h1>Listing lunar_releases</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+<% for lunar_release in @lunar_releases %>
+  <tr>
+    <td><%=h lunar_release.title %></td>
+    <td><%=h lunar_release.body %></td>
+    <td><%= link_to 'Show', lunar_release %></td>
+    <td><%= link_to 'Edit', edit_lunar_release_path(lunar_release) %></td>
+    <td><%= link_to 'Destroy', lunar_release, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New lunar_release', new_lunar_release_path %>

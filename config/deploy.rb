@@ -41,7 +41,11 @@ after "deploy:update_code".to_sym do
   run <<-CMD
     cd #{release_path} &&
     rm #{release_path}/fleximages &&
-    ln -nfs #{shared_path}/fleximages #{release_path}/fleximages
+    rm #{release_path}/audio &&
+    rm #{release_path}/play &&
+    ln -nfs #{shared_path}/audio #{release_path}/audio &&
+    ln -nfs #{shared_path}/fleximages #{release_path}/fleximages &&
+    ln -nfs #{shared_path}/play #{release_path}/play
   CMD
 end
 

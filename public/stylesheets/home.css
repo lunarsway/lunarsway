@@ -1,3 +1,24 @@
 .home_news {
-  width: 400px;
+  width: 550px;
   float: left; }
+
+.home_releases {
+  float: right;
+  width: 250px;
+  border-left: dotted #bbbbbb 1px;
+  padding: 0px 10px 25px 25px; }
+  .home_releases .lunar_release {
+    padding: 10px;
+    font-size: 75%; }
+    .home_releases .lunar_release .embed {
+      text-align: right;
+      padding: 10px 0px 5px 10px; }
+
+.mailing_list_join {
+  font-size: 75%; }
+  .mailing_list_join input {
+    font-size: 80%;
+    border: solid gray 1px;
+    background-color: transparent;
+    padding: 5px;
+    color: #b1b1b1; }

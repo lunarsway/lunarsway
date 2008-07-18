@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
+  
   # GET /pages
   # GET /pages.xml
   def index
     @pages = Page.find(:all)
+    @auth_token = authenticity_token_from_session_id
 
     respond_to do |format|
       format.html # index.html.erb

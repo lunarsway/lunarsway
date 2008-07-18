@@ -1,0 +1,25 @@
+%h1 Editing Lunar Link
+
+= error_messages_for :link
+
+- form_for(@link) do |f| 
+  %p
+    %b Title
+    %br/
+    = f.text_field :title, :class => "text"
+
+  %p
+    %b Url
+    %br/
+    = f.text_field :url, :class => "text"
+
+  %p
+    %b Description
+    %br/
+    = f.text_area :description, :class => "text", :rows => "5", :cols => "45"
+
+  %p
+    = f.submit "Update"
+= link_to 'Show', @link
+|
+= link_to 'Back', links_path

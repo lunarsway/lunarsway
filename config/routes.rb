@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :lunar_releases
+
+  map.resources :mailing_list_items
+
   map.resources :roles
   map.resource :session, :member => {
     :admin            => :get
@@ -31,13 +35,14 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '', :controller => "/home"
   map.home "/", :controller => "/home"
   map.news "/news", :controller => "/news_items"
-  map.downloads "/downloads", :controller => "/downloads"
-  map.video "/video", :controller => "/video"
-  map.photos "/photos", :controller => "/photos"
-  map.biography "/biography", :controller => "/biography"
-  map.philosophy "/philosophy", :controller => "/philosophy"
+  map.downloads "/downloads", :controller => "/home", :action => "downloads"
+  map.video "/video", :controller => "/home", :action => "video"
+  map.photos "/photos", :controller => "/home", :action => "photos"
+  map.biography "/biography", :controller => "/home", :action => "biography"
+  map.philosophy "/philosophy", :controller => "/home", :action => "philosophy"
   map.links "/links", :controller => "/links"
-  map.tour "/tour", :controller => "/tour"
+  map.tour "/tour", :controller => "/tour_dates"
+  map.route "/song_downloads", :controller => "/song_downloads"
 
   map.connect '/news_items', :controller => "/news_items", :action => "index"
 

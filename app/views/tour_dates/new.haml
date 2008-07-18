@@ -1,0 +1,39 @@
+%h1 New Tour Date
+
+= error_messages_for :tour_date
+
+- form_for(@tour_date) do |f| 
+  %p
+    %b Title
+    %br/
+    = f.text_field :title, :class => "text"
+
+  %p
+    %b Location
+    %br/
+    = f.text_field :location, :class => "text"
+
+  %p
+    %b Description
+    %br/
+    = f.text_area :description, :rows => "5", :cols => "45", :class => "text"
+
+  %p
+    %b Address
+    %br/
+    = f.text_field :address, :class => "text"
+
+  %p
+    %b Price ahead
+    %br/
+    = f.text_field :price_ahead, :class => "text"
+
+  %p
+    %b Price door
+    %br/
+    = f.text_field :price_door, :class => "text"
+
+  %p
+    = f.submit "Create"
+
+= link_to 'Back to Tour Dates', tour_dates_path

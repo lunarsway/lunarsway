@@ -1,0 +1,22 @@
+<h1>Editing lunar_release</h1>
+
+<%= error_messages_for :lunar_release %>
+
+<% form_for(@lunar_release) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @lunar_release %> |
+<%= link_to 'Back', lunar_releases_path %>

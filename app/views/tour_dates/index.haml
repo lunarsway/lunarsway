@@ -1,0 +1,21 @@
+%h1 Tour Dates
+
+- if logged_in?
+  - if current_user.has_role?('administrator')
+    %ul
+      %li= link_to "Create New Tour Date", new_tour_date_path
+
+- for tour_date in @tour_dates
+  .tour_date
+    .title= link_to tour_date.title, tour_date
+    .location= tour_date.location
+    .ticket_prices
+      Ahead:
+      = tour_date.price_ahead
+      Door:
+      = tour_date.price_ahead
+    - if logged_in?
+      - if current_user.has_role?('administrator')
+        = link_to '(edit)', edit_tour_date_path(tour_date)
+        = link_to '(delete)', tour_date, :confirm => 'Are you sure?', :method => :delete
+

@@ -1,4 +1,7 @@
 class TourDatesController < ApplicationController
+  
+  layout "standard-layout"
+  
   # GET /tour_dates
   # GET /tour_dates.xml
   def index

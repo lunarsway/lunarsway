@@ -1,0 +1,12 @@
+.tour_date {
+  margin: 15px 0px 15px 0px;
+  padding: 0px 0px 15px 0px;
+  border-bottom: dotted #bbbbbb 1px; }
+  .tour_date .title a {
+    font-size: 125%; }
+  .tour_date .location {
+    padding-left: 20px;
+    font-size: 100%; }
+  .tour_date .ticket_prices {
+    padding-left: 20px;
+    font-size: 75%; }
