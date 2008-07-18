@@ -1,4 +1,7 @@
 class PhotosController < ApplicationController
+
+  layout "standard-layout"
+  
   # GET /photos
   # GET /photos.xml
   def index

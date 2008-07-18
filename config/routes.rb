@@ -10,7 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pages
   map.resources :tour_dates
   map.resources :links
-  map.resources :photos
+  # map.resources :photos
   map.resources :news_items
 
   map.signup '/signup', :controller => 'users', :action => 'new'

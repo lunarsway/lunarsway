@@ -3,7 +3,7 @@ require "mt-capistrano"
 set :site,         "40592"
 set :application,  "lunarsway"
 set :webpath,      "www.lunarsway.com"
-set :domain,       "chemistryinspace.com"
+set :domain,       "lunarsway.com"
 set :user,         "serveradmin%chemistryinspace.com"
 set :password,     "danielle"
 
@@ -42,10 +42,10 @@ after "deploy:update_code".to_sym do
     cd #{release_path} &&
     rm #{release_path}/fleximages &&
     rm #{release_path}/audio &&
-    rm #{release_path}/play &&
+    rm #{release_path}/public/play &&
     ln -nfs #{shared_path}/audio #{release_path}/audio &&
     ln -nfs #{shared_path}/fleximages #{release_path}/fleximages &&
-    ln -nfs #{shared_path}/play #{release_path}/play
+    ln -nfs #{shared_path}/play #{release_path}/public/play
   CMD
 end
 
