@@ -7,6 +7,7 @@ begin
 rescue MissingSourceFile => e
   puts %{ERROR :: FlexImage requires the RMagick gem.  http://rmagick.rubyforge.org/install-faq.html}
   raise e
+rescue NameError, LoadError
 end
 
 # Load dsl_accessor from lib
