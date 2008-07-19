@@ -1,6 +1,6 @@
 class MailingListItemsController < ApplicationController
   
-  before_filter :check_administrator_role, :only => [:show, :update, :edit, :destroy]
+  before_filter :check_administrator_role, :only => [:index, :show, :update, :edit, :destroy]
   
   layout "standard-layout"
   

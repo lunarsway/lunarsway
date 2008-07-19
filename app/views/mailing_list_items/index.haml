@@ -1,0 +1,7 @@
+%h1 Mailing List
+
+%p
+  = MailingListItem.count
+  Total
+
+= MailingListItem.find(:all, :order => "email ASC").collect{|x| [x.email]}.join(', ')

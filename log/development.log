@@ -10357,3 +10357,563 @@ Rendering news_items/edit
   [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
 Rendered /home/_logged_in (0.00433)
 Completed in 0.14372 (6 reqs/sec) | Rendering: 0.04563 (31%) | DB: 0.04458 (31%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000673)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMailingListItem Columns (0.007639)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mSQL (0.003294)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.033358)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'preston@prestonpope.com')[0m
+  [4;36;1mSQL (0.006387)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000774)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001274)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'web@prestonpope.com')[0m
+  [4;35;1mSQL (0.001295)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000549)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001523)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'feliche1@hotmail.com')[0m
+  [4;36;1mSQL (0.001355)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000517)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000997)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'pw@prestonpope.com')[0m
+  [4;35;1mSQL (0.001896)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000858)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001729)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'pw2@prestonpope.com')[0m
+  [4;36;1mSQL (0.001638)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000532)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001100)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'rpope@chicousd.org')[0m
+  [4;35;1mSQL (0.001476)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000559)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000985)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'cfeddersen@usa.net')[0m
+  [4;36;1mSQL (0.001265)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.001241)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001029)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ppope@prestonpope.com')[0m
+  [4;35;1mSQL (0.001534)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000545)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001040)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'musicatthemarina@yahoo.com')[0m
+  [4;36;1mSQL (0.001948)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000561)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001210)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'byeretzian@hotmail.com')[0m
+  [4;35;1mSQL (0.002077)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000563)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001069)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'bergstsa@yahoo.com')[0m
+  [4;36;1mSQL (0.001317)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000519)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000974)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'wintks@msn.com')[0m
+  [4;35;1mSQL (0.001282)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000618)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001246)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'nasskn@yahoo.com')[0m
+  [4;36;1mSQL (0.001659)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000537)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001470)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ilikeitdoggystyle69@hotmail.com')[0m
+  [4;35;1mSQL (0.001425)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000569)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000975)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'liladrinafaust@yahoo.com')[0m
+  [4;36;1mSQL (0.001305)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000803)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001256)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'selena@selenagarcia.com')[0m
+  [4;35;1mSQL (0.001287)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000527)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001036)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'slynch1830@yahoo.com')[0m
+  [4;36;1mSQL (0.001337)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.001466)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001004)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'info@mhervahakn.com')[0m
+  [4;35;1mSQL (0.001265)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001507)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'mattonice@gmail.com')[0m
+  [4;36;1mSQL (0.001308)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000528)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000972)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'libracaliente88@yahoo.com')[0m
+  [4;35;1mSQL (0.001295)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000514)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001001)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jbeerdietz@gmail.com')[0m
+  [4;36;1mSQL (0.001740)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000523)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001006)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'lizpagliarini@yahoo.com')[0m
+  [4;35;1mSQL (0.001449)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.001421)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000989)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jessicafelman@gmail.com')[0m
+  [4;36;1mSQL (0.001284)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000520)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000975)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'drewlawrence@yahoo.com')[0m
+  [4;35;1mSQL (0.001663)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000554)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001004)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'Jeero@GlencrestTeam.com')[0m
+  [4;36;1mSQL (0.001314)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000518)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001669)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'kyle.vanes@gmail.com')[0m
+  [4;35;1mSQL (0.002010)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000607)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001248)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'cmshibby@gmail.com')[0m
+  [4;36;1mSQL (0.001548)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000523)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001006)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'scottjones3000@gmail.com')[0m
+  [4;35;1mSQL (0.001480)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000535)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000965)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'bettigo@earthlink.net')[0m
+  [4;36;1mSQL (0.001270)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000806)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001071)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'thejaenchain@altrionet.com')[0m
+  [4;35;1mSQL (0.001306)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000523)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001058)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ziurx@earthlink.net')[0m
+  [4;36;1mSQL (0.001488)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000532)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001014)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jckindrick@yahoo.com')[0m
+  [4;35;1mSQL (0.001364)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000522)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001237)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'epramon@gmail.com')[0m
+  [4;36;1mSQL (0.001245)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000546)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000964)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'tfenmore@ma.com')[0m
+  [4;35;1mSQL (0.001619)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000580)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001007)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'vdudukgian@yahoo.com')[0m
+  [4;36;1mSQL (0.001294)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000534)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001296)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'fultronic@gmail.com')[0m
+  [4;35;1mSQL (0.001835)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.001016)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001003)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'samim106@hotmail.com')[0m
+  [4;36;1mSQL (0.001300)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000537)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001014)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'kevinhaaland@gmail.com')[0m
+  [4;35;1mSQL (0.001483)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000520)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001397)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'sarkisda33@yahoo.com')[0m
+  [4;36;1mSQL (0.004749)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000779)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001144)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'lawrencedeb@csps.com')[0m
+  [4;35;1mSQL (0.001328)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000539)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001026)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'contact@hooshere.com')[0m
+  [4;36;1mSQL (0.001257)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000519)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001292)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'graham.w.a@hotmail.com')[0m
+  [4;35;1mSQL (0.001242)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.001073)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000972)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'minnesota4@hotmail.com')[0m
+  [4;36;1mSQL (0.001276)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000557)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000965)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jay5@pacbell.net')[0m
+  [4;35;1mSQL (0.001782)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000555)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001033)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'sherbarr@pacbell.net')[0m
+  [4;36;1mSQL (0.001284)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000509)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001687)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'CalifJackie@aol.com')[0m
+  [4;35;1mSQL (0.001279)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000515)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000985)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'krikor717@sbcglobal.net')[0m
+  [4;36;1mSQL (0.001306)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000511)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001314)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'zkcga@sbcglobal.net')[0m
+  [4;35;1mSQL (0.001264)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000513)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000965)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'socalseb@hotmail.com')[0m
+  [4;36;1mSQL (0.002467)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000557)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001153)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ant.ok@hotmail.com')[0m
+  [4;35;1mSQL (0.002023)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000712)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001440)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'mandi@mandiperkins.com')[0m
+  [4;36;1mSQL (0.001307)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000511)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000948)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ari@mandiperkins.com')[0m
+  [4;35;1mSQL (0.001521)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000563)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001258)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'ameliabedelia_99@yahoo.com')[0m
+  [4;36;1mSQL (0.001662)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000721)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001019)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'anikhodaverdian@ucla.edu')[0m
+  [4;35;1mSQL (0.001239)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000989)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000958)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'sevagvrej@gmail.com')[0m
+  [4;36;1mSQL (0.001517)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000558)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000995)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'rduduk@yahoo.com')[0m
+  [4;35;1mSQL (0.001758)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000563)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001071)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'raymond@rayraworld.com')[0m
+  [4;36;1mSQL (0.005209)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000619)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001017)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'armenR@gmail.com')[0m
+  [4;35;1mSQL (0.001637)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000532)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000952)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'joe.kara@newline.com')[0m
+  [4;36;1mSQL (0.001785)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000533)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000987)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'matt-flem@hotmail.com')[0m
+  [4;35;1mSQL (0.001425)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000533)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001456)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'admin@welsford.net')[0m
+  [4;36;1mSQL (0.002361)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000702)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001194)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jbayham@gmail.com')[0m
+  [4;35;1mSQL (0.001272)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000553)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001014)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'daeunau@yahoo.com')[0m
+  [4;36;1mSQL (0.001299)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000531)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000957)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'only1earth86@gmail.com')[0m
+  [4;35;1mSQL (0.001929)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000536)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000966)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'Harfilm@sbcglobal.net')[0m
+  [4;36;1mSQL (0.001291)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000517)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000979)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'lmsark@socal.rr.com')[0m
+  [4;35;1mSQL (0.042683)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000890)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001085)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'pwatford@aiken.k12.sc.us')[0m
+  [4;36;1mSQL (0.001425)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000563)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001206)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'aamirayan@verizon.net')[0m
+  [4;35;1mSQL (0.001323)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000547)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001052)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'goofyandpooh@yahoo.com')[0m
+  [4;36;1mSQL (0.001339)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000505)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000981)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'raffy_y@hotmail.com')[0m
+  [4;35;1mSQL (0.001842)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000585)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001015)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'lorkynl@gmail.com')[0m
+  [4;36;1mSQL (0.001397)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000505)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000984)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'krick_10@hotmail.com')[0m
+  [4;35;1mSQL (0.001302)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000530)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001233)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'jennifergail24@gmail.com')[0m
+  [4;36;1mSQL (0.001353)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000842)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001212)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'preston@upgradedliving.com')[0m
+  [4;35;1mSQL (0.001300)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000986)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'Gypsysix06@aol.com')[0m
+  [4;36;1mSQL (0.001294)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000505)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000989)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'sevoog1@yahoo.com')[0m
+  [4;35;1mSQL (0.001223)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000503)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000990)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'michelleclark79@yahoo.com')[0m
+  [4;36;1mSQL (0.001254)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000583)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001211)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'gence7@gmail.com')[0m
+  [4;35;1mSQL (0.001356)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000510)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.000979)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'lportillos@yahoo.com')[0m
+  [4;36;1mSQL (0.001781)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000529)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.001169)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'nathanael.emenaer@gmail.com')[0m
+  [4;35;1mSQL (0.001272)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000544)[0m   [0;1mBEGIN[0m
+  [4;35;1mMailingListItem Create (0.001457)[0m   [0mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'bosin73@hotmail.com')[0m
+  [4;36;1mSQL (0.001289)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000513)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.000994)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-07-18 17:37:55', NULL, NULL, '2008-07-18 17:37:55', 'your email address')[0m
+  [4;35;1mSQL (0.001201)[0m   [0mCOMMIT[0m
+
+
+Processing SessionsController#admin (for 127.0.0.1 at 2008-07-18 17:41:57) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"admin", "controller"=>"sessions"}
+Rendering template within layouts/standard-layout
+Rendering sessions/admin
+  [4;35;1mUser Columns (0.007752)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.006150)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.006247)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.004814)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.10478)
+Completed in 0.15292 (6 reqs/sec) | Rendering: 0.11558 (75%) | DB: 0.02496 (16%) | 200 OK [http://0.0.0.0/session/admin]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:41:59) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;35;1mUser Columns (0.007063)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.014687)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.007406)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.003284)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mMailingListItem Load (0.022096)[0m   [0mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;36;1mMailingListItem Columns (0.009504)[0m   [0;1mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00484)
+Completed in 0.16397 (6 reqs/sec) | Rendering: 0.03476 (21%) | DB: 0.06404 (39%) | 200 OK [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:42:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;36;1mUser Columns (0.015845)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.006951)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005783)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004609)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mMailingListItem Load (0.014138)[0m   [0;1mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;35;1mMailingListItem Columns (0.005644)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+
+
+ActionView::TemplateError (undefined method `name' for #<MailingListItem:0x33d2bf8>) on line #3 of mailing_list_items/index.haml:
+1: %h1 Mailing List
+2: 
+3: = @mailing_list_items.collect{|x| [x.name]}.join(', ')
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    app/views/mailing_list_items/index.haml:3:in `_run_template_47app47views47mailing_list_items47index46haml'
+    app/views/mailing_list_items/index.haml:3:in `collect'
+    app/views/mailing_list_items/index.haml:3:in `_run_template_47app47views47mailing_list_items47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/mailing_list_items_controller.rb:12:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:42:25) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;36;1mUser Columns (0.007288)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.016220)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.007435)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.002764)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mMailingListItem Load (0.023265)[0m   [0;1mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;35;1mMailingListItem Columns (0.008537)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00369)
+Completed in 0.15685 (6 reqs/sec) | Rendering: 0.02829 (18%) | DB: 0.07115 (45%) | 200 OK [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:42:59) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;35;1mUser Columns (0.010428)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.005898)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.004820)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.004739)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mMailingListItem Load (0.013735)[0m   [0mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #3 of mailing_list_items/index.haml:
+1: %h1 Mailing List
+2: 
+3: = @mailing_list_items.find(:all, :order => "email ASC").collect{|x| [x.email]}.join(', ')
+    app/views/mailing_list_items/index.haml:3:in `find'
+    app/views/mailing_list_items/index.haml:3:in `_run_template_47app47views47mailing_list_items47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/mailing_list_items_controller.rb:12:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:43:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;36;1mUser Columns (0.008544)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.005787)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.004687)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.005369)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mMailingListItem Load (0.013948)[0m   [0;1mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;35;1mMailingListItem Load (0.016727)[0m   [0mSELECT * FROM `mailing_list_items` ORDER BY email ASC[0m
+  [4;36;1mMailingListItem Columns (0.005617)[0m   [0;1mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00335)
+Completed in 0.17993 (5 reqs/sec) | Rendering: 0.03979 (22%) | DB: 0.06068 (33%) | 200 OK [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:43:38) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;36;1mUser Columns (0.008475)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.006786)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005164)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004300)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mMailingListItem Load (0.013777)[0m   [0;1mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;35;1mMailingListItem Columns (0.007181)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mSQL (0.062215)[0m   [0;1mSELECT count(*) AS count_all FROM `mailing_list_items` [0m
+  [4;35;1mMailingListItem Load (0.014301)[0m   [0mSELECT * FROM `mailing_list_items` ORDER BY email ASC[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00358)
+Completed in 0.23220 (4 reqs/sec) | Rendering: 0.03625 (15%) | DB: 0.12220 (52%) | 200 OK [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:43:51) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;35;1mUser Columns (0.010184)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.003744)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.008063)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.002731)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mMailingListItem Load (0.018101)[0m   [0mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;36;1mMailingListItem Columns (0.013179)[0m   [0;1mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;35;1mSQL (0.004154)[0m   [0mSELECT count(*) AS count_all FROM `mailing_list_items` [0m
+  [4;36;1mMailingListItem Load (0.014051)[0m   [0;1mSELECT * FROM `mailing_list_items` ORDER BY email ASC[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00332)
+Completed in 0.17455 (5 reqs/sec) | Rendering: 0.03415 (19%) | DB: 0.07421 (42%) | 200 OK [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#index (for 127.0.0.1 at 2008-07-18 17:54:03) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"mailing_list_items"}
+  [4;36;1mUser Columns (0.007743)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.007051)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.013112)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.005775)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mMailingListItem Load (0.015184)[0m   [0;1mSELECT * FROM `mailing_list_items` [0m
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/index
+  [4;35;1mMailingListItem Columns (0.008217)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mSQL (0.001573)[0m   [0;1mSELECT count(*) AS count_all FROM `mailing_list_items` [0m
+  [4;35;1mMailingListItem Load (0.387649)[0m   [0mSELECT * FROM `mailing_list_items` ORDER BY email ASC[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00353)
+Completed in 0.54623 (1 reqs/sec) | Rendering: 0.03917 (7%) | DB: 0.44630 (81%) | 200 OK [http://0.0.0.0/mailing_list_items]
