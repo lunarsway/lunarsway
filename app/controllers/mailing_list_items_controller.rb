@@ -47,15 +47,22 @@ class MailingListItemsController < ApplicationController
   def create
     @mailing_list_item = MailingListItem.new(params[:mailing_list_item])
 
-    respond_to do |format|
-      if @mailing_list_item.save
-        flash[:notice] = 'MailingListItem was successfully created.'
-        MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
-        format.html { redirect_to(@mailing_list_item) }
-        format.xml  { render :xml => @mailing_list_item, :status => :created, :location => @mailing_list_item }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @mailing_list_item.errors, :status => :unprocessable_entity }
+    if MailingListItem.exists?(:email => params[:mailing_list_item][:email])
+      # just deliver the list
+      MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
+      format.html { redirect_to(@mailing_list_item) }
+      format.xml  { render :xml => @mailing_list_item, :status => :created, :location => @mailing_list_item }
+    else
+      respond_to do |format|
+        if @mailing_list_item.save
+          flash[:notice] = 'MailingListItem was successfully created.'
+          MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
+          format.html { redirect_to(@mailing_list_item) }
+          format.xml  { render :xml => @mailing_list_item, :status => :created, :location => @mailing_list_item }
+        else
+          format.html { render :action => "new" }
+          format.xml  { render :xml => @mailing_list_item.errors, :status => :unprocessable_entity }
+        end
       end
     end
   end
