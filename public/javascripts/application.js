@@ -1,9 +1,9 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
-function setupHome() {
+
+function setupJoinMailingList() {
   $(function () {
-    setupJoinMailingList();
     $('#mailing_list_join').val('your email address');
     $('#mailing_list_join').focus(function() {
       if ($(this).val() == 'your email address') {
@@ -15,11 +15,6 @@ function setupHome() {
         $(this).val('your email address');
       }
     });
-  });
-}
-
-function setupJoinMailingList() {
-  $(function () {
     $('#mailing_list_form').submit(function () {
       if ($('#mailing_list_join').val() != '' && $('#mailing_list_join').val().match('@') && $('#mailing_list_join').val().match('.')) {
         $('#mailing_list_form').ajaxSubmit(
