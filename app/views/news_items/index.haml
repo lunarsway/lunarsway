@@ -3,7 +3,7 @@
 - for news_item in @news_items
   .news_item
     .title
-      = news_item.created_at.strftime("%M %d, %Y")
+      = news_item.created_at.strftime("%B %d, %Y")
       =h news_item.title
     .posted_by
       by
