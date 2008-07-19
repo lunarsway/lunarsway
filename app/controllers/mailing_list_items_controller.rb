@@ -50,8 +50,6 @@ class MailingListItemsController < ApplicationController
     if MailingListItem.exists?(:email => params[:mailing_list_item][:email])
       # just deliver the list
       MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
-      format.html { redirect_to(@mailing_list_item) }
-      format.xml  { render :xml => @mailing_list_item, :status => :created, :location => @mailing_list_item }
     else
       respond_to do |format|
         if @mailing_list_item.save
