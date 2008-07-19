@@ -1,4 +1,5 @@
 class LinksController < ApplicationController
+  before_filter :check_administrator_role, :except => [:index, :show]
   
   layout "standard-layout"
   

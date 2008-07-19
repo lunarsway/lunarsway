@@ -10123,3 +10123,237 @@ Rendering home/index
   [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
 Rendered /home/_logged_in (0.00414)
 Completed in 0.15319 (6 reqs/sec) | Rendering: 0.07842 (51%) | DB: 0.04383 (28%) | 200 OK [http://0.0.0.0/]
+
+
+Processing SessionsController#admin (for 127.0.0.1 at 2008-07-18 16:58:59) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"admin", "controller"=>"sessions"}
+Rendering template within layouts/standard-layout
+Rendering sessions/admin
+  [4;36;1mUser Columns (0.009751)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.006651)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.024769)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004626)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.09759)
+Completed in 0.13662 (7 reqs/sec) | Rendering: 0.08042 (58%) | DB: 0.04580 (33%) | 200 OK [http://0.0.0.0/session/admin]
+
+
+Processing NewsItemsController#index (for 127.0.0.1 at 2008-07-18 16:59:04) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"index", "controller"=>"/news_items"}
+  [4;36;1mNewsItem Load (0.002680)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering news_items/index
+  [4;35;1mNewsItem Columns (0.010303)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mUser Columns (0.011525)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.006109)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.017465)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.007334)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00378)
+Completed in 0.18078 (5 reqs/sec) | Rendering: 0.10071 (55%) | DB: 0.05542 (30%) | 200 OK [http://0.0.0.0/news]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 16:59:07) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;35;1mUser Columns (0.006791)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.006446)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.005887)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.009456)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mNewsItem Columns (0.005751)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mNewsItem Load (0.006766)[0m   [0;1mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+
+
+ActionView::TemplateError (undefined method `created_on' for #<NewsItem:0x1045a00>) on line #10 of news_items/edit.haml:
+7:     %b Date
+8:     %br/
+9:     = f.datetime_select :created_on
+10: 
+11:   %p
+12:     %b Title
+13:     %br/
+
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:555:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:555:in `value'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:546:in `value'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/date_helper.rb:596:in `date_or_time_select'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/date_helper.rb:589:in `to_datetime_select_tag_without_error_wrapping'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/active_record_helper.rb:227:in `to_datetime_select_tag'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/date_helper.rb:209:in `datetime_select'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/date_helper.rb:685:in `datetime_select'
+    app/views/news_items/edit.haml:10:in `_run_template_47app47views47news_items47edit46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:72:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:72:in `form_for'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers.rb:336:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers.rb:336:in `haml_bind_proc'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for_without_haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:76:in `form_for'
+    app/views/news_items/edit.haml:5:in `_run_template_47app47views47news_items47edit46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 16:59:21) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;35;1mUser Columns (0.013636)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.004933)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.004966)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.004567)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mNewsItem Columns (0.011470)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mNewsItem Load (0.004368)[0m   [0;1mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00339)
+Completed in 0.16691 (5 reqs/sec) | Rendering: 0.05670 (33%) | DB: 0.04394 (26%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 17:00:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;36;1mUser Columns (0.006786)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.014064)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005243)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004457)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mNewsItem Columns (0.005269)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+  [4;35;1mNewsItem Load (0.006048)[0m   [0mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00463)
+Completed in 0.55951 (1 reqs/sec) | Rendering: 0.46204 (82%) | DB: 0.04187 (7%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 17:00:30) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;35;1mUser Columns (0.010710)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.007537)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.005189)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.004247)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mNewsItem Columns (0.008136)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mNewsItem Load (0.004970)[0m   [0;1mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00433)
+Completed in 0.14729 (6 reqs/sec) | Rendering: 0.03974 (26%) | DB: 0.04079 (27%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 17:00:33) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;36;1mUser Columns (0.010825)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.008965)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.006055)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.018916)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mNewsItem Columns (0.015792)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+  [4;35;1mNewsItem Load (0.004478)[0m   [0mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00331)
+Completed in 0.16361 (6 reqs/sec) | Rendering: 0.02988 (18%) | DB: 0.06503 (39%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 17:00:40) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;35;1mUser Columns (0.011441)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.006574)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.004768)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.012444)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mNewsItem Columns (0.007461)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mNewsItem Load (0.002883)[0m   [0;1mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00360)
+Completed in 0.14091 (7 reqs/sec) | Rendering: 0.04202 (29%) | DB: 0.04557 (32%) | 200 OK [http://0.0.0.0/news_items/2/edit]
+
+
+Processing NewsItemsController#edit (for 127.0.0.1 at 2008-07-18 17:00:48) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlM2U0YmU4MWVmYmQ2ZGVlY2Qz%0ANGEyOTU5Njg4Nzg4NDk6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c0abb2e9704abb8de0c5326d15fda63b3ff03ac8
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"news_items"}
+  [4;36;1mUser Columns (0.018647)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.005857)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005158)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004806)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mNewsItem Columns (0.006032)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+  [4;35;1mNewsItem Load (0.004084)[0m   [0mSELECT * FROM `news_items` WHERE (`news_items`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering news_items/edit
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00433)
+Completed in 0.14372 (6 reqs/sec) | Rendering: 0.04563 (31%) | DB: 0.04458 (31%) | 200 OK [http://0.0.0.0/news_items/2/edit]

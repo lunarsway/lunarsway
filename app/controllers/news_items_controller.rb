@@ -1,4 +1,7 @@
 class NewsItemsController < ApplicationController
+
+  before_filter :check_administrator_role, :only => [:new, :update, :edit, :destroy, :create]
+
   layout "standard-layout"
   # GET /news_items
   # GET /news_items.xml
