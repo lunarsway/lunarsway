@@ -19,20 +19,22 @@ function setupHome() {
 }
 
 function setupJoinMailingList() {
-  $('#mailing_list_form').submit(function () {
-    if ($('#mailing_list_join').val() != '' && $('#mailing_list_join').val().match('@') && $('#mailing_list_join').val().match('.')) {
-      $('#mailing_list_form').ajaxSubmit(
-        {success: function() {
-          alert('Thanks for joining mailing list!');
-          $('#mailing_list_join').val('your email address');            
-        }}
-      );
-      return false;
-    } else {
-      alert("Be sure to enter a valid email address!");        
-      return false;
-    }      
-  });  
+  $(function () {
+    $('#mailing_list_form').submit(function () {
+      if ($('#mailing_list_join').val() != '' && $('#mailing_list_join').val().match('@') && $('#mailing_list_join').val().match('.')) {
+        $('#mailing_list_form').ajaxSubmit(
+          {success: function() {
+            alert('Thanks for joining mailing list!');
+            $('#mailing_list_join').val('your email address');            
+          }}
+        );
+        return false;
+      } else {
+        alert("Be sure to enter a valid email address!");        
+        return false;
+      }      
+    });  
+  });
 }
 
 function doJoinMailingList() {
