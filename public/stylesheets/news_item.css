@@ -9,7 +9,8 @@
   .news_item .posted_by {
     font-size: 75%; }
   .news_item .body {
-    padding: 10px 0px 0px 15px; }
+    padding: 10px 0px 0px 15px;
+    font-size: 75%; }
 
 .news_item_show {
   margin: 0px 0px 15px 0px;
@@ -22,4 +23,5 @@
   .news_item_show .posted_by {
     font-size: 75%; }
   .news_item_show .body {
-    padding: 10px 0px 0px 15px; }
+    padding: 10px 0px 0px 15px;
+    font-size: 50%; }
