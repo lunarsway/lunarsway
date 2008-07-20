@@ -2,10 +2,9 @@
   logged in as
   - if current_user.has_role?('administrator')
     = link_to "admin", admin_session_url
+    |
+    = link_to "logout", logout_url
   - else
     = link_to current_user.login, user_path(current_user)
     |
     = link_to "logout", logout_url
-- else
-  = succeed "." do
-    = link_to "login here", login_url
