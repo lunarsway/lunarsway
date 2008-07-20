@@ -42,3 +42,5 @@ function doJoinMailingList() {
     alert("Be sure to enter a valid email address!");
   }
 }
+
+function setupReleases()
