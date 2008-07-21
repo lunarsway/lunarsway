@@ -43,4 +43,3 @@ function doJoinMailingList() {
   }
 }
 
-function setupReleases()
