@@ -3,14 +3,14 @@
   padding-bottom: 10px;
   border-bottom: dotted gray 1px; }
   .news_item .title {
-    font-size: 120%; }
+    font-size: 150%; }
     .news_item .title .date {
       color: #AAAAAA; }
   .news_item .posted_by {
     font-size: 75%; }
   .news_item .body {
     padding: 10px 0px 0px 15px;
-    font-size: 75%; }
+    font-size: 85%; }
 
 .news_item_show {
   margin: 0px 0px 15px 0px;
