@@ -1,0 +1,14 @@
+.talignc{:style => "width: 550px; margin-left: auto; margin-right: auto;"}
+  = image_tag formatted_large_photo_path(@photo, :jpg)
+  %br/
+  =h @photo.caption 
+  
+  .talignr
+    Credit:
+    %b=h @photo.credit
+
+  - if logged_in?
+    - if current_user.has_role?('administrator')
+      = link_to 'Edit', edit_photo_path(@photo)
+      |
+  = link_to 'Back', photos_path

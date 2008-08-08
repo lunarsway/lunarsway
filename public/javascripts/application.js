@@ -43,3 +43,21 @@ function doJoinMailingList() {
   }
 }
 
+function setupPhotoPage() {
+  $(function() {
+
+  //Set the default directory to find the images needed
+  //by the plugin (closebtn.png, blank.gif, loading images ....)
+  $.fn.fancyzoom.defaultsOptions.imgDir='../images/fancy_zoom/';//very important must finish with a /
+
+  // Select all links in object with gallery ID using the defaults options
+  $('#gallery a').fancyzoom({showoverlay: true, overlay:0.8}); 
+
+  // Select all links with tozoom class, set the open animation time to 1000
+  //$('a.tozoom').fancyzoom({Speed:1000});
+
+  // Select all links set the overlay opacity to 80%
+  //$('a').fancyzoom({overlay:0.8});
+
+  });
+}

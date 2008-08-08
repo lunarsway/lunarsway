@@ -10,7 +10,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pages
   map.resources :tour_dates
   map.resources :links
-  # map.resources :photos
+  map.resources :photos, :member => {
+    :custom           => :get,
+    :large            => :get,
+    :gallery          => :get
+  }
   map.resources :news_items
 
   map.signup '/signup', :controller => 'users', :action => 'new'
@@ -37,7 +41,7 @@ ActionController::Routing::Routes.draw do |map|
   map.news "/news", :controller => "/news_items"
   map.downloads "/downloads", :controller => "/home", :action => "downloads"
   map.video "/video", :controller => "/home", :action => "video"
-  map.photos "/photos", :controller => "/home", :action => "photos"
+  map.photos "/photos", :controller => "/photos", :action => "index"
   map.biography "/biography", :controller => "/home", :action => "biography"
   map.philosophy "/philosophy", :controller => "/home", :action => "philosophy"
   map.links "/links", :controller => "/links"
