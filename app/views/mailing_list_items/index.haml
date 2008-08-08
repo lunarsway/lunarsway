@@ -4,4 +4,5 @@
   = MailingListItem.count
   Total
 
-= MailingListItem.find(:all, :order => "email ASC").collect{|x| [x.email]}.join(', ')
+%small
+  = MailingListItem.find(:all, :order => "email ASC").collect{|x| [x.email]}.join(', ')

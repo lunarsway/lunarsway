@@ -19,7 +19,7 @@ test:
 
 production:
   adapter: mysql
-  database: lunarsway_production
+  database: lunarsway_prod
   host: 127.0.0.1
   username: root
   password: danielle
