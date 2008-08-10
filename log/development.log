@@ -13255,3 +13255,16 @@ ActionController::RoutingError (No route matches "/-/images/fancy_zoom/zoom-1.1"
     script/server:3
 
 Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-09 17:55:52) [GET]
+  Session ID: 567abb782738936b43825c80e96188d0
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001584)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.058200)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.017055)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.02781)
+Completed in 0.31864 (3 reqs/sec) | Rendering: 0.18467 (57%) | DB: 0.07684 (24%) | 200 OK [http://0.0.0.0/]
