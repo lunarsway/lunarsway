@@ -13268,3 +13268,37 @@ Rendering home/index
   [4;36;1mNewsItem Columns (0.017055)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.02781)
 Completed in 0.31864 (3 reqs/sec) | Rendering: 0.18467 (57%) | DB: 0.07684 (24%) | 200 OK [http://0.0.0.0/]
+  [4;35;1mSQL (0.039397)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-11 15:46:44) [GET]
+  Session ID: ad9c39619054d318bd6fb707a9a64d65
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.077540)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.047435)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00142)
+Completed in 0.33591 (2 reqs/sec) | Rendering: 0.04734 (14%) | DB: 0.16437 (48%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-11 15:54:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmUzMGVjNzI0M2Y3OGY3OGRjNDNjMTZiYWNlYjY5%0AZGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--360eeedb8851ee8633b406653bf77f48aa7881d1
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.002587)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.006644)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00476)
+Completed in 0.10491 (9 reqs/sec) | Rendering: 0.04773 (45%) | DB: 0.00923 (8%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-11 15:57:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmUzMGVjNzI0M2Y3OGY3OGRjNDNjMTZiYWNlYjY5%0AZGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--360eeedb8851ee8633b406653bf77f48aa7881d1
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.004876)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.010383)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.01298)
+Completed in 0.14436 (6 reqs/sec) | Rendering: 0.07224 (50%) | DB: 0.01526 (10%) | 200 OK [http://0.0.0.0/]
