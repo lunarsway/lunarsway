@@ -47,6 +47,14 @@
       margin-left: 12px;
       margin-top: 1px;
       float: left; }
+    #main_page #main_nav img#nav_lyrics {
+      margin-left: 15px;
+      margin-top: 0px;
+      float: left; }
+    #main_page #main_nav img#nav_blog {
+      margin-left: 17px;
+      margin-top: 1px;
+      float: left; }
   #main_page #main_content {
     height: 550px;
     background-image: URL('/images/structure/bg_content.jpg');

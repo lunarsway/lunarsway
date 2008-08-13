@@ -46,6 +46,7 @@ ActionController::Routing::Routes.draw do |map|
   map.philosophy "/philosophy", :controller => "/home", :action => "philosophy"
   map.links "/links", :controller => "/links"
   map.tour "/tour", :controller => "/tour_dates"
+  map.lyrics "/lyrics", :controller => "/lyrics", :action => "index"
   map.route "/song_downloads", :controller => "/song_downloads"
 
   map.connect '/news_items', :controller => "/news_items", :action => "index"

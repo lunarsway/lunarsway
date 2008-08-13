@@ -27,6 +27,8 @@
         = link_to image_tag("/images/structure/nav/philosophy.gif", :id => "nav_philosophy"), philosophy_url
         = link_to image_tag("/images/structure/nav/links.gif", :id => "nav_links"), links_url
         = link_to image_tag("/images/structure/nav/tour.gif", :id => "nav_tour"), tour_url
+        = link_to image_tag("/images/structure/nav/lyrics.gif", :id => "nav_lyrics"), lyrics_url
+        = link_to image_tag("/images/structure/nav/blog.gif", :id => "nav_blog"), "http://lunarsway.blogspot.com", :target => "_blank"
         .clear
       #main_content
         .top_info
@@ -38,7 +40,7 @@
           #logged_in.floatr= render :partial => "/home/logged_in"
           .clear
         #content_box
-          = @content_for_layout
+          %div{:style => "padding-top: 10px;"}= @content_for_layout
 
   = javascript_tag "setupJoinMailingList();"
   :plain

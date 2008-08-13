@@ -6,8 +6,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
   padding: 0; }
 
 p {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 15px;
+  margin-bottom: 35px; }
 
 blockquote {
   margin: 3px 5px 5px 3px; }
@@ -31,8 +31,8 @@ caption, th {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
 
 

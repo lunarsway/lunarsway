@@ -13302,3 +13302,563 @@ Rendering home/index
   [4;35;1mNewsItem Columns (0.010383)[0m   [0mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.01298)
 Completed in 0.14436 (6 reqs/sec) | Rendering: 0.07224 (50%) | DB: 0.01526 (10%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 12:34:33) [GET]
+  Session ID: 333cd177bbc2bfb8ca2e28fae48497a6
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001294)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.017834)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.012154)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+
+
+ActionView::TemplateError (undefined local variable or method `lyrics_url' for #<ActionView::Base:0x3b3ab5c>) on line #30 of layouts/standard-layout.haml:
+27:         = link_to image_tag("/images/structure/nav/philosophy.gif", :id => "nav_philosophy"), philosophy_url
+28:         = link_to image_tag("/images/structure/nav/links.gif", :id => "nav_links"), links_url
+29:         = link_to image_tag("/images/structure/nav/tour.gif", :id => "nav_tour"), tour_url
+30:         = link_to image_tag("/images/structure/nav/lyrics.gif", :id => "nav_lyrics"), lyrics_url
+31:         = link_to image_tag("/images/structure/nav/blog.gif", :id => "nav_blog"), "http://lunarsway.blogspot.com", :target => "_blank"
+32:         .clear
+33:       #main_content
+
+    app/views/layouts/standard-layout.haml:30:in `_run_template_47app47views47layouts47standard45layout46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:268:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 12:35:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--153857f070d4e9bd97af1d995652d1efab6e1dbe
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.005879)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.251228)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.04602)
+Completed in 0.40830 (2 reqs/sec) | Rendering: 0.09519 (23%) | DB: 0.26926 (65%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 12:35:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.029706)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.017074)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00723)
+Completed in 0.18029 (5 reqs/sec) | Rendering: 0.08076 (44%) | DB: 0.04678 (25%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 12:38:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.007269)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.021089)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00222)
+Completed in 0.19264 (5 reqs/sec) | Rendering: 0.09135 (47%) | DB: 0.02836 (14%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 12:44:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.064493)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.019043)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.01121)
+Completed in 0.26738 (3 reqs/sec) | Rendering: 0.06506 (24%) | DB: 0.08354 (31%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 12:44:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering lyrics/index
+Completed in 0.08842 (11 reqs/sec) | Rendering: 0.07195 (81%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 12:45:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00192)
+Completed in 0.05677 (17 reqs/sec) | Rendering: 0.04220 (74%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 12:45:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00736)
+Completed in 0.07973 (12 reqs/sec) | Rendering: 0.05870 (73%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 12:51:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00174)
+Completed in 0.06620 (15 reqs/sec) | Rendering: 0.03942 (59%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 12:51:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00169)
+Completed in 0.07425 (13 reqs/sec) | Rendering: 0.05952 (80%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 23:07:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.003190)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.014448)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00154)
+Completed in 0.12098 (8 reqs/sec) | Rendering: 0.05695 (47%) | DB: 0.01764 (14%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:07:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00216)
+Completed in 0.07931 (12 reqs/sec) | Rendering: 0.04506 (56%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 23:07:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00167)
+Completed in 0.08538 (11 reqs/sec) | Rendering: 0.07333 (85%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:08:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00374)
+Completed in 0.06593 (15 reqs/sec) | Rendering: 0.04321 (65%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:09:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00203)
+Completed in 0.06375 (15 reqs/sec) | Rendering: 0.05139 (80%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 23:09:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00217)
+Completed in 0.07685 (13 reqs/sec) | Rendering: 0.05440 (70%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 23:09:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00201)
+Completed in 0.11399 (8 reqs/sec) | Rendering: 0.09849 (86%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 23:10:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00215)
+Completed in 0.62171 (1 reqs/sec) | Rendering: 0.05982 (9%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:10:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00170)
+Completed in 0.09603 (10 reqs/sec) | Rendering: 0.07997 (83%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-12 23:10:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00273)
+Completed in 0.09281 (10 reqs/sec) | Rendering: 0.07118 (76%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:10:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.01405)
+Completed in 0.12947 (7 reqs/sec) | Rendering: 0.10764 (83%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:10:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00306)
+Completed in 0.04854 (20 reqs/sec) | Rendering: 0.03921 (80%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:11:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00200)
+Completed in 0.08439 (11 reqs/sec) | Rendering: 0.06102 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:13:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00173)
+Completed in 0.09413 (10 reqs/sec) | Rendering: 0.06202 (65%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:14:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00684)
+Completed in 0.21938 (4 reqs/sec) | Rendering: 0.11961 (54%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:15:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.01000)
+Completed in 0.14104 (7 reqs/sec) | Rendering: 0.11081 (78%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:16:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00207)
+Completed in 0.09297 (10 reqs/sec) | Rendering: 0.07235 (77%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 23:16:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.003071)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.008914)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.01146)
+Completed in 0.36083 (2 reqs/sec) | Rendering: 0.08062 (22%) | DB: 0.01198 (3%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-12 23:30:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.002973)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.006656)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00139)
+Completed in 0.05841 (17 reqs/sec) | Rendering: 0.02435 (41%) | DB: 0.00963 (16%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-12 23:30:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00322)
+Completed in 0.05310 (18 reqs/sec) | Rendering: 0.03964 (74%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:30:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00219)
+Completed in 0.05143 (19 reqs/sec) | Rendering: 0.04074 (79%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:31:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00191)
+Completed in 0.03955 (25 reqs/sec) | Rendering: 0.03032 (76%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:32:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00213)
+Completed in 0.05006 (19 reqs/sec) | Rendering: 0.03535 (70%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-12 23:32:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjdmNjQ0NzhiMDIyODBiODM3ODgwOTQ3YzY0ZTYz%0ANmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--59652d06e0622a192dfa6d85d82f22b32e8b14e2
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00168)
+Completed in 0.03634 (27 reqs/sec) | Rendering: 0.02828 (77%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+  [4;35;1mSQL (0.003780)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:06:30) [GET]
+  Session ID: 8d6d71e3649c6a41557f06678fbd1abf
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.002849)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.007506)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00151)
+Completed in 0.07187 (13 reqs/sec) | Rendering: 0.02801 (38%) | DB: 0.01414 (19%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:10:14) [GET]
+  Session ID: 5a9fd6f3c66025c833a2d9ab7566044a
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.004454)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.009368)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00142)
+Completed in 0.06683 (14 reqs/sec) | Rendering: 0.02730 (40%) | DB: 0.01382 (20%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-13 15:12:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00231)
+Completed in 0.05987 (16 reqs/sec) | Rendering: 0.04326 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-13 15:12:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00270)
+Completed in 0.04367 (22 reqs/sec) | Rendering: 0.03164 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing LyricsController#AmericaSpokeUp (for 127.0.0.1 at 2008-08-13 15:12:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"AmericaSpokeUp", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/AmericaSpokeUp
+Rendered /home/_logged_in (0.00170)
+Completed in 0.03532 (28 reqs/sec) | Rendering: 0.02381 (67%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/AmericaSpokeUp]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:12:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.002851)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.033970)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00144)
+Completed in 0.09680 (10 reqs/sec) | Rendering: 0.03571 (36%) | DB: 0.03682 (38%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-13 15:14:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.01962)
+Completed in 0.11034 (9 reqs/sec) | Rendering: 0.08072 (73%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:14:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.003343)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.008687)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00254)
+Completed in 0.09074 (11 reqs/sec) | Rendering: 0.04997 (55%) | DB: 0.01203 (13%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:16:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.012281)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.011061)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00169)
+Completed in 0.42416 (2 reqs/sec) | Rendering: 0.32185 (75%) | DB: 0.02334 (5%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:16:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.005013)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.246998)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00295)
+Completed in 0.33979 (2 reqs/sec) | Rendering: 0.05414 (15%) | DB: 0.25201 (74%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:17:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.004231)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.016015)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00142)
+Completed in 0.11429 (8 reqs/sec) | Rendering: 0.06324 (55%) | DB: 0.02025 (17%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-13 15:17:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00339)
+Completed in 0.10328 (9 reqs/sec) | Rendering: 0.08529 (82%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-08-13 15:17:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00195)
+Completed in 0.03282 (30 reqs/sec) | Rendering: 0.02235 (68%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:18:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.003963)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.060936)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.47765)
+Completed in 0.87705 (1 reqs/sec) | Rendering: 0.77094 (87%) | DB: 0.06490 (7%) | 200 OK [http://0.0.0.0/]
+
+
+Processing LyricsController#SaintMarksSquare (for 127.0.0.1 at 2008-08-13 15:18:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"SaintMarksSquare", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/SaintMarksSquare
+Rendered /home/_logged_in (0.00304)
+Completed in 0.04327 (23 reqs/sec) | Rendering: 0.03029 (70%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/SaintMarksSquare]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-13 15:30:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNWIxYmYwZWE5ZDgyNzNiMjNkYmFhY2IyZTlmOGM0%0ANmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--78e331f4397b14567141576d71fc7eb1ebb1d20b
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.006511)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 5[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.018087)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00197)
+Completed in 0.09604 (10 reqs/sec) | Rendering: 0.03423 (35%) | DB: 0.02460 (25%) | 200 OK [http://0.0.0.0/]
