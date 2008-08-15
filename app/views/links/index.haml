@@ -4,11 +4,11 @@
   - if logged_in?
     - if current_user.has_role?('administrator')
       %li= link_to 'New Link', new_link_path
-    - for link in @links
-      %li
-        =h link.title + " - "
-        = link_to link.url, link.url
-        - if logged_in?
-          - if current_user.has_role?('administrator')
-            = link_to '(edit)', edit_link_path(link)
-            = link_to '(delete)', link, :confirm => 'Are you sure?', :method => :delete
+  - for link in @links
+    %li
+      =h link.title + " - "
+      = link_to link.url, link.url
+      - if logged_in?
+        - if current_user.has_role?('administrator')
+          = link_to '(edit)', edit_link_path(link)
+          = link_to '(delete)', link, :confirm => 'Are you sure?', :method => :delete
