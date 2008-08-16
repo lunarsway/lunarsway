@@ -12,6 +12,21 @@
       margin-top: 70px; }
       #main_page #main_header img:hover {
         opacity: .5; }
+    #main_page #main_header .mailing_list_join {
+      font-size: 75%;
+      padding-top: 50px;
+      padding-right: 50px; }
+      #main_page #main_header .mailing_list_join input {
+        font-size: 100%;
+        border: solid gray 1px;
+        padding: 5px;
+        color: #333333; }
+      #main_page #main_header .mailing_list_join .message {
+        font-size: 125%;
+        color: white;
+        text-align: right;
+        font-weight: bold;
+        margin-bottom: 5px; }
   #main_page #main_nav {
     height: 38px;
     background-image: URL('/images/structure/bg_nav.jpg'); }
@@ -56,9 +71,9 @@
       margin-top: 1px;
       float: left; }
   #main_page #main_content {
-    height: 550px;
+    height: 580px;
     background-image: URL('/images/structure/bg_content.jpg');
-    padding-top: 20px; }
+    padding-top: 10px; }
     #main_page #main_content #content_box {
       overflow-y: auto;
       height: 440px;
