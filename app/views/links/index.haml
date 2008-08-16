@@ -1,6 +1,6 @@
 %h1 Lunar Links
 
-%ul
+%ul.links_list
   - if logged_in?
     - if current_user.has_role?('administrator')
       %li= link_to 'New Link', new_link_path

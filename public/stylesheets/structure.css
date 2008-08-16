@@ -14,7 +14,7 @@
         opacity: .5; }
     #main_page #main_header .mailing_list_join {
       font-size: 75%;
-      padding-top: 50px;
+      padding-top: 65px;
       padding-right: 50px; }
       #main_page #main_header .mailing_list_join input {
         font-size: 100%;
@@ -60,7 +60,7 @@
       float: left; }
     #main_page #main_nav img#nav_tour {
       margin-left: 12px;
-      margin-top: 1px;
+      margin-top: 0px;
       float: left; }
     #main_page #main_nav img#nav_lyrics {
       margin-left: 15px;
@@ -71,8 +71,8 @@
       margin-top: 1px;
       float: left; }
     #main_page #main_nav img#nav_store {
-      margin-left: 17px;
-      margin-top: 1px;
+      margin-left: 15px;
+      margin-top: 0px;
       float: left; }
   #main_page #main_content {
     height: 580px;

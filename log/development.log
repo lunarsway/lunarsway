@@ -14248,3 +14248,845 @@ ActionController::RoutingError (No route matches "/crossdomain.xml" with {:metho
     script/server:3
 
 Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:08:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.172887)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.018216)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00172)
+Completed in 3.42526 (0 reqs/sec) | Rendering: 0.20657 (6%) | DB: 0.19110 (5%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:10:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.005733)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.699960)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00142)
+Completed in 1.00982 (0 reqs/sec) | Rendering: 0.19100 (18%) | DB: 0.70569 (69%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:10:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.473748)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.011312)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00208)
+Completed in 0.64867 (1 reqs/sec) | Rendering: 0.04233 (6%) | DB: 0.48506 (74%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:12:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.017848)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.056291)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00177)
+Completed in 0.46258 (2 reqs/sec) | Rendering: 0.19992 (43%) | DB: 0.07414 (16%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:13:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.238863)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (1.102278)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00215)
+Completed in 2.30429 (0 reqs/sec) | Rendering: 0.14412 (6%) | DB: 1.34114 (58%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:13:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.347121)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.008534)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00233)
+Completed in 0.67540 (1 reqs/sec) | Rendering: 0.24158 (35%) | DB: 0.35565 (52%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:21:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.025792)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.010092)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.01048)
+Completed in 0.43090 (2 reqs/sec) | Rendering: 0.35592 (82%) | DB: 0.03588 (8%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:21:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.008812)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.006824)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00282)
+Completed in 0.23243 (4 reqs/sec) | Rendering: 0.10752 (46%) | DB: 0.01564 (6%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing LinksController#index (for 127.0.0.1 at 2008-08-16 15:22:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"links"}
+  [4;35;1mLink Load (0.046948)[0m   [0mSELECT * FROM `links` [0m
+Rendering template within layouts/standard-layout
+Rendering links/index
+  [4;36;1mLink Columns (0.008297)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+Rendered /home/_logged_in (0.00143)
+Completed in 0.25319 (3 reqs/sec) | Rendering: 0.04995 (19%) | DB: 0.05525 (21%) | 200 OK [http://0.0.0.0/links]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:38:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/tour_dates"}
+  [4;35;1mTourDate Load (0.174243)[0m   [0mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;36;1mTourDate Columns (0.026795)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00349)
+Completed in 0.98239 (1 reqs/sec) | Rendering: 0.28226 (28%) | DB: 0.20104 (20%) | 200 OK [http://0.0.0.0/tour]
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000663)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.233476)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001867)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001418)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001085)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001910)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.003483)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001400)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001687)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001223)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.360957)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateLunarReleases (10)
+  [4;35;1mSQL (0.609234)[0m   [0mCREATE TABLE `lunar_releases` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255) DEFAULT NULL, `body` text DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.619846)[0m   [0;1mUPDATE schema_info SET version = 10[0m
+  [4;35;1mSQL (0.001594)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to TourDatesAddShowDate (11)
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42000You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date_time' at line 1: ALTER TABLE `tour_dates` ADD `show_date` date_time[0m
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:46:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/tour_dates"}
+  [4;35;1mTourDate Load (0.137553)[0m   [0mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;36;1mTourDate Columns (0.185000)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+
+
+ActionView::TemplateError (undefined method `show_date' for #<TourDate:0x39f82a8>) on line #11 of tour_dates/index.haml:
+8: - for tour_date in @tour_dates
+9:   .tour_date
+10:     .title
+11:       = tour_date.show_date.strftime("%M/%D/%Y")
+12:       = "-"
+13:       = link_to tour_date.title, tour_date
+14:     .location= tour_date.location
+
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    app/views/tour_dates/index.haml:11:in `_run_template_47app47views47tour_dates47index46haml'
+    app/views/tour_dates/index.haml:8:in `each'
+    app/views/tour_dates/index.haml:8:in `_run_template_47app47views47tour_dates47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/tour_dates_controller.rb:10:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000629)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.002120)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.002919)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001993)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001374)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.105735)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.025831)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001568)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.004210)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001738)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.002148)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001630)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to TourDatesAddShowDate (11)
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42000You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date_time' at line 1: ALTER TABLE `tour_dates` ADD `show_date` date_time[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000915)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.084967)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001264)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.002405)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001252)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.003526)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001385)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001453)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001988)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.002180)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001375)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001303)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to TourDatesAddShowDate (11)
+  [4;36;1mSQL (1.299023)[0m   [0;1mALTER TABLE `tour_dates` ADD `show_date` datetime[0m
+  [4;35;1mSQL (0.251990)[0m   [0mUPDATE schema_info SET version = 11[0m
+  [4;36;1mSQL (0.002943)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (2.036918)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.075318)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+  [4;35;1mSQL (0.091929)[0m   [0mdescribe `links`[0m
+  [4;36;1mSQL (0.039377)[0m   [0;1mSHOW KEYS FROM `links`[0m
+  [4;35;1mSQL (0.011100)[0m   [0mSHOW FIELDS FROM `lunar_releases`[0m
+  [4;36;1mSQL (0.147842)[0m   [0;1mdescribe `lunar_releases`[0m
+  [4;35;1mSQL (0.053704)[0m   [0mSHOW KEYS FROM `lunar_releases`[0m
+  [4;36;1mSQL (0.239697)[0m   [0;1mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;35;1mSQL (0.041779)[0m   [0mdescribe `mailing_list_items`[0m
+  [4;36;1mSQL (0.079532)[0m   [0;1mSHOW KEYS FROM `mailing_list_items`[0m
+  [4;35;1mSQL (0.041874)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mSQL (0.154745)[0m   [0;1mdescribe `news_items`[0m
+  [4;35;1mSQL (0.234982)[0m   [0mSHOW KEYS FROM `news_items`[0m
+  [4;36;1mSQL (0.099503)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.008762)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.120232)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.037092)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+  [4;36;1mSQL (0.031707)[0m   [0;1mdescribe `permissions`[0m
+  [4;35;1mSQL (0.047544)[0m   [0mSHOW KEYS FROM `permissions`[0m
+  [4;36;1mSQL (0.161708)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mSQL (0.245141)[0m   [0mdescribe `photos`[0m
+  [4;36;1mSQL (0.013118)[0m   [0;1mSHOW KEYS FROM `photos`[0m
+  [4;35;1mSQL (0.124866)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.114894)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.108530)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.010171)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+  [4;35;1mSQL (0.340819)[0m   [0mdescribe `tour_dates`[0m
+  [4;36;1mSQL (0.014516)[0m   [0;1mSHOW KEYS FROM `tour_dates`[0m
+  [4;35;1mSQL (0.355142)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.026946)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.413014)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:48:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/tour_dates"}
+  [4;35;1mTourDate Load (0.027192)[0m   [0mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;36;1mTourDate Columns (0.494335)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #11 of tour_dates/index.haml:
+8: - for tour_date in @tour_dates
+9:   .tour_date
+10:     .title
+11:       = tour_date.show_date.strftime("%M/%D/%Y")
+12:       = "-"
+13:       = link_to tour_date.title, tour_date
+14:     .location= tour_date.location
+
+    app/views/tour_dates/index.haml:11:in `_run_template_47app47views47tour_dates47index46haml'
+    app/views/tour_dates/index.haml:8:in `each'
+    app/views/tour_dates/index.haml:8:in `_run_template_47app47views47tour_dates47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/tour_dates_controller.rb:10:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:49:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/tour_dates"}
+  [4;35;1mTourDate Load (0.123079)[0m   [0mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;36;1mTourDate Columns (0.097338)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #11 of tour_dates/index.haml:
+8: - for tour_date in @tour_dates
+9:   .tour_date
+10:     .title
+11:       = tour_date.show_date.strftime("%M/%D/%Y")
+12:       = "-"
+13:       = link_to tour_date.title, tour_date
+14:     .location= tour_date.location
+
+    app/views/tour_dates/index.haml:11:in `_run_template_47app47views47tour_dates47index46haml'
+    app/views/tour_dates/index.haml:8:in `each'
+    app/views/tour_dates/index.haml:8:in `_run_template_47app47views47tour_dates47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/tour_dates_controller.rb:10:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-08-16 15:50:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/tour/1/edit" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TourDatesController#edit (for 127.0.0.1 at 2008-08-16 15:50:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tour_dates"}
+  [4;35;1mTourDate Columns (0.012438)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+  [4;36;1mTourDate Load (0.225047)[0m   [0;1mSELECT * FROM `tour_dates` WHERE (`tour_dates`.`id` = 1) [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/edit
+
+
+ActionView::TemplateError (undefined method `date_time' for #<ActionView::Helpers::FormBuilder:0x3b05d94>) on line #15 of tour_dates/edit.haml:
+12:     %b Date and Time
+13:     %br/
+14:     = f.date_time :show_date
+15: 
+16:   %p
+17:     %b Location
+18:     %br/
+
+    app/views/tour_dates/edit.haml:15:in `_run_template_47app47views47tour_dates47edit46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:72:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:72:in `form_for'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers.rb:336:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers.rb:336:in `haml_bind_proc'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for_without_haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:76:in `form_for'
+    app/views/tour_dates/edit.haml:5:in `_run_template_47app47views47tour_dates47edit46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TourDatesController#edit (for 127.0.0.1 at 2008-08-16 15:54:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tour_dates"}
+  [4;35;1mTourDate Columns (0.008805)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+  [4;36;1mTourDate Load (0.016122)[0m   [0;1mSELECT * FROM `tour_dates` WHERE (`tour_dates`.`id` = 1) [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/edit
+Rendered /home/_logged_in (0.00214)
+Completed in 0.34798 (2 reqs/sec) | Rendering: 0.27561 (79%) | DB: 0.02493 (7%) | 200 OK [http://0.0.0.0/tour_dates/1/edit]
+
+
+Processing TourDatesController#update (for 127.0.0.1 at 2008-08-16 15:54:32) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"commit"=>"Update", "tour_date"=>{"show_date(5i)"=>"54", "price_ahead"=>"$10.00", "title"=>"Private Open Rehearsal", "description"=>"Private Open Rehearsal", "show_date(1i)"=>"2008", "show_date(2i)"=>"8", "price_door"=>"$15.00", "show_date(3i)"=>"16", "address"=>"2342 Fattoush Lane", "show_date(4i)"=>"15", "location"=>"TBD"}, "authenticity_token"=>"9283117455f86a297ee0a48073e70a64a81072a4", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"tour_dates"}
+  [4;35;1mTourDate Columns (0.069691)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+  [4;36;1mTourDate Load (0.007933)[0m   [0;1mSELECT * FROM `tour_dates` WHERE (`tour_dates`.`id` = 1) [0m
+  [4;35;1mSQL (0.054615)[0m   [0mBEGIN[0m
+  [4;36;1mTourDate Update (0.006491)[0m   [0;1mUPDATE `tour_dates` SET `created_at` = '2008-07-18 02:14:11', `address` = '2342 Fattoush Lane', `title` = 'Private Open Rehearsal', `price_ahead` = '$10.00', `location` = 'TBD', `price_door` = '$15.00', `description` = 'Private Open Rehearsal', `show_date` = '2008-08-16 15:54:00', `updated_at` = '2008-08-16 15:54:33' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.002367)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/tour_dates/1
+Completed in 0.57346 (1 reqs/sec) | DB: 0.14110 (24%) | 302 Found [http://0.0.0.0/tour_dates/1]
+
+
+Processing TourDatesController#show (for 127.0.0.1 at 2008-08-16 15:54:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIidUb3VyRGF0ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0%0AZWQuBjoKQHVzZWR7BjsHVA%3D%3D--1214e415a3e1f49a0349017eacca2a5b3ff4c7a4
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Columns (0.031617)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+  [4;35;1mTourDate Load (0.008928)[0m   [0mSELECT * FROM `tour_dates` WHERE (`tour_dates`.`id` = 1) [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/show
+Rendered /home/_logged_in (0.00344)
+Completed in 0.38947 (2 reqs/sec) | Rendering: 0.12447 (31%) | DB: 0.04055 (10%) | 200 OK [http://0.0.0.0/tour_dates/1]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:54:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.006514)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.010574)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00210)
+Completed in 0.29173 (3 reqs/sec) | Rendering: 0.18500 (63%) | DB: 0.01709 (5%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:55:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.006593)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.011079)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00358)
+Completed in 0.26380 (3 reqs/sec) | Rendering: 0.11916 (45%) | DB: 0.01767 (6%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:55:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.004541)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.045966)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00172)
+Completed in 0.25480 (3 reqs/sec) | Rendering: 0.12080 (47%) | DB: 0.05051 (19%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:55:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.005365)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.035527)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00252)
+Completed in 0.24486 (4 reqs/sec) | Rendering: 0.15092 (61%) | DB: 0.04089 (16%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:55:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.032452)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.031362)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00196)
+Completed in 0.29759 (3 reqs/sec) | Rendering: 0.13188 (44%) | DB: 0.06381 (21%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:57:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.007040)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.006289)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #18 of tour_dates/index.haml:
+15:       Location:
+16:       = tour_date.location
+17:     .ticket_prices
+18:       - unless tour_date.price_ahead.empty? tour_date.price_ahead.nil?
+19:         Ahead:
+20:         = tour_date.price_ahead
+21:       - unless tour_date.price_door.empty? tour_date.price_door.nil?
+
+    app/views/tour_dates/index.haml:18:in `empty?'
+    app/views/tour_dates/index.haml:18:in `_run_template_47app47views47tour_dates47index46haml'
+    app/views/tour_dates/index.haml:8:in `each'
+    app/views/tour_dates/index.haml:8:in `_run_template_47app47views47tour_dates47index46haml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/tour_dates_controller.rb:10:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 15:58:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.004110)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.007356)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00595)
+Completed in 0.29117 (3 reqs/sec) | Rendering: 0.22858 (78%) | DB: 0.01775 (6%) | 200 OK [http://0.0.0.0/tour_dates]

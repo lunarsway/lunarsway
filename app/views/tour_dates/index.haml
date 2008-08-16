@@ -7,13 +7,20 @@
 
 - for tour_date in @tour_dates
   .tour_date
-    .title= link_to tour_date.title, tour_date
-    .location= tour_date.location
+    .title
+      = tour_date.show_date.strftime("%m/%d/%Y")
+      = "-"
+      = link_to tour_date.title, tour_date
+    .location
+      Location:
+      = tour_date.location
     .ticket_prices
-      Ahead:
-      = tour_date.price_ahead
-      Door:
-      = tour_date.price_ahead
+      - unless tour_date.price_ahead.empty? or tour_date.price_ahead.nil?
+        Ahead:
+        = tour_date.price_ahead
+      - unless tour_date.price_door.empty? or tour_date.price_door.nil?
+        Door:
+        = tour_date.price_door
     - if logged_in?
       - if current_user.has_role?('administrator')
         = link_to '(edit)', edit_tour_date_path(tour_date)
