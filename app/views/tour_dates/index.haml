@@ -11,9 +11,8 @@
       = tour_date.show_date.strftime("%m/%d/%Y")
       = "-"
       = link_to tour_date.title, tour_date
-    .location
-      Location:
-      = tour_date.location
+      %span.location
+        = tour_date.location
     .ticket_prices
       - unless tour_date.price_ahead.empty? or tour_date.price_ahead.nil?
         Ahead:
