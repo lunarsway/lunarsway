@@ -15134,3 +15134,47 @@ Rendering tour_dates/index
   [4;35;1mTourDate Columns (0.012031)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
 Rendered /home/_logged_in (0.00221)
 Completed in 0.30275 (3 reqs/sec) | Rendering: 0.21417 (70%) | DB: 0.04222 (13%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-16 18:29:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.002655)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.038508)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00137)
+Completed in 2.51998 (0 reqs/sec) | Rendering: 2.31608 (91%) | DB: 0.04116 (1%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-16 18:30:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.018726)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.009231)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00774)
+Completed in 1.37173 (0 reqs/sec) | Rendering: 1.06342 (77%) | DB: 0.02796 (2%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-16 18:31:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.003161)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.006918)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00143)
+Completed in 0.32729 (3 reqs/sec) | Rendering: 0.20052 (61%) | DB: 0.01008 (3%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-16 18:31:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mNewsItem Load (0.003302)[0m   [0;1mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mNewsItem Columns (0.008131)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00338)
+Completed in 0.77059 (1 reqs/sec) | Rendering: 0.32480 (42%) | DB: 0.01143 (1%) | 200 OK [http://0.0.0.0/]

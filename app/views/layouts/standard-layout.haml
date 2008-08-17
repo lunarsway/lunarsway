@@ -19,7 +19,9 @@
       #main_header
         .floatl= link_to image_tag("/images/structure/logo.png"), home_url
         .mailing_list_join.floatr
-          .message Join our mailing list!
+          .message
+            Join our
+            %span{:style => "color: red;"} mailing list!
           - form_tag mailing_list_items_path, :id => 'mailing_list_form' do
             = text_field_tag "mailing_list_item[email]", "", :id => 'mailing_list_join'
             = submit_tag "join!"        
