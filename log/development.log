@@ -15251,3 +15251,22 @@ Rendering photos/gallery
   [4;35;1mPhoto Columns (0.018715)[0m   [0mSHOW FIELDS FROM `photos`[0m
   [4;36;1mPhoto Load (0.341326)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
 Completed in 3.92378 (0 reqs/sec) | Rendering: 3.49664 (89%) | DB: 0.36004 (9%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-08-16 19:48:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+  [4;35;1mPhoto Load (0.043535)[0m   [0mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;36;1mPhoto Columns (0.060660)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+Rendered /home/_logged_in (0.00158)
+Completed in 0.46721 (2 reqs/sec) | Rendering: 0.06659 (14%) | DB: 0.10420 (22%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-08-16 19:48:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;35;1mPhoto Columns (0.006220)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.009985)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
