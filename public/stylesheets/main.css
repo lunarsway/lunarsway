@@ -4,6 +4,7 @@
 @import url(home.css);
 @import url(news_item.css);
 @import url(links.css);
+@import url(photos.css);
 @import url(tour_dates.css);
 body {
   background-color: #000000;

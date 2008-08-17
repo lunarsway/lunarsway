@@ -15178,3 +15178,36 @@ Rendering home/index
   [4;35;1mNewsItem Columns (0.008131)[0m   [0mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.00338)
 Completed in 0.77059 (1 reqs/sec) | Rendering: 0.32480 (42%) | DB: 0.01143 (1%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-16 19:31:58) [GET]
+  Session ID: 9075f943eda8e3b8aeadf6b56a119c40
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000684)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.002607)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.012566)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.02114)
+Completed in 0.12063 (8 reqs/sec) | Rendering: 0.08641 (71%) | DB: 0.01586 (13%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-08-16 19:32:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+  [4;35;1mPhoto Load (0.002762)[0m   [0mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;36;1mPhoto Columns (0.013735)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+Rendered /home/_logged_in (0.00380)
+Completed in 0.16298 (6 reqs/sec) | Rendering: 0.06043 (37%) | DB: 0.01650 (10%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-08-16 19:32:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;35;1mPhoto Columns (0.013334)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.002807)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 1.28159 (0 reqs/sec) | Rendering: 1.25503 (97%) | DB: 0.01614 (1%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
