@@ -1,4 +1,4 @@
 @photo = Photo.find(params[:id])
 @photo.operate do |image|
-  image.resize '200x150'
+  image.resize '175x100'
 end
