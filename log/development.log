@@ -15112,3 +15112,25 @@ Rendering tour_dates/index
   [4;35;1mTourDate Columns (0.022866)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
 Rendered /home/_logged_in (0.02704)
 Completed in 0.23685 (4 reqs/sec) | Rendering: 0.14557 (61%) | DB: 0.02851 (12%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 18:24:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.024473)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.127730)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.02787)
+Completed in 0.38124 (2 reqs/sec) | Rendering: 0.12021 (31%) | DB: 0.15220 (39%) | 200 OK [http://0.0.0.0/tour_dates]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-08-16 18:24:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGVjZDY5ZDZjMTQyNjM4MTY5ZjE4Y2FkMjdmMmI1%0AZmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b61af91bb39f7519ceebf1dd8b5460c59409b10f
+  Parameters: {"action"=>"index", "controller"=>"tour_dates"}
+  [4;36;1mTourDate Load (0.030186)[0m   [0;1mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;35;1mTourDate Columns (0.012031)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00221)
+Completed in 0.30275 (3 reqs/sec) | Rendering: 0.21417 (70%) | DB: 0.04222 (13%) | 200 OK [http://0.0.0.0/tour_dates]
