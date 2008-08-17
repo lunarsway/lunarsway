@@ -7,5 +7,5 @@ ActionMailer::Base.smtp_settings = {
 :domain => 'lunarsway.com',
 :authentication => :plain,
 :user_name => 'info@lunarsway.com',
-:password => 'pooryou'
+:password => 'fattoush'
 }
