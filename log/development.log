@@ -15270,3 +15270,95 @@ Processing PhotosController#gallery (for 127.0.0.1 at 2008-08-16 19:48:39) [GET]
 Rendering photos/gallery
   [4;35;1mPhoto Columns (0.006220)[0m   [0mSHOW FIELDS FROM `photos`[0m
   [4;36;1mPhoto Load (0.009985)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 3.12739 (0 reqs/sec) | Rendering: 3.04668 (97%) | DB: 0.01621 (0%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-08-16 19:50:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+  [4;35;1mPhoto Load (0.002970)[0m   [0mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;36;1mPhoto Columns (0.006431)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+Rendered /home/_logged_in (0.00148)
+Completed in 0.20823 (4 reqs/sec) | Rendering: 0.04265 (20%) | DB: 0.00940 (4%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-08-16 19:50:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;35;1mPhoto Columns (0.008034)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.003871)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 3.16568 (0 reqs/sec) | Rendering: 3.09687 (97%) | DB: 0.01190 (0%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-17 14:51:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.025460)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.078734)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.041993)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.01755)
+Completed in 0.34160 (2 reqs/sec) | Rendering: 0.17714 (51%) | DB: 0.14619 (42%) | 200 OK [http://0.0.0.0/]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-08-17 14:52:09) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d2b72942a55fd42588314262c7978ccf23b509e8
+  Parameters: {"mailing_list_item"=>{"email"=>"pwp@prestonpope.com"}, "authenticity_token"=>"84052a5b1985d3b397dfe855a2f45074e03b6b56", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.010205)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.336926)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'pwp@prestonpope.com') LIMIT 1[0m
+  [4;35;1mSQL (0.001071)[0m   [0mBEGIN[0m
+  [4;36;1mMailingListItem Create (0.318595)[0m   [0;1mINSERT INTO `mailing_list_items` (`updated_at`, `first_name`, `last_name`, `created_at`, `email`) VALUES('2008-08-17 14:52:09', NULL, NULL, '2008-08-17 14:52:09', 'pwp@prestonpope.com')[0m
+  [4;35;1mSQL (0.238737)[0m   [0mCOMMIT[0m
+Sent mail:
+ Date: Sun, 17 Aug 2008 14:52:10 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: pwp@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>
+  We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Just for a Moment"
+</p>
+<br />
+<p>
+  Next month, you can look forward to our third song "Just for a Moment" which will be released on August, 16th.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+  We will definitely keep you in the loop on all things Lunar Sway!
+</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Redirected to http://0.0.0.0:3000/mailing_list_items/98
+Completed in 4.08462 (0 reqs/sec) | DB: 0.90553 (22%) | 302 Found [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#show (for 127.0.0.1 at 2008-08-17 14:52:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODUwMjZkY2E2YzhlMzc2NDkzZDkxMjA2MDY5YTI1%0AM2UiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIi5NYWlsaW5nTGlzdEl0ZW0gd2FzIHN1Y2Nlc3NmdWxs%0AeSBjcmVhdGVkLgY6CkB1c2VkewY7B1Q%3D--51e8e2c5f85066e869af586565011cf126ddfe85
+  Parameters: {"action"=>"show", "id"=>"98", "controller"=>"mailing_list_items"}
+Redirected to http://0.0.0.0:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x3b9abd8 @filter=:check_administrator_role>] rendered_or_redirected.
+Completed in 0.01409 (70 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://0.0.0.0/mailing_list_items/98]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-08-17 14:52:18) [GET]
+  Session ID: BAh7CToNcmVmZXJfdG8iGWh0dHA6Ly8wLjAuMC4wOjMwMDAvOgxjc3JmX2lk%0AIiU4NTAyNmRjYTZjOGUzNzY0OTNkOTEyMDYwNjlhMjUzZToOcmV0dXJuX3Rv%0AIhsvbWFpbGluZ19saXN0X2l0ZW1zLzk4IgpmbGFzaElDOidBY3Rpb25Db250%0Acm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIjJZb3UgbXVzdCBi%0AZSBsb2dnZWQgaW4gdG8gYWNjZXNzIHRoaXMgZmVhdHVyZS4GOgpAdXNlZHsG%0AOwlU--69c87d4e72a24609ae35d4d851650372f026e58b
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/standard-layout
+Rendering sessions/new
+Rendered /home/_logged_in (0.00798)
+Completed in 0.13010 (7 reqs/sec) | Rendering: 0.11817 (90%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
