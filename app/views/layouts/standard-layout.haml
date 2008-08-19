@@ -43,7 +43,11 @@
         #logged_in.talignr= render :partial => "/home/logged_in"
         #content_box
           %div{:style => "padding-top: 10px;"}= @content_for_layout
-
+        .floatr{:style => "padding-right: 60px; margin-top: 25px;"}
+          %span{:style => "color: red;"}
+            contact: 
+            = mail_to "info@lunarsway.com"
+        .clear
   = javascript_tag "setupJoinMailingList();"
   :plain
     <script type="text/javascript">
