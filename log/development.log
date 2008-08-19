@@ -15452,3 +15452,14 @@ Rendering home/index
   [4;36;1mNewsItem Columns (0.013599)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.00288)
 Completed in 0.23103 (4 reqs/sec) | Rendering: 0.14465 (62%) | DB: 0.01764 (7%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-08-18 17:37:15) [GET]
+  Session ID: BAh7CToNcmVmZXJfdG8iGWh0dHA6Ly8wLjAuMC4wOjMwMDAvOgxjc3JmX2lk%0AIiU4NTAyNmRjYTZjOGUzNzY0OTNkOTEyMDYwNjlhMjUzZToOcmV0dXJuX3Rv%0AIhsvbWFpbGluZ19saXN0X2l0ZW1zLzk4IgpmbGFzaElDOidBY3Rpb25Db250%0Acm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--a025a3996902f2d603517981b650452a770e186c
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.021252)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.184165)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00421)
+Completed in 0.81422 (1 reqs/sec) | Rendering: 0.13550 (16%) | DB: 0.20542 (25%) | 200 OK [http://0.0.0.0/]
