@@ -2,17 +2,27 @@
   :width 550px
   :float left
 
-.home_releases  
-  :float right
-  :width 250px
-  :border-left dotted #bbbbbb 1px
-  :padding 0px 10px 25px 25px
-  .lunar_release
-    :padding 10px
-    :font-size 75%
-    .title
-    .embed
-      :text-align right
-      :padding 10px 0px 5px 10px
-  
-  
+.home_releases
+  /:background-color white
+  /:filter alpha(opacity=5)
+  /:-moz-opacity .5
+  :width 275px
+  /:height 300px
+  :background-image URL('/images/structure/bg.png')
+  :border dotted #bbbbbb 2px
+  :padding 0px 10px 25px 15px
+  .releases_content
+    /:padding-left 5px
+    /:position relative
+    /:top -290px
+    /:height 300px
+    :color black
+    .lunar_release
+      :padding 10px
+      :font-size 75%
+      .title
+      .embed
+        :text-align right
+        :padding 10px 0px 5px 10px
+
+

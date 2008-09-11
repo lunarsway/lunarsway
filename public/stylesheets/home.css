@@ -3,13 +3,15 @@
   float: left; }
 
 .home_releases {
-  float: right;
-  width: 250px;
-  border-left: dotted #bbbbbb 1px;
-  padding: 0px 10px 25px 25px; }
-  .home_releases .lunar_release {
-    padding: 10px;
-    font-size: 75%; }
-    .home_releases .lunar_release .embed {
-      text-align: right;
-      padding: 10px 0px 5px 10px; }
+  width: 275px;
+  background-image: URL('/images/structure/bg.png');
+  border: dotted #bbbbbb 2px;
+  padding: 0px 10px 25px 15px; }
+  .home_releases .releases_content {
+    color: black; }
+    .home_releases .releases_content .lunar_release {
+      padding: 10px;
+      font-size: 75%; }
+      .home_releases .releases_content .lunar_release .embed {
+        text-align: right;
+        padding: 10px 0px 5px 10px; }

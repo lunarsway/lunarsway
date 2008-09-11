@@ -20,25 +20,27 @@
             %br/
             = link_to "(edit)", edit_news_item_path(news_item)
             = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
-.home_releases
-  %h4 Lunar Releases  
-  .lunar_release
-    .title
-      August 16, 2008 - Just For A Moment
-      = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustForAMoment"}, :class => "tiny_link"
-    .embed
-      %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=true"}
-  .lunar_release
-    .title
-      July 18, 2008 - America Spoke Up
-      = link_to "(lyrics)", {:controller => "/lyrics", :action => "AmericaSpokeUp"}, :class => "tiny_link"
-    .embed
-      %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/america_spoke_up_lo.mp3&autostart=false"}
-  .lunar_release
-    .title
-      June 18, 2008 - Saint Mark's Square
-      = link_to "(lyrics)", {:controller => "/lyrics", :action => "SaintMarksSquare"}, :class => "tiny_link"
-    .embed
-      %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/st_marks_square_lo.mp3&autostart=false"}
+.floatr
+  .home_releases
+    .releases_content
+      %h4 Lunar Releases  
+      .lunar_release
+        .title
+          August 16, 2008 - Just For A Moment
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustForAMoment"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=true"}
+      .lunar_release
+        .title
+          July 18, 2008 - America Spoke Up
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "AmericaSpokeUp"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/america_spoke_up_lo.mp3&autostart=false"}
+      .lunar_release
+        .title
+          June 18, 2008 - Saint Mark's Square
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "SaintMarksSquare"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/st_marks_square_lo.mp3&autostart=false"}
 
 .clear
