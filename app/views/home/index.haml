@@ -26,19 +26,22 @@
       %h4 Lunar Releases  
       .lunar_release
         .title
-          August 16, 2008 - Just For A Moment
+          %span.date August 16, 2008 -
+          %span.song Just For A Moment
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustForAMoment"}, :class => "tiny_link"
         .embed
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=true"}
       .lunar_release
         .title
-          July 18, 2008 - America Spoke Up
+          %span.date July 18, 2008 -
+          %span.song America Spoke Up
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "AmericaSpokeUp"}, :class => "tiny_link"
         .embed
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/america_spoke_up_lo.mp3&autostart=false"}
       .lunar_release
         .title
-          June 18, 2008 - Saint Mark's Square
+          %span.date June 18, 2008 -
+          %span.song Saint Mark's Square
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "SaintMarksSquare"}, :class => "tiny_link"
         .embed
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/st_marks_square_lo.mp3&autostart=false"}
