@@ -6,7 +6,7 @@ class TourDatesController < ApplicationController
   # GET /tour_dates
   # GET /tour_dates.xml
   def index
-    @tour_dates = TourDate.find(:all)
+    @tour_dates = TourDate.find(:all, :order => "show_date DESC")
 
     respond_to do |format|
       format.html # index.html.erb

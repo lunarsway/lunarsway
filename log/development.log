@@ -15949,3 +15949,14 @@ Rendering home/index
   [4;36;1mNewsItem Columns (0.038863)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.00707)
 Completed in 0.13146 (7 reqs/sec) | Rendering: 0.05790 (44%) | DB: 0.04271 (32%) | 200 OK [http://0.0.0.0/]
+
+
+Processing TourDatesController#index (for 127.0.0.1 at 2008-09-11 00:39:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/tour_dates"}
+  [4;35;1mTourDate Load (0.060864)[0m   [0mSELECT * FROM `tour_dates` [0m
+Rendering template within layouts/standard-layout
+Rendering tour_dates/index
+  [4;36;1mTourDate Columns (0.006755)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
+Rendered /home/_logged_in (0.00298)
+Completed in 0.31285 (3 reqs/sec) | Rendering: 0.18190 (58%) | DB: 0.06762 (21%) | 200 OK [http://0.0.0.0/tour]
