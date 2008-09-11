@@ -15463,3 +15463,71 @@ Rendering home/index
   [4;36;1mNewsItem Columns (0.184165)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
 Rendered /home/_logged_in (0.00421)
 Completed in 0.81422 (1 reqs/sec) | Rendering: 0.13550 (16%) | DB: 0.20542 (25%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:41:04) [GET]
+  Session ID: 12dddc58f24ea26c78aea9d79579a4a3
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.033750)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.121798)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.027246)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.03452)
+Completed in 0.48862 (2 reqs/sec) | Rendering: 0.25350 (51%) | DB: 0.18279 (37%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:45:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.003342)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.017285)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00244)
+Completed in 0.10835 (9 reqs/sec) | Rendering: 0.04977 (45%) | DB: 0.02063 (19%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:45:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.003551)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.010024)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00139)
+Completed in 0.14707 (6 reqs/sec) | Rendering: 0.08996 (61%) | DB: 0.01358 (9%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:46:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.003111)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.013505)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00143)
+Completed in 0.12731 (7 reqs/sec) | Rendering: 0.07600 (59%) | DB: 0.01662 (13%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:47:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.011248)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.007942)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00462)
+Completed in 0.11252 (8 reqs/sec) | Rendering: 0.05718 (50%) | DB: 0.01919 (17%) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-10 23:47:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.005368)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.009096)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.00322)
+Completed in 0.10741 (9 reqs/sec) | Rendering: 0.05776 (53%) | DB: 0.01446 (13%) | 200 OK [http://0.0.0.0/]

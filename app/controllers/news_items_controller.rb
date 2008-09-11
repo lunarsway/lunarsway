@@ -65,7 +65,7 @@ class NewsItemsController < ApplicationController
 
     respond_to do |format|
       if @news_item.update_attributes(params[:news_item])
-        expire_page(:controller => "/home", :action => "index")
+        expire_page home_url
         flash[:notice] = 'NewsItem was successfully updated.'
         format.html { redirect_to(@news_item) }
         format.xml  { head :ok }

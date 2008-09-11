@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   layout "standard-layout"
   
-  # caches_page :index
+  caches_page :index
   
   def index
     @news_items = NewsItem.recent

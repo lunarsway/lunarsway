@@ -2,6 +2,9 @@
   margin: 15px 0px 15px 0px;
   padding-bottom: 10px;
   border-bottom: dotted gray 1px; }
+  .news_item .date {
+    font-size: 100%;
+    color: #bbbbbb; }
   .news_item .title {
     font-size: 150%; }
     .news_item .title .date {

@@ -4,9 +4,8 @@
 .home_news
   - for news_item in @news_items
     .news_item
-      .title
-        = news_item.created_at.strftime("%B %d, %Y")
-        =h news_item.title
+      %span.date= news_item.created_at.strftime("%B %d, %Y")
+      %span.title=h news_item.title
       .posted_by
         by
         =h news_item.author
