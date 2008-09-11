@@ -48,6 +48,7 @@ class NewsItemsController < ApplicationController
 
     respond_to do |format|
       if @news_item.save
+        expire_page home_url
         flash[:notice] = 'NewsItem was successfully created.'
         format.html { redirect_to(@news_item) }
         format.xml  { render :xml => @news_item, :status => :created, :location => @news_item }
