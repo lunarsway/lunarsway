@@ -15960,3 +15960,168 @@ Rendering tour_dates/index
   [4;36;1mTourDate Columns (0.006755)[0m   [0;1mSHOW FIELDS FROM `tour_dates`[0m
 Rendered /home/_logged_in (0.00298)
 Completed in 0.31285 (3 reqs/sec) | Rendering: 0.18190 (58%) | DB: 0.06762 (21%) | 200 OK [http://0.0.0.0/tour]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-09-11 03:57:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001722)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPhoto Load (0.048468)[0m   [0mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;36;1mPhoto Columns (0.006907)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+Rendered /home/_logged_in (0.03496)
+Completed in 0.43610 (2 reqs/sec) | Rendering: 0.21596 (49%) | DB: 0.05710 (13%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-09-11 03:57:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;35;1mPhoto Columns (0.012242)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.076637)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 3.62398 (0 reqs/sec) | Rendering: 3.45778 (95%) | DB: 0.08888 (2%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-09-11 03:57:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/standard-layout
+Rendering sessions/new
+Rendered /home/_logged_in (0.00282)
+Completed in 0.13899 (7 reqs/sec) | Rendering: 0.10905 (78%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-09-11 03:57:37) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmIwOGYyMDViYjljMjY2ZjJmYWQ2MGFkOGQ4NTU3%0AMTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--87af487ccf0af8e9d7a4466d6e79726017411c82
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"9fa5cb397bc21f26a3e9dad029f34834c3926fb8", "action"=>"create", "controller"=>"sessions", "password"=>"admin", "login"=>"admin"}
+  [4;35;1mUser Load (0.094899)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (0.008486)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 0.13197 (7 reqs/sec) | DB: 0.10339 (78%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-09-11 03:57:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--7f43f79273f7534d2dfe36126f7bf0f489d37751
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.002726)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.035402)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+  [4;35;1mUser Columns (0.031981)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.014177)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.093108)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.062726)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00449)
+Completed in 0.62347 (1 reqs/sec) | Rendering: 0.32618 (52%) | DB: 0.24012 (38%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-09-11 03:57:48) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+  [4;36;1mPhoto Load (0.046138)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;35;1mUser Columns (0.081786)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.006796)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.009727)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.104116)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mPhoto Columns (0.072038)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00654)
+Completed in 1.00053 (0 reqs/sec) | Rendering: 0.38160 (38%) | DB: 0.32060 (32%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-09-11 03:57:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;35;1mPhoto Columns (0.053214)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.041018)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 3.68992 (0 reqs/sec) | Rendering: 3.58425 (97%) | DB: 0.09423 (2%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing PhotosController#new (for 127.0.0.1 at 2008-09-11 03:57:58) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"action"=>"new", "controller"=>"photos"}
+  [4;35;1mPhoto Columns (0.252608)[0m   [0mSHOW FIELDS FROM `photos`[0m
+Rendering template within layouts/standard-layout
+Rendering photos/new
+  [4;36;1mUser Columns (0.031453)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.026628)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.011254)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.027427)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.34206)
+Completed in 0.87284 (1 reqs/sec) | Rendering: 0.35074 (40%) | DB: 0.34937 (40%) | 200 OK [http://0.0.0.0/photos/new]
+
+
+Processing PhotosController#create (for 127.0.0.1 at 2008-09-11 03:58:38) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"photo"=>{"image_file"=>#<File:/tmp/CGI.2294.1>, "credit"=>"", "image_file_url"=>"", "caption"=>"le stage", "description"=>""}, "commit"=>"Create", "authenticity_token"=>"9fa5cb397bc21f26a3e9dad029f34834c3926fb8", "action"=>"create", "controller"=>"photos"}
+  [4;36;1mPhoto Columns (0.014663)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mSQL (0.100751)[0m   [0mBEGIN[0m
+  [4;36;1mPhoto Create (0.097424)[0m   [0;1mINSERT INTO `photos` (`updated_at`, `credit`, `caption`, `description`, `position`, `created_at`) VALUES('2008-09-11 03:58:39', '', 'le stage', '', NULL, '2008-09-11 03:58:39')[0m
+  [4;35;1mSQL (0.014796)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/photos/2
+Completed in 1.85696 (0 reqs/sec) | DB: 0.22763 (12%) | 302 Found [http://0.0.0.0/photos]
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2008-09-11 03:58:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFBob3RvIHdh%0AcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlU--6eea5d454384a390e4b104fd8fb087ce84982069
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"photos"}
+  [4;36;1mPhoto Columns (0.011660)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mPhoto Load (0.027230)[0m   [0mSELECT * FROM `photos` WHERE (`photos`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering photos/show
+  [4;36;1mUser Columns (0.044232)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.014819)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.012903)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.006108)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00676)
+Completed in 0.45558 (2 reqs/sec) | Rendering: 0.24823 (54%) | DB: 0.11695 (25%) | 200 OK [http://0.0.0.0/photos/2]
+
+
+Processing PhotosController#large (for 127.0.0.1 at 2008-09-11 03:58:44) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"format"=>"jpg", "action"=>"large", "id"=>"2", "controller"=>"photos"}
+Rendering photos/large
+  [4;35;1mPhoto Columns (0.009448)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mPhoto Load (0.015181)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 2) [0m
+Completed in 4.91505 (0 reqs/sec) | Rendering: 4.87138 (99%) | DB: 0.02463 (0%) | 200 OK [http://0.0.0.0/photos/2/large.jpg]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2008-09-11 03:58:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"action"=>"index", "controller"=>"photos"}
+  [4;35;1mPhoto Load (0.007587)[0m   [0mSELECT * FROM `photos` [0m
+Rendering template within layouts/standard-layout
+Rendering photos/index
+  [4;36;1mUser Columns (0.013145)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.047467)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005233)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.035356)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mPhoto Columns (0.009269)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00357)
+Completed in 0.45258 (2 reqs/sec) | Rendering: 0.24389 (53%) | DB: 0.11806 (26%) | 200 OK [http://0.0.0.0/photos]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-09-11 03:58:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"1", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;36;1mPhoto Columns (0.031623)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mPhoto Load (0.005039)[0m   [0mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
+Completed in 2.55563 (0 reqs/sec) | Rendering: 2.47357 (96%) | DB: 0.03666 (1%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing PhotosController#gallery (for 127.0.0.1 at 2008-09-11 03:58:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiViYjA4ZjIw%0ANWJiOWMyNjZmMmZhZDYwYWQ4ZDg1NTcxNiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--1425825cdfe9458ea3c26a17280a2329293fc902
+  Parameters: {"format"=>"jpg", "action"=>"gallery", "id"=>"2", "controller"=>"photos"}
+Rendering photos/gallery
+  [4;36;1mPhoto Columns (0.045378)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mPhoto Load (0.002886)[0m   [0mSELECT * FROM `photos` WHERE (`photos`.`id` = 2) [0m
+Completed in 3.03240 (0 reqs/sec) | Rendering: 2.96869 (97%) | DB: 0.04826 (1%) | 200 OK [http://0.0.0.0/photos/2/gallery.jpg]
