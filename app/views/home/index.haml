@@ -26,11 +26,18 @@
       %h4 Lunar Releases  
       .lunar_release
         .title
+          %span.date September 15, 2008 -
+          %span.song Dashboard Lights
+          /= link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=true"}
+      .lunar_release
+        .title
           %span.date August 16, 2008 -
           %span.song Just For A Moment
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustForAMoment"}, :class => "tiny_link"
         .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=true"}
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=false"}
       .lunar_release
         .title
           %span.date July 18, 2008 -
