@@ -28,7 +28,7 @@
         .title
           %span.date September 15, 2008 -
           %span.song Dashboard Lights
-          /= link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
         .embed
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=true"}
       .lunar_release
