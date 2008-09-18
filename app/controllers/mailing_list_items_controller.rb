@@ -1,6 +1,7 @@
 class MailingListItemsController < ApplicationController
   
   before_filter :check_administrator_role, :only => [:index, :show, :update, :edit, :destroy]
+  protect_from_forgery :except => [:create]
   
   layout "standard-layout"
   
@@ -50,12 +51,14 @@ class MailingListItemsController < ApplicationController
     if MailingListItem.exists?(:email => params[:mailing_list_item][:email])
       # just deliver the list
       MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
+      redirect_to(thank_you_mailing_list_items_url)
     else
       respond_to do |format|
         if @mailing_list_item.save
           flash[:notice] = 'MailingListItem was successfully created.'
           MailingListItemMailer.deliver_signup_notification(@mailing_list_item)
-          format.html { redirect_to(@mailing_list_item) }
+          # format.html { redirect_to(@mailing_list_item) }
+          format.html { redirect_to(thank_you_mailing_list_items_url)}
           format.xml  { render :xml => @mailing_list_item, :status => :created, :location => @mailing_list_item }
         else
           format.html { render :action => "new" }
@@ -76,7 +79,7 @@ class MailingListItemsController < ApplicationController
         format.html { redirect_to(@mailing_list_item) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "index" }
         format.xml  { render :xml => @mailing_list_item.errors, :status => :unprocessable_entity }
       end
     end

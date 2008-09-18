@@ -1,7 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :lunar_releases
 
-  map.resources :mailing_list_items
+  map.resources :mailing_list_items, :collection => {
+    :thank_you        => :get
+  }
 
   map.resources :roles
   map.resource :session, :member => {

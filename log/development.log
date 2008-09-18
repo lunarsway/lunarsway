@@ -16341,3 +16341,725 @@ ActionController::RoutingError (No route matches "/play/dashboard_lights_lo.mp3"
     script/server:3
 
 Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:45:17) [POST]
+  Session ID: 59eea7cb873f0ec6ba73f73ce11c9833
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000983)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/request_forgery_protection.rb:79:in `verify_authenticity_token'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:469:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:469:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:441:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:716:in `run_before_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:695:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (unprocessable_entity)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:47:49) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.045381)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.004632)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:47:49 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/create
+Rendered /home/_logged_in (0.02790)
+Completed in 3.08207 (0 reqs/sec) | Rendering: 0.11758 (3%) | DB: 0.05100 (1%) | 200 OK [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:49:04) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.005937)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.005876)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:49:04 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/create
+Rendered /home/_logged_in (0.00184)
+Completed in 1.93234 (0 reqs/sec) | Rendering: 0.02642 (1%) | DB: 0.01181 (0%) | 200 OK [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:49:35) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.244786)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.004978)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:49:36 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/create
+Rendered /home/_logged_in (0.00266)
+Completed in 2.26989 (0 reqs/sec) | Rendering: 0.02586 (1%) | DB: 0.24976 (11%) | 200 OK [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:50:38) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.007119)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.005612)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:50:39 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/create
+Rendered /home/_logged_in (0.00273)
+Completed in 2.14057 (0 reqs/sec) | Rendering: 0.02709 (1%) | DB: 0.01273 (0%) | 200 OK [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:51:51) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.007106)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.003920)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:51:51 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/create
+Rendered /home/_logged_in (0.00172)
+Completed in 1.98293 (0 reqs/sec) | Rendering: 0.02232 (1%) | DB: 0.01103 (0%) | 200 OK [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:53:27) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.006496)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.005069)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:53:27 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+
+
+ActionController::RoutingError (thank_you_mailing_list_item_url failed to generate from {:controller=>"mailing_list_items", :action=>"thank_you"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["mailing_list_items", :id, "thank_you"] - are they all satisfied?):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1419:in `raise_named_route_error'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1379:in `generate'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:124:in `rewrite_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    (eval):17:in `thank_you_mailing_list_item_url'
+    /app/controllers/mailing_list_items_controller.rb:54:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:54:19) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.006781)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.006220)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:54:19 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+
+
+NameError (undefined local variable or method `thank_you_mailing_list_item_url' for #<MailingListItemsController:0x3c40a24>):
+    /app/controllers/mailing_list_items_controller.rb:54:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:55:28) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.014483)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.005158)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:55:28 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+
+
+NameError (undefined local variable or method `thank_you_mailing_list_item_url' for #<MailingListItemsController:0x3cec75c>):
+    /app/controllers/mailing_list_items_controller.rb:54:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:56:29) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.007367)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.013813)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:56:29 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+
+
+NameError (undefined local variable or method `thank_you_mailing_list_item_url' for #<MailingListItemsController:0x39061d8>):
+    /app/controllers/mailing_list_items_controller.rb:54:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2008-09-18 03:56:42) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "commit"=>"Join!", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.007180)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.004633)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Thu, 18 Sep 2008 03:56:42 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We will be releasing a song online every month, on every full moon, and are very excited about the release of our newest song "Dashboard Lights"</p>
+<br />
+<p>
+  Don't miss our next show at the Troubadour in Hollywood, CA on September 27th!
+  For more information visit the
+  <a href='http://www.lunarsway.com/tour'>tour</a>
+  section of lunarsway.com.
+</p>
+<p>
+  Be sure to visit our blog often at
+  <a href='http://lunarsway.blogspot.com'>http://lunarsway.blogspot.com</a>.
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Redirected to http://0.0.0.0:3000/mailing_list_items/thank_you
+Completed in 1.62554 (0 reqs/sec) | DB: 0.07720 (4%) | 302 Found [http://0.0.0.0/mailing_list_items/create]
+
+
+Processing MailingListItemsController#thank_you (for 127.0.0.1 at 2008-09-18 03:56:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGNkODVjYmEyMGZiM2IzMTQzNDdlNDc3OWM1NDNh%0AZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--fa995eb0b4252c40c2dd99db7fb1a3ab2948d9df
+  Parameters: {"action"=>"thank_you", "controller"=>"mailing_list_items"}
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/thank_you
+Rendered /home/_logged_in (0.00191)
+Completed in 0.03620 (27 reqs/sec) | Rendering: 0.02519 (69%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/mailing_list_items/thank_you]
