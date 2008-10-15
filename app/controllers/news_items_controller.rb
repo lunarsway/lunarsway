@@ -6,7 +6,7 @@ class NewsItemsController < ApplicationController
   # GET /news_items
   # GET /news_items.xml
   def index
-    @news_items = NewsItem.recent
+    @news_items = NewsItem.find(:all, :order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
