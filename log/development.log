@@ -26918,3 +26918,39 @@ ActionController::RoutingError (No route matches "/play/goodbye_beautiful_day_lo
     script/server:3
 
 Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2008-10-14 19:23:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNjZDlkODY0NGZjZTY4NTcyNzkxZjQ0ZWVlOGRj%0AZDUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--8544d75da3a707ccad157d662c69c6d4ecb21a04
+  Parameters: {"action"=>"index", "controller"=>"/store"}
+Rendering template within layouts/standard-layout
+Rendering store/index
+Rendered /home/_logged_in (0.00739)
+Completed in 1.00273 (0 reqs/sec) | Rendering: 0.96862 (96%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/store]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2008-10-14 19:34:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNjZDlkODY0NGZjZTY4NTcyNzkxZjQ0ZWVlOGRj%0AZDUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--8544d75da3a707ccad157d662c69c6d4ecb21a04
+  Parameters: {"action"=>"index", "controller"=>"/lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/index
+Rendered /home/_logged_in (0.00342)
+Completed in 0.07965 (12 reqs/sec) | Rendering: 0.03480 (43%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics]
+
+
+Processing LyricsController#GoodbyeBeautifulDay (for 127.0.0.1 at 2008-10-14 19:34:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNjZDlkODY0NGZjZTY4NTcyNzkxZjQ0ZWVlOGRj%0AZDUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--8544d75da3a707ccad157d662c69c6d4ecb21a04
+  Parameters: {"action"=>"GoodbyeBeautifulDay", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/GoodbyeBeautifulDay
+Rendered /home/_logged_in (0.00257)
+Completed in 0.28979 (3 reqs/sec) | Rendering: 0.27788 (95%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/GoodbyeBeautifulDay]
+
+
+Processing LyricsController#GoodbyeBeautifulDay (for 127.0.0.1 at 2008-10-14 19:35:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNjZDlkODY0NGZjZTY4NTcyNzkxZjQ0ZWVlOGRj%0AZDUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--8544d75da3a707ccad157d662c69c6d4ecb21a04
+  Parameters: {"action"=>"GoodbyeBeautifulDay", "controller"=>"lyrics"}
+Rendering template within layouts/standard-layout
+Rendering lyrics/GoodbyeBeautifulDay
+Rendered /home/_logged_in (0.00352)
+Completed in 0.12206 (8 reqs/sec) | Rendering: 0.09989 (81%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/lyrics/GoodbyeBeautifulDay]
