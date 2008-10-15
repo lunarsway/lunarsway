@@ -6,6 +6,7 @@
     - for news_item in @news_items
       .news_item
         %span.date= news_item.created_at.strftime("%B %d, %Y")
+        %br/
         %span.title=h news_item.title
         .posted_by
           by
