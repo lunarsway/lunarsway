@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :profile_photos
+
+  map.resources :wall_photos
+
+  map.resources :wall_messages
+
   map.resources :lunar_releases
 
   map.resources :mailing_list_items, :collection => {
@@ -51,6 +57,10 @@ ActionController::Routing::Routes.draw do |map|
   map.lyrics "/lyrics", :controller => "/lyrics", :action => "index"
   map.store "/store", :controller => "/store", :action => "index"
   map.route "/song_downloads", :controller => "/song_downloads"
+  map.join_community "/community/join", :controller => "/community", :action => "join"
+  map.my_community "/community/base-station", :controller => "/community", :action => "my_acct"
+  map.edit_my_community_profile "/community/edit-profile", :controller => "/users", :action => "edit"
+  map.community_wall "/community/wall", :controller => "/community", :action => "wall"
 
   map.connect '/news_items', :controller => "/news_items", :action => "index"
 

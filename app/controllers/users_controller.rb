@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
-  layout 'application'
+  layout 'standard-layout'
+  
   before_filter :not_logged_in_required, :only => [:new, :create] 
-  before_filter :login_required, :only => [:show, :edit, :update]
+  before_filter :check_lunarnaut_role, :only => [:show, :edit, :update]
   before_filter :check_administrator_role, :only => [:index, :destroy, :enable]
   
   def index
@@ -22,6 +23,7 @@ class UsersController < ApplicationController
     cookies.delete :auth_token
     @user = User.new(params[:user])
     @user.save!
+    @user.give_lunarnaut_permission
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
   flash[:notice] = "Thanks for signing up! Please check your email to activate your account before logging in."
@@ -36,11 +38,12 @@ class UsersController < ApplicationController
   end
   
   def update
-    @user = User.find(current_user)
-    if @user.update_attributes(params[:user])
+    @user = current_user
+    if @user.update_attributes!(params[:lunarnaut])
       flash[:notice] = "User updated"
-      redirect_to :action => 'show', :id => current_user
+      redirect_to edit_my_community_profile_url
     else
+      flash[:notice] = "There was an error saving your profile."
       render :action => 'edit'
     end
   end

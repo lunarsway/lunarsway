@@ -1,12 +1,18 @@
+.join_community {
+  font-size: 85%;
+  font-weight: bold;
+  color: white;
+  margin-right: 45px; }
+
 .home_news {
   width: 580px;
   float: left; }
 
 .home_releases {
-  width: 275px;
+  width: 290px;
   background-image: URL('/images/structure/bg.png');
   border: dotted #bbbbbb 2px;
-  padding: 0px 10px 25px 15px; }
+  padding: 0px 5px 15px 10px; }
   .home_releases .releases_content {
     color: black; }
     .home_releases .releases_content .lunar_release {

@@ -1,36 +1,44 @@
-  
-%h3 Recent News
 
-.home_news
-  - for news_item in @news_items
-    .news_item
-      %span.date= news_item.created_at.strftime("%B %d, %Y")
-      %span.title=h news_item.title
-      .posted_by
-        by
-        =h news_item.author
-        at
-        = news_item.created_at.strftime("%I:%M %p")
-      .body
-        = truncate nl2br(news_item.body), 300
-        %br/
-        = link_to '(read more)', news_item
-        - if logged_in?
-          - if current_user.has_role?('administrator')
-            %br/
-            = link_to "(edit)", edit_news_item_path(news_item)
-            = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
+.floatl{:style => "width: 590px;"}
+  %h3 Recent News
+
+  .home_news
+    - for news_item in @news_items
+      .news_item
+        %span.date= news_item.created_at.strftime("%B %d, %Y")
+        %span.title=h news_item.title
+        .posted_by
+          by
+          =h news_item.author
+          at
+          = news_item.created_at.strftime("%I:%M %p")
+        .body
+          = truncate nl2br(news_item.body), 300
+          %br/
+          = link_to '(read more)', news_item
+          - if logged_in?
+            - if current_user.has_role?('administrator')
+              %br/
+              = link_to "(edit)", edit_news_item_path(news_item)
+              = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
 .floatr
   .home_releases
     .releases_content
       %h4 Lunar Releases  
       .lunar_release
         .title
+          %span.date October 14th, 2008 -
+          %span.song Goodbye Beautiful Day
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "GoodbyeBeautifulDay"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/goodbye_beautiful_day_lo.mp3&autostart=true"}
+      .lunar_release
+        .title
           %span.date September 15, 2008 -
           %span.song Dashboard Lights
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
         .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=true"}
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=false"}
       .lunar_release
         .title
           %span.date August 16, 2008 -

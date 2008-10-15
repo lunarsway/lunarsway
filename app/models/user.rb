@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
-  attr_accessible :login, :email, :password, :password_confirmation
+  attr_accessible :login, :email, :password, :password_confirmation, :first_name, :last_name
  
   class ActivationCodeNotFound < StandardError; end
   class AlreadyActivated < StandardError
@@ -29,6 +29,18 @@ class User < ActiveRecord::Base
     def initialize(user, message=nil)
       @message, @user = message, user
     end
+  end
+  
+  def give_lunarnaut_permission
+    p = Permission.new
+    p.role = Role.find_by_rolename('lunarnaut')
+    p.user = self
+    p.save(false)
+  end
+  
+  def get_sub_account
+    return self if self.has_role?('administrator')
+    return Lunarnaut.create_from_user(self) if self.has_role?('lunarnaut')
   end
   
   # Finds the user with the corresponding activation code, activates their account and returns the user.

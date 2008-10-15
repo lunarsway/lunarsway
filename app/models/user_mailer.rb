@@ -7,7 +7,7 @@ class UserMailer < ActionMailer::Base
   
   def activation(user)
     setup_email(user)
-    @subject    += 'Your LunarSway.com account has been activated!'
+    @subject    += 'Your Lunar Sway community account has been activated!'
     @body[:url]  = "Login at http://www.lunarsway.com/login/"
   end
   

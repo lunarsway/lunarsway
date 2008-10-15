@@ -4,27 +4,30 @@
   %head
     %title Lunar Sway Landing Site
     = stylesheet_link_tag "main"
+    = stylesheet_link_tag "community_wall"
+    = stylesheet_link_tag "tabs"
     = javascript_include_tag "application"
     = javascript_include_tag "jquery/jquery-1.2.6.min.js"
     = javascript_include_tag "jquery/jquery.form.js"
-    = javascript_include_tag "jquery/jquery-ui-1.5.1.min.js"
     = javascript_include_tag "jquery/jquery.dimensions.js"
     = javascript_include_tag "jquery/jquery.shadow.js"
     = javascript_include_tag "jquery/jquery.ifixpng.js"
     = javascript_include_tag "jquery/jquery.fancyzoom-min.js"
+    = javascript_include_tag "jquery/jquery-ui-1.6rc2.packed.js"
     = javascript_include_tag "swfobject.js"
   
   %body
     #main_page
       #main_header
         .floatl= link_to image_tag("/images/structure/logo.png"), home_url
-        .mailing_list_join.floatr
+        .mailing_list_join.floatr.talignr
           .message
             Join our
-            %span{:style => "color: red;"} mailing list!
+            %span{:style => "color: red;"} Mailing List!
           - form_tag mailing_list_items_path, :id => 'mailing_list_form' do
             = text_field_tag "mailing_list_item[email]", "", :id => 'mailing_list_join'
-            = submit_tag "join!"        
+            = submit_tag "join!"
+          %div{:style => "margin-top: 5px;"}= render :partial => "/home/logged_in"
         .clear
       #main_nav
         = link_to image_tag("/images/structure/nav/news.gif", :id => "nav_news"), news_url
@@ -40,9 +43,20 @@
         = link_to image_tag("/images/structure/nav/store.gif", :id => "nav_store"), store_url
         .clear
       #main_content
-        #logged_in.talignr= render :partial => "/home/logged_in"
+        #logged_in.talignr
+          /- unless logged_in?
+          /  .join_community
+          /    %span{:style => "color: red;"} New!
+          /    Become a member of the
+          /    %br/
+          /    = link_to "Lunar Sway Community!", join_community_url
         #content_box
-          %div{:style => "padding-top: 10px;"}= @content_for_layout
+          %div{:style => "padding-top: 10px;"}
+            - unless flash[:notice].nil? or flash[:notice].empty?
+              .notice= flash[:notice]
+            - unless flash[:error].nil? or flash[:error].empty?
+              .error= flash[:error]
+            = @content_for_layout
         .floatr{:style => "padding-right: 60px; margin-top: 10px;"}
           %span{:style => "color: red;"}
             contact: 

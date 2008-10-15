@@ -6,6 +6,7 @@
 @import url(links.css);
 @import url(tour_dates.css);
 @import url(photos.css);
+@import url(wall.css);
 body {
   background-color: #000000;
   color: #dddddd;
@@ -34,6 +35,16 @@ ul {
 a.tiny_link {
   font-size: 9px;
   text-decoration: none; }
+
+.notice {
+  color: green;
+  font-style: italic;
+  font-weight: bold; }
+
+.error {
+  color: red;
+  font-style: italic;
+  font-weight: bold; }
 
 .talignr {
   text-align: right; }

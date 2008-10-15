@@ -10,6 +10,7 @@ module AuthenticatedSystem
     # so that future calls do not hit the database.
     def current_user
       @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || :false)
+      @current_user == :false ? @current_user : @current_user.get_sub_account
     end
  
     # Store the given user id in the session.
@@ -69,6 +70,10 @@ module AuthenticatedSystem
  
     def check_administrator_role
       check_role('administrator')
+    end    
+
+    def check_lunarnaut_role
+      check_role('lunarnaut')
     end    
  
     # Redirect as appropriate when an access request fails.

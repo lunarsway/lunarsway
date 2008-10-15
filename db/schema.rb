@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 11) do
+ActiveRecord::Schema.define(:version => 14) do
 
   create_table "links", :force => true do |t|
     t.string   "title"
@@ -97,6 +97,15 @@ ActiveRecord::Schema.define(:version => 11) do
     t.datetime "activated_at"
     t.string   "password_reset_code",       :limit => 40
     t.boolean  "enabled",                                 :default => true
+    t.string   "first_name",                              :default => ""
+    t.string   "last_name",                               :default => ""
+  end
+
+  create_table "wall_messages", :force => true do |t|
+    t.text     "message"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
