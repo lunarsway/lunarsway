@@ -28,6 +28,13 @@
       %h4 Lunar Releases  
       .lunar_release
         .title
+          %span.date November 13th, 2008 -
+          %span.song Just an Illusion
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustAnIllusion"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/player.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_an_illusion.mp3&autostart=true"}
+      .lunar_release
+        .title
           %span.date October 14th, 2008 -
           %span.song Goodbye Beautiful Day
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "GoodbyeBeautifulDay"}, :class => "tiny_link"
