@@ -1,0 +1,28 @@
+%h1
+  Editing Video -
+  = "'#{@video.title}'"
+
+= error_messages_for :video
+
+- form_for(@video) do |f|
+  %p
+    %b Title
+    %br/
+    = f.text_field :title
+
+  %p
+    %b Url
+    %br/
+    = f.text_field :url
+
+  %p
+    %b Embed Code
+    %br/
+    = f.text_area :embed, :rows => "5", :cols => "45"
+
+  %p
+    = f.submit "Update"
+
+= link_to 'Show', @video
+|
+= link_to 'Back', videos_path

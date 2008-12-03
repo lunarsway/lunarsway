@@ -1,0 +1,11 @@
+.community_wall {
+  padding: 15px; }
+  .community_wall .wall_message {
+    border-bottom: dotted gray 2px;
+    padding-bottom: 15px;
+    padding-top: 10px; }
+    .community_wall .wall_message .posted_by {
+      font-weight: bold; }
+    .community_wall .wall_message .message {
+      padding-top: 10px;
+      padding-left: 25px; }

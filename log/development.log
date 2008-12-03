@@ -27293,3 +27293,891 @@ ActionController::RoutingError (No route matches "/play/goodbye_beautiful_day_lo
     script/server:3
 
 Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-12-03 12:35:36) [GET]
+  Session ID: 76c4dc52a9e6351dc05cdfa479334286
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mSQL (0.115924)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.320769)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.170630)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.04158)
+Completed in 1.14929 (0 reqs/sec) | Rendering: 0.42874 (37%) | DB: 0.60732 (52%) | 200 OK [http://0.0.0.0/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-12-03 12:35:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/play/just_an_illusion.mp3" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:35:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mVideo Load (0.000000)[0m   [0mMysql::Error: Table 'lunarsway_development.videos' doesn't exist: SELECT * FROM `videos` [0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'lunarsway_development.videos' doesn't exist: SELECT * FROM `videos`   ):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract_adapter.rb:150:in `log'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/mysql_adapter.rb:281:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/mysql_adapter.rb:481:in `select'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:74:in `cache_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:532:in `find_by_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1233:in `find_every'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:503:in `find'
+    /app/controllers/videos_controller.rb:5:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.004597)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.086867)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001150)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000811)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000664)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000556)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000463)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000439)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000464)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000458)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000721)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.002064)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000557)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000460)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000435)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateWallPhotos (15)
+  [4;36;1mSQL (0.236637)[0m   [0;1mCREATE TABLE `wall_photos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `caption` varchar(255) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001093)[0m   [0mUPDATE schema_info SET version = 15[0m
+  [4;36;1mSQL (0.001001)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateProfilePhotos (16)
+  [4;35;1mSQL (0.005506)[0m   [0mCREATE TABLE `profile_photos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000902)[0m   [0;1mUPDATE schema_info SET version = 16[0m
+  [4;35;1mSQL (0.000578)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateVideos (17)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:40:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mVideo Load (0.000000)[0m   [0;1mMysql::Error: Table 'lunarsway_development.videos' doesn't exist: SELECT * FROM `videos` [0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'lunarsway_development.videos' doesn't exist: SELECT * FROM `videos`   ):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract_adapter.rb:150:in `log'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/mysql_adapter.rb:281:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/mysql_adapter.rb:481:in `select'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:74:in `cache_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:532:in `find_by_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1233:in `find_every'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:503:in `find'
+    /app/controllers/videos_controller.rb:5:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.001549)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.002330)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.002177)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.002827)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.011998)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000602)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000480)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000436)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001110)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000555)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000517)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000429)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000421)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000419)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000422)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000409)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000713)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000468)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateVideos (17)
+  [4;36;1mSQL (0.005654)[0m   [0;1mCREATE TABLE `videos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11) DEFAULT NULL, `title` varchar(255) DEFAULT NULL, `embed` text DEFAULT NULL, `url` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000921)[0m   [0mUPDATE schema_info SET version = 17[0m
+  [4;36;1mSQL (0.000744)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.001597)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.127526)[0m   [0;1mSHOW FIELDS FROM `links`[0m
+  [4;35;1mSQL (0.043872)[0m   [0mdescribe `links`[0m
+  [4;36;1mSQL (0.003412)[0m   [0;1mSHOW KEYS FROM `links`[0m
+  [4;35;1mSQL (0.089711)[0m   [0mSHOW FIELDS FROM `lunar_releases`[0m
+  [4;36;1mSQL (0.030611)[0m   [0;1mdescribe `lunar_releases`[0m
+  [4;35;1mSQL (0.044832)[0m   [0mSHOW KEYS FROM `lunar_releases`[0m
+  [4;36;1mSQL (0.065813)[0m   [0;1mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;35;1mSQL (0.041511)[0m   [0mdescribe `mailing_list_items`[0m
+  [4;36;1mSQL (0.014594)[0m   [0;1mSHOW KEYS FROM `mailing_list_items`[0m
+  [4;35;1mSQL (0.010006)[0m   [0mSHOW FIELDS FROM `news_items`[0m
+  [4;36;1mSQL (0.044340)[0m   [0;1mdescribe `news_items`[0m
+  [4;35;1mSQL (0.009942)[0m   [0mSHOW KEYS FROM `news_items`[0m
+  [4;36;1mSQL (0.035040)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.034062)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.027668)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.032599)[0m   [0mSHOW FIELDS FROM `permissions`[0m
+  [4;36;1mSQL (0.034026)[0m   [0;1mdescribe `permissions`[0m
+  [4;35;1mSQL (0.007812)[0m   [0mSHOW KEYS FROM `permissions`[0m
+  [4;36;1mSQL (0.084488)[0m   [0;1mSHOW FIELDS FROM `photos`[0m
+  [4;35;1mSQL (0.647049)[0m   [0mdescribe `photos`[0m
+  [4;36;1mSQL (0.001433)[0m   [0;1mSHOW KEYS FROM `photos`[0m
+  [4;35;1mSQL (0.005395)[0m   [0mSHOW FIELDS FROM `profile_photos`[0m
+  [4;36;1mSQL (0.005962)[0m   [0;1mdescribe `profile_photos`[0m
+  [4;35;1mSQL (0.001434)[0m   [0mSHOW KEYS FROM `profile_photos`[0m
+  [4;36;1mSQL (0.008668)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.006125)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.001349)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.066345)[0m   [0mSHOW FIELDS FROM `tour_dates`[0m
+  [4;36;1mSQL (0.036507)[0m   [0;1mdescribe `tour_dates`[0m
+  [4;35;1mSQL (0.027266)[0m   [0mSHOW KEYS FROM `tour_dates`[0m
+  [4;36;1mSQL (0.073430)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.014713)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.021780)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.037057)[0m   [0mSHOW FIELDS FROM `videos`[0m
+  [4;36;1mSQL (0.005136)[0m   [0;1mdescribe `videos`[0m
+  [4;35;1mSQL (0.003625)[0m   [0mSHOW KEYS FROM `videos`[0m
+  [4;36;1mSQL (0.381444)[0m   [0;1mSHOW FIELDS FROM `wall_messages`[0m
+  [4;35;1mSQL (0.029044)[0m   [0mdescribe `wall_messages`[0m
+  [4;36;1mSQL (0.022631)[0m   [0;1mSHOW KEYS FROM `wall_messages`[0m
+  [4;35;1mSQL (0.025468)[0m   [0mSHOW FIELDS FROM `wall_photos`[0m
+  [4;36;1mSQL (0.012675)[0m   [0;1mdescribe `wall_photos`[0m
+  [4;35;1mSQL (0.011103)[0m   [0mSHOW KEYS FROM `wall_photos`[0m
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:41:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mVideo Load (0.001200)[0m   [0mSELECT * FROM `videos` [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 0.06893 (14 reqs/sec) | Rendering: 0.02347 (34%) | DB: 0.00120 (1%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:42:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mVideo Load (0.022155)[0m   [0;1mSELECT * FROM `videos` [0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+Rendered /home/_logged_in (0.04083)
+Completed in 1.23804 (0 reqs/sec) | Rendering: 1.14018 (92%) | DB: 0.02216 (1%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:54:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mVideo Load (0.001089)[0m   [0mSELECT * FROM `videos` [0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+Rendered /home/_logged_in (0.00142)
+Completed in 0.09490 (10 reqs/sec) | Rendering: 0.06352 (66%) | DB: 0.00109 (1%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:54:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mVideo Load (0.002335)[0m   [0;1mSELECT * FROM `videos` [0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+Rendered /home/_logged_in (0.00155)
+Completed in 0.27902 (3 reqs/sec) | Rendering: 0.11735 (42%) | DB: 0.00234 (0%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-12-03 12:55:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/standard-layout
+Rendering sessions/new
+Rendered /home/_logged_in (0.02401)
+Completed in 1.51215 (0 reqs/sec) | Rendering: 0.17439 (11%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-12-03 12:55:12) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjc0ZThjMjlkYjQxZDE0ZWU4ZWVmODY0ZjYwMGM0%0AYzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--010fa2c542ccce66af9c23dcca9022b542cdef2c
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"1617ae08f8edfdb3778ba0659f185116abfadaff", "action"=>"create", "controller"=>"sessions", "password"=>"pooryou", "login"=>"admin"}
+  [4;35;1mUser Load (0.066503)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (0.033578)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard-layout
+Rendering sessions/new
+Rendered /home/_logged_in (0.00154)
+Completed in 0.38222 (2 reqs/sec) | Rendering: 0.05726 (14%) | DB: 0.10008 (26%) | 200 OK [http://0.0.0.0/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-12-03 12:55:28) [POST]
+  Session ID: BAh7CDoMdXNlcl9pZDA6DGNzcmZfaWQiJWI3NGU4YzI5ZGI0MWQxNGVlOGVl%0AZjg2NGY2MDBjNGMyIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c5ea0838cf17634a284e6c55a46704f462ef2ae9
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"1617ae08f8edfdb3778ba0659f185116abfadaff", "action"=>"create", "controller"=>"sessions", "password"=>"admin", "login"=>"admin"}
+  [4;35;1mUser Load (0.006144)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (0.162074)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRole Columns (0.031952)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.059822)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mRole Load (0.003541)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'lunarnaut') LIMIT 1[0m
+Completed in 0.57286 (1 reqs/sec) | DB: 0.26353 (46%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-12-03 12:55:30) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--e443bd2b0006ba26ae802c801c1e05b10ab86266
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;35;1mNewsItem Load (0.001671)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.011491)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+  [4;35;1mUser Columns (0.010361)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.030797)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.015685)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.009924)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.12827)
+Completed in 0.61684 (1 reqs/sec) | Rendering: 0.48607 (78%) | DB: 0.07993 (12%) | 200 OK [http://0.0.0.0/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-12-03 12:55:34) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/play/just_an_illusion.mp3" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 12:55:39) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mVideo Load (0.004195)[0m   [0;1mSELECT * FROM `videos` [0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;35;1mUser Columns (0.007341)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.005043)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.023920)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.025623)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.03634)
+Completed in 0.45785 (2 reqs/sec) | Rendering: 0.26337 (57%) | DB: 0.06612 (14%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-12-03 12:55:54) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;36;1mVideo Columns (0.018051)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/standard-layout
+Rendering videos/new
+  [4;35;1mUser Columns (0.293318)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001301)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.142992)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.003627)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.75202)
+Completed in 1.05514 (0 reqs/sec) | Rendering: 0.47169 (44%) | DB: 0.45929 (43%) | 200 OK [http://0.0.0.0/videos/new]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-12-03 12:58:08) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;35;1mUser Columns (0.008582)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.024092)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.005501)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.001638)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mVideo Columns (0.005901)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/standard-layout
+Rendering videos/new
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00985)
+Completed in 1.27643 (0 reqs/sec) | Rendering: 0.13929 (10%) | DB: 0.04571 (3%) | 200 OK [http://0.0.0.0/videos/new]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-12-03 13:01:45) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.010177)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.012581)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.013939)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.004840)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Columns (0.009375)[0m   [0mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/standard-layout
+Rendering videos/new
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.05976)
+Completed in 0.40659 (2 reqs/sec) | Rendering: 0.19659 (48%) | DB: 0.05091 (12%) | 200 OK [http://0.0.0.0/videos/new]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-12-03 13:02:57) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;35;1mUser Columns (0.053859)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.021196)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.013849)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.051160)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mVideo Columns (0.003547)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/standard-layout
+Rendering videos/new
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00712)
+Completed in 0.32455 (3 reqs/sec) | Rendering: 0.05135 (15%) | DB: 0.14361 (44%) | 200 OK [http://0.0.0.0/videos/new]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2008-12-03 13:04:40) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"new", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.038153)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.003319)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.005094)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.001529)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Columns (0.005575)[0m   [0mSHOW FIELDS FROM `videos`[0m
+Rendering template within layouts/standard-layout
+Rendering videos/new
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00924)
+Completed in 0.33061 (3 reqs/sec) | Rendering: 0.17928 (54%) | DB: 0.05367 (16%) | 200 OK [http://0.0.0.0/videos/new]
+
+
+Processing VideosController#create (for 127.0.0.1 at 2008-12-03 13:09:35) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1617ae08f8edfdb3778ba0659f185116abfadaff", "action"=>"create", "controller"=>"videos", "video"=>{"title"=>"Dashboard Lights!", "url"=>"", "embed"=>"<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>"}}
+  [4;35;1mUser Columns (0.032487)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.022610)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.004174)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.003691)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mVideo Columns (0.006543)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+
+
+NoMethodError (undefined method `user=' for #<Video:0x323b718>):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:200:in `method_missing'
+    /app/controllers/videos_controller.rb:48:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing VideosController#create (for 127.0.0.1 at 2008-12-03 13:10:52) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1617ae08f8edfdb3778ba0659f185116abfadaff", "action"=>"create", "controller"=>"videos", "video"=>{"title"=>"Dashboard Lights!", "url"=>"", "embed"=>"<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>"}}
+  [4;36;1mUser Columns (0.003767)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.003234)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.006585)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.001451)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Columns (0.100031)[0m   [0mSHOW FIELDS FROM `videos`[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mSQL (0.028348)[0m   [0mBEGIN[0m
+  [4;36;1mVideo Create (0.059200)[0m   [0;1mINSERT INTO `videos` (`updated_at`, `title`, `url`, `embed`, `user_id`, `created_at`) VALUES('2008-12-03 13:10:53', 'Dashboard Lights!', '', '<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>', 1, '2008-12-03 13:10:53')[0m
+  [4;35;1mSQL (0.027898)[0m   [0mCOMMIT[0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_sym):
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/hash/keys.rb:27:in `symbolize_keys'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1602:in `inject'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/hash/keys.rb:26:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/hash/keys.rb:26:in `inject'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/core_ext/hash/keys.rb:26:in `symbolize_keys'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:113:in `rewrite_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    (eval):17:in `video_url'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/polymorphic_routes.rb:27:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/polymorphic_routes.rb:27:in `polymorphic_url'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:618:in `url_for'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1060:in `redirect_to'
+    /app/controllers/videos_controller.rb:53:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    /app/controllers/videos_controller.rb:50:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing VideosController#create (for 127.0.0.1 at 2008-12-03 13:13:49) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFZpZGVvIHdh%0AcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlU--a56522a3eb717f3dd727b44d4648efb21120bef7
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1617ae08f8edfdb3778ba0659f185116abfadaff", "action"=>"create", "controller"=>"videos", "video"=>{"title"=>"Dashboard Lights!", "url"=>"", "embed"=>"<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>"}}
+  [4;36;1mUser Columns (0.007157)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.003934)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.015297)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.031730)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Columns (0.019266)[0m   [0mSHOW FIELDS FROM `videos`[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mSQL (0.030639)[0m   [0mBEGIN[0m
+  [4;36;1mVideo Create (0.004451)[0m   [0;1mINSERT INTO `videos` (`updated_at`, `title`, `url`, `embed`, `user_id`, `created_at`) VALUES('2008-12-03 13:13:50', 'Dashboard Lights!', '', '<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FFHlybg8OfI&hl=en&fs=1&color1=0x2b405b&color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>', 1, '2008-12-03 13:13:50')[0m
+  [4;35;1mSQL (0.009517)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/videos/2
+Completed in 0.61575 (1 reqs/sec) | DB: 0.42201 (68%) | 302 Found [http://0.0.0.0/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2008-12-03 13:13:51) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFZpZGVvIHdh%0AcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlU--a56522a3eb717f3dd727b44d4648efb21120bef7
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"videos"}
+  [4;36;1mVideo Columns (0.029241)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mVideo Load (0.011199)[0m   [0mSELECT * FROM `videos` WHERE (`videos`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering videos/show
+  [4;36;1mUser Columns (0.056486)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.010489)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.016067)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.005950)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.27941)
+Completed in 0.51000 (1 reqs/sec) | Rendering: 0.23837 (46%) | DB: 0.12943 (25%) | 200 OK [http://0.0.0.0/videos/2]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2008-12-03 13:14:48) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"videos"}
+  [4;36;1mVideo Columns (0.257194)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mVideo Load (0.033049)[0m   [0mSELECT * FROM `videos` WHERE (`videos`.`id` = 2) [0m
+Rendering template within layouts/standard-layout
+Rendering videos/show
+  [4;36;1mUser Columns (0.004412)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.003648)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mRole Columns (0.017381)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.009617)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.24438)
+Completed in 0.73742 (1 reqs/sec) | Rendering: 0.38032 (51%) | DB: 0.32530 (44%) | 200 OK [http://0.0.0.0/videos/2]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 13:14:53) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.006241)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.007231)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;36;1mUser Load (0.003280)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.031907)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.067834)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Load (0.005392)[0m   [0mSELECT * FROM `videos` WHERE (videos.user_id = 1) [0m
+  [4;36;1mVideo Columns (0.027655)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.01211)
+Completed in 0.70028 (1 reqs/sec) | Rendering: 0.50918 (72%) | DB: 0.14954 (21%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 13:17:57) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.004015)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.004694)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;36;1mUser Load (0.004114)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.007177)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.034596)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Load (0.014581)[0m   [0mSELECT * FROM `videos` WHERE (videos.user_id = 1) [0m
+  [4;36;1mVideo Columns (0.008729)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.01524)
+Completed in 1.48080 (0 reqs/sec) | Rendering: 1.37018 (92%) | DB: 0.07791 (5%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 13:18:56) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.012157)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.019573)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;36;1mUser Load (0.012728)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.003680)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.004236)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Load (0.001053)[0m   [0mSELECT * FROM `videos` WHERE (videos.user_id = 1) [0m
+  [4;36;1mVideo Columns (0.003239)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.00649)
+Completed in 0.31551 (3 reqs/sec) | Rendering: 0.09514 (30%) | DB: 0.05667 (17%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 13:19:21) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.019829)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.016467)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;36;1mUser Load (0.001845)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.005167)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.001343)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Load (0.002471)[0m   [0mSELECT * FROM `videos` WHERE (videos.user_id = 1) [0m
+  [4;36;1mVideo Columns (0.009129)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.08084)
+Completed in 0.53292 (1 reqs/sec) | Rendering: 0.35716 (67%) | DB: 0.05625 (10%) | 200 OK [http://0.0.0.0/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2008-12-03 13:19:51) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOgxjc3JmX2lkIiViNzRlOGMy%0AOWRiNDFkMTRlZThlZWY4NjRmNjAwYzRjMiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bb8dc7b517c5fa90cdaf3c2095ba06e556119505
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Columns (0.026350)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.006694)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Rendering template within layouts/standard-layout
+Rendering videos/index
+  [4;36;1mUser Load (0.007005)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mRole Columns (0.004616)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.001398)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mVideo Load (0.012710)[0m   [0mSELECT * FROM `videos` WHERE (videos.user_id = 1) [0m
+  [4;36;1mVideo Columns (0.014526)[0m   [0;1mSHOW FIELDS FROM `videos`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT roles.* FROM roles INNER JOIN permissions ON roles.id = permissions.role_id WHERE ((permissions.user_id = 1)) AND (`roles`.`rolename` = 'administrator') LIMIT 1[0m
+Rendered /home/_logged_in (0.01358)
+Completed in 0.31725 (3 reqs/sec) | Rendering: 0.09976 (31%) | DB: 0.07330 (23%) | 200 OK [http://0.0.0.0/videos]

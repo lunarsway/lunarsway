@@ -1,0 +1,13 @@
+%h1 Lunar Videos
+
+- if logged_in? and current_user.has_role?('administrator')
+  %p= link_to 'New video', new_video_path  
+
+- for video in @videos
+  .video  
+    = video.embed
+    .title= link_to video.title, video.url, :target => "_blank"
+.clear
+
+- content_for :css_header do
+  = stylesheet_link_tag "videos"

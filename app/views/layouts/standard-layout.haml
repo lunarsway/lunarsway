@@ -6,6 +6,8 @@
     = stylesheet_link_tag "main"
     = stylesheet_link_tag "community_wall"
     = stylesheet_link_tag "tabs"
+    = yield :css_header
+
     = javascript_include_tag "application"
     = javascript_include_tag "jquery/jquery-1.2.6.min.js"
     = javascript_include_tag "jquery/jquery.form.js"
@@ -15,7 +17,8 @@
     = javascript_include_tag "jquery/jquery.fancyzoom-min.js"
     = javascript_include_tag "jquery/jquery-ui-1.6rc2.packed.js"
     = javascript_include_tag "swfobject.js"
-  
+    = yield :js_header
+    
   %body
     #main_page
       #main_header
@@ -32,7 +35,7 @@
       #main_nav
         = link_to image_tag("/images/structure/nav/news.gif", :id => "nav_news"), news_url
         = link_to image_tag("/images/structure/nav/downloads.gif", :id => "nav_downloads"), downloads_url
-        = link_to image_tag("/images/structure/nav/video.gif", :id => "nav_video"), video_url
+        = link_to image_tag("/images/structure/nav/video.gif", :id => "nav_video"), videos_url
         = link_to image_tag("/images/structure/nav/photos.gif", :id => "nav_photos"), photos_url
         = link_to image_tag("/images/structure/nav/biography.gif", :id => "nav_biography"), biography_url
         = link_to image_tag("/images/structure/nav/philosophy.gif", :id => "nav_philosophy"), philosophy_url

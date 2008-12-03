@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :videos
+
   map.resources :profile_photos
 
   map.resources :wall_photos
@@ -48,7 +50,7 @@ ActionController::Routing::Routes.draw do |map|
   map.home "/", :controller => "/home"
   map.news "/news", :controller => "/news_items"
   map.downloads "/downloads", :controller => "/home", :action => "downloads"
-  map.video "/video", :controller => "/home", :action => "video"
+  # map.video "/video", :controller => "/home", :action => "video"
   map.photos "/photos", :controller => "/photos", :action => "index"
   map.biography "/biography", :controller => "/home", :action => "biography"
   map.philosophy "/philosophy", :controller => "/home", :action => "philosophy"

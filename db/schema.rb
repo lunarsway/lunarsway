@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 14) do
+ActiveRecord::Schema.define(:version => 17) do
 
   create_table "links", :force => true do |t|
     t.string   "title"
@@ -66,6 +66,12 @@ ActiveRecord::Schema.define(:version => 14) do
     t.datetime "updated_at"
   end
 
+  create_table "profile_photos", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.string   "rolename"
     t.datetime "created_at"
@@ -101,8 +107,24 @@ ActiveRecord::Schema.define(:version => 14) do
     t.string   "last_name",                               :default => ""
   end
 
+  create_table "videos", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "embed"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "wall_messages", :force => true do |t|
     t.text     "message"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wall_photos", :force => true do |t|
+    t.string   "caption"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

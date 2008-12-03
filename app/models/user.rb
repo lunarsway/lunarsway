@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
  
   has_many :permissions
   has_many :roles, :through => :permissions
+  
+  has_many :videos
  
   before_save :encrypt_password
   before_create :make_activation_code
@@ -22,6 +24,10 @@ class User < ActiveRecord::Base
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :password, :password_confirmation, :first_name, :last_name
+ 
+  def self.administrator
+    User.find_by_login('admin')
+  end
  
   class ActivationCodeNotFound < StandardError; end
   class AlreadyActivated < StandardError

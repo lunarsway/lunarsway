@@ -1,0 +1,10 @@
+.video {
+  float: left;
+  border: solid gray 1px;
+  margin: 5px; }
+  .video .title {
+    color: #dfdfdf;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center; }
