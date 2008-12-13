@@ -50,6 +50,7 @@ ActionController::Routing::Routes.draw do |map|
   map.home "/", :controller => "/home"
   map.news "/news", :controller => "/news_items"
   map.downloads "/downloads", :controller => "/home", :action => "downloads"
+  map.releases "/releases", :controller => "/home", :action => "releases"
   # map.video "/video", :controller => "/home", :action => "video"
   map.photos "/photos", :controller => "/photos", :action => "index"
   map.biography "/biography", :controller => "/home", :action => "biography"

@@ -28,11 +28,18 @@
       %h4 Lunar Releases  
       .lunar_release
         .title
+          %span.date December 12th, 2008 -
+          %span.song Progress
+          = link_to "(lyrics)", {:controller => "/lyrics", :action => "Progress"}, :class => "tiny_link"
+        .embed
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/progress.mp3&autostart=true"}
+      .lunar_release
+        .title
           %span.date November 13th, 2008 -
           %span.song Just an Illusion
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustAnIllusion"}, :class => "tiny_link"
         .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_an_illusion.mp3&autostart=true"}
+          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_an_illusion.mp3&autostart=false"}
       .lunar_release
         .title
           %span.date October 14th, 2008 -
@@ -47,26 +54,5 @@
           = link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
         .embed
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=false"}
-      .lunar_release
-        .title
-          %span.date August 16, 2008 -
-          %span.song Just For A Moment
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustForAMoment"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_for_a_moment_lo.mp3&autostart=false"}
-      .lunar_release
-        .title
-          %span.date July 18, 2008 -
-          %span.song America Spoke Up
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "AmericaSpokeUp"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/america_spoke_up_lo.mp3&autostart=false"}
-      .lunar_release
-        .title
-          %span.date June 18, 2008 -
-          %span.song Saint Mark's Square
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "SaintMarksSquare"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/st_marks_square_lo.mp3&autostart=false"}
-
+      %p.talignr= link_to "More Lunar Releases &raquo;", releases_url
 .clear
