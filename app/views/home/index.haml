@@ -1,12 +1,12 @@
 
-.floatl{:style => "width: 300px;"}
-  %object{:width => 300, :height => 265}
+.floatl{:style => "width: 570px;"}
+  %object{:width => 300, :height => 265}.floatl
     %param{:name => "movie", :value => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999"}
     %param{:name => "allowFullScreen", :value => true}
     %param{:name => "allowscriptaccess", :value => "always"}
     %embed{:src => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999", :type => "application/x-shockwave-flash", :allowscriptaccess => "always", :allowfullscreen => true, :width => 300, :height => 265}
-.floatl= image_tag Photo.find(47).public_path(:size => "26500x265")
-.clear
+  .floatl{:style => "margin-left: 5px;"}= image_tag Photo.find(47).public_path(:size => "265x265")
+  .clear
   %h3 Recent News
 
   .home_news
