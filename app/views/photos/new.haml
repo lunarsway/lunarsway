@@ -2,13 +2,11 @@
 
 = error_messages_for :photo
 
-- form_for(@photo, :html => {:multipart => true}) do |f|
+- form_for(Photo.new, :html => {:enctype => 'multipart/form-data'}) do |f|
   %p
     %b Upload Image
     %br/
-    = f.file_field :image_file, :class => "text"
-    or URL:
-    = f.text_field :image_file_url, :class => "text"
+    = f.file_field :file, :class => "text"
   .floatl{:style => "margin-right: 25px;"}
     %p
       %b Caption

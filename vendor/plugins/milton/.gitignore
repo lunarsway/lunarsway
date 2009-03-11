@@ -1,0 +1,4 @@
+.DS_Store
+spec/output/*
+spec/debug.log
+milton-*.gem

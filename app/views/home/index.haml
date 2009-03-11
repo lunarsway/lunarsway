@@ -1,5 +1,10 @@
 
 .floatl{:style => "width: 570px;"}
+  %object{:width => 560, :height => 265}
+    %param{:name => "movie", :value => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999"}
+    %param{:name => "allowFullScreen", :value => true}
+    %param{:name => "allowscriptaccess", :value => "always"}
+    %embed{:src => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999", :type => "application/x-shockwave-flash", :allowscriptaccess => "always", :allowfullscreen => true, :width => 560, :height => 265}
   %h3 Recent News
 
   .home_news
@@ -14,12 +19,10 @@
           at
           = news_item.created_at.strftime("%I:%M %p")
         .body
-          = truncate nl2br(news_item.body), 300
-          %br/
+          = truncate nl2br(news_item.body), 100
           = link_to '(read more)', news_item
           - if logged_in?
             - if current_user.has_role?('administrator')
-              %br/
               = link_to "(edit)", edit_news_item_path(news_item)
               = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
 .floatr
@@ -56,3 +59,7 @@
           %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=false"}
       %p.talignr= link_to "More Lunar Releases &raquo;", releases_url
 .clear
+
+- content_for :js_header do
+  :javascript
+    $(')

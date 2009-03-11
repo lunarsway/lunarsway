@@ -2,11 +2,14 @@
 
 - if logged_in?
   - if current_user.has_role?('administrator')
-    %p= link_to 'New photo', new_photo_path
+    %p
+      = link_to 'New photo', new_photo_path
+      = link_to 'reorder', reorder_photos_path
 #gallery
   - for photo in @photos
     .photo
-      = link_to image_tag(formatted_gallery_photo_path(photo, :jpg), :alt => photo.caption), formatted_large_photo_path(photo, :jpg)
+      = link_to image_tag(photo.public_path(:size => "150x100")), photo.public_path(:size => "640x480")
+      = # link_to image_tag(formatted_gallery_photo_path(photo, :jpg), :alt => photo.caption), formatted_large_photo_path(photo, :jpg)
       = # link_to image_tag(formatted_thumb_photo_path(photo, :jpg), :alt => photo.caption), formatted_photo_path(photo, :jpg)
   .clear
 

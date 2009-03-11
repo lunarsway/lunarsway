@@ -1,11 +1,7 @@
 class Photo < ActiveRecord::Base
-  cattr_reader :per_page
-  @@per_page = 30
+  is_image
 
-  acts_as_fleximage do
-    image_directory 'fleximages/photos'
-    require_image true
-
-    image_storage_format :jpg
+  def self.all_ordered
+    self.find(:all, :order => "position ASC")
   end
 end
