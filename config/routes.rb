@@ -24,6 +24,9 @@ ActionController::Routing::Routes.draw do |map|
     :custom           => :get,
     :large            => :get,
     :gallery          => :get
+  }, :collection => {
+    :reorder          => :get,
+    :update_positions => :post
   }
   map.resources :news_items
 

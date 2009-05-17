@@ -1,11 +1,13 @@
 class PhotosController < ApplicationController
+  before_filter :check_administrator_role, :only => [:new, :update, :edit, :destroy, :create, :reorder, :update_positions]
+  skip_before_filter :verify_authenticity_token, :only => [:update_positions]
 
   layout "standard-layout"
   
   # GET /photos
   # GET /photos.xml
   def index
-    @photos = Photo.find(:all, :order => "created_at DESC")
+    @photos = Photo.all_ordered
 
     respond_to do |format|
       format.html # index.html.erb
@@ -43,7 +45,7 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.xml
   def create
-    @photo = Photo.new(params[:photo])
+    @photo = Photo.create(params[:photo])
 
     respond_to do |format|
       if @photo.save
@@ -84,5 +86,19 @@ class PhotosController < ApplicationController
       format.html { redirect_to(photos_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def reorder
+    @photos = Photo.all_ordered
+  end
+  
+  def update_positions
+    i = 0
+    for id in params[:photo]
+      Photo.find(id).update_attribute("position", i)
+      i = i + 1
+    end
+    
+    render :nothing => true    
   end
 end

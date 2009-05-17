@@ -1,5 +1,5 @@
 .talignc{:style => "width: 550px; margin-left: auto; margin-right: auto;"}
-  = image_tag formatted_large_photo_path(@photo, :jpg)
+  = image_tag @photo.public_path(:size => "550x480")
   %br/
   =h @photo.caption 
   

@@ -1,16 +1,16 @@
 .news_item {
-  margin: 15px 0px 15px 0px;
+  margin: 5px 0px 5px 0px;
   padding-bottom: 10px;
   border-bottom: dotted gray 1px; }
   .news_item .date {
-    font-size: 100%;
+    font-size: 12px;
     color: #bbbbbb; }
   .news_item .title {
     font-size: 150%; }
     .news_item .title .date {
       color: #AAAAAA; }
   .news_item .posted_by {
-    font-size: 75%; }
+    font-size: 10px; }
   .news_item .body {
     padding: 10px 0px 0px 15px;
     font-size: 85%; }

@@ -1,0 +1,13 @@
+%p= link_to 'New photo', new_photo_path
+
+#sortable
+  - for photo in @photos
+    .photo{:id => "photo_#{photo.id}"}= image_tag photo.public_path(:size => "100x100")
+  .clear
+- content_for :js_header do
+  = javascript_include_tag "jquery-ui/jquery-1.2.6.js"
+  = javascript_include_tag "jquery-ui/jquery-ui-personalized-1.5.3.min.js"
+  = javascript_tag "$(function () {$('#sortable').sortable({update: function() {$.post('#{update_positions_photos_url}', $('#sortable').sortable('serialize'));}});});"    
+    
+- content_for :css_header do
+  = stylesheet_link_tag "photos-reorder"
