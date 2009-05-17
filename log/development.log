@@ -28504,3 +28504,445 @@ Rendering photos/gallery
   [4;35;1mPhoto Columns (0.003114)[0m   [0mSHOW FIELDS FROM `photos`[0m
   [4;36;1mPhoto Load (0.003636)[0m   [0;1mSELECT * FROM `photos` WHERE (`photos`.`id` = 1) [0m
 Completed in 1.29021 (0 reqs/sec) | Rendering: 1.26552 (98%) | DB: 0.00675 (0%) | 200 OK [http://0.0.0.0/photos/1/gallery.jpg]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-05-17 13:02:36) [GET]
+  Session ID: 63ccac054931d73bad9bc64e18a7c31c
+  Parameters: {"action"=>"index", "controller"=>"/home"}
+  [4;36;1mSQL (0.000709)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mNewsItem Load (0.638358)[0m   [0mSELECT * FROM `news_items` ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mNewsItem Columns (0.011189)[0m   [0;1mSHOW FIELDS FROM `news_items`[0m
+Rendered /home/_logged_in (0.17689)
+Completed in 1.22991 (0 reqs/sec) | Rendering: 0.53027 (43%) | DB: 0.65026 (52%) | 200 OK [http://0.0.0.0/]
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2009-05-17 13:03:36) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTVlZmI5ZjVkMjg4YWMwNDM1ODRjM2ZiMmRlODE1%0AOTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--412ba31b0c63da9d24897d90030985e48fb3be80
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "authenticity_token"=>"6672a9b4e9f4e71954784e79e857657dae809a6f", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.179846)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.001392)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+ERROR: compiling _run_plugin_47app47views47mailing_list_item_mailer47signup_notification46haml RAISED Illegal nesting: content can't be both given on the same line as %p and nested within it.
+Function body: 
+Backtrace: (haml):17
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:581:in `render_tag'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:188:in `process_line'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:152:in `precompile'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/inflector.rb:257:in `each_with_index'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each_with_index'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `precompile'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/engine.rb:100:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:513:in `delegate_compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:560:in `create_template_source'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:48:in `compile_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:348:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/helpers/action_view_mods.rb:14:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:502:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:494:in `render_message'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:442:in `create!'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:403:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `method_missing'
+/Users/double/Sites/lunarsway.com/2008-07-15/lunarsway/app/controllers/mailing_list_items_controller.rb:53:in `create'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #17 of mailing_list_item_mailer/signup_notification.haml:
+14:   section for more info.
+15: 
+16: %p Be sure to check these Lunar Sway links often for new media and tour updates:
+17:   %ul
+18:     %li
+19:       website:
+20:       = link_to "http://www.lunarsway.com", "http://www.lunarsway.com"
+
+    app/views/mailing_list_item_mailer/signup_notification.haml:17
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:581:in `render_tag'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:188:in `process_line'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:152:in `precompile'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/inflector.rb:257:in `each_with_index'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each_with_index'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `precompile'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/engine.rb:100:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `compile'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:513:in `delegate_compile'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:560:in `create_template_source'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:48:in `compile_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:348:in `render_without_haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/helpers/action_view_mods.rb:14:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:502:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:494:in `render_message'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:442:in `create!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:403:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `method_missing'
+    app/controllers/mailing_list_items_controller.rb:53:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2009-05-17 13:03:45) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTVlZmI5ZjVkMjg4YWMwNDM1ODRjM2ZiMmRlODE1%0AOTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--412ba31b0c63da9d24897d90030985e48fb3be80
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "authenticity_token"=>"6672a9b4e9f4e71954784e79e857657dae809a6f", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.035798)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.010339)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+ERROR: compiling _run_plugin_47app47views47mailing_list_item_mailer47signup_notification46haml RAISED Illegal nesting: content can't be both given on the same line as %p and nested within it.
+Function body: 
+Backtrace: (haml):17
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:581:in `render_tag'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:188:in `process_line'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:152:in `precompile'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/inflector.rb:257:in `each_with_index'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each_with_index'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `precompile'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/engine.rb:100:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:513:in `delegate_compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:560:in `create_template_source'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:48:in `compile_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:348:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/helpers/action_view_mods.rb:14:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:502:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:494:in `render_message'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:442:in `create!'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:403:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `method_missing'
+/Users/double/Sites/lunarsway.com/2008-07-15/lunarsway/app/controllers/mailing_list_items_controller.rb:53:in `create'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #17 of mailing_list_item_mailer/signup_notification.haml:
+14:   section for more info.
+15: 
+16: %p Be sure to check these Lunar Sway links often for new media and tour updates:
+17:   %ul
+18:     %li
+19:       website:
+20:       = link_to "http://www.lunarsway.com", "http://www.lunarsway.com"
+
+    app/views/mailing_list_item_mailer/signup_notification.haml:17
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:581:in `render_tag'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:188:in `process_line'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:152:in `precompile'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/inflector.rb:257:in `each_with_index'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `each_with_index'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/precompiler.rb:118:in `precompile'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/engine.rb:100:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:21:in `compile'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:513:in `delegate_compile'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:560:in `create_template_source'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/template/plugin.rb:48:in `compile_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:348:in `render_without_haml'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/haml/helpers/action_view_mods.rb:14:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:502:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:494:in `render_message'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:442:in `create!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:403:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.0.2/lib/action_mailer/base.rb:352:in `method_missing'
+    app/controllers/mailing_list_items_controller.rb:53:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-2.0.4/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MailingListItemsController#create (for 127.0.0.1 at 2009-05-17 13:04:03) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTVlZmI5ZjVkMjg4YWMwNDM1ODRjM2ZiMmRlODE1%0AOTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--412ba31b0c63da9d24897d90030985e48fb3be80
+  Parameters: {"mailing_list_item"=>{"email"=>"preston@prestonpope.com"}, "authenticity_token"=>"6672a9b4e9f4e71954784e79e857657dae809a6f", "action"=>"create", "controller"=>"mailing_list_items"}
+  [4;35;1mMailingListItem Columns (0.012999)[0m   [0mSHOW FIELDS FROM `mailing_list_items`[0m
+  [4;36;1mMailingListItem Load (0.038729)[0m   [0;1mSELECT `mailing_list_items`.id FROM `mailing_list_items` WHERE (`mailing_list_items`.`email` = 'preston@prestonpope.com') LIMIT 1[0m
+Sent mail:
+ Date: Sun, 17 May 2009 13:04:03 -0700
+From: Lunar Sway <info@lunarsway.com>
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining the Lunar Sway mailing list!
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  Thank you for signing the Lunar Sway mailing list!
+</p>
+<p>
+  As token of appreciation to our first fans, here's a link to your free copy of our first two songs:
+  <a href="http://www.lunarsway.com/song_downloads/get/Saint Mark's Square">"Saint Mark's Square"</a>
+  and
+  <a href='http://www.lunarsway.com/song_downloads/get/America Spoke Up'>“America Spoke Up.”</a>
+</p>
+<p>We are currently in the studio recording our next batch of songs and are excited to get them to you!</p>
+<p>
+  June 12th we will be rocking the Dragonfly Nightclub in Hollywood! Check out our
+  <a href="http://www.lunarsway.com/tour">tour</a>
+  section for more info.
+</p>
+<p>
+  Be sure to check these Lunar Sway links often for new media and tour updates:
+  <ul>
+    <li>
+      website:
+      <a href="http://www.lunarsway.com">http://www.lunarsway.com</a>
+    </li>
+    <li>
+      myspace:
+      <a href="http://www.myspace.com/lunarsway">http://www.myspace.com/lunarsway</a>
+    </li>
+    <li>
+      facebook:
+      <a href="http://www.facebook.com/pages/Lunar-Sway/51020740023">http://www.facebook.com/pages/Lunar-Sway/51020740023</a>
+    </li>
+  </ul>
+</p>
+<p>We will definitely keep you in the loop on all things Lunar Sway!</p>
+<p>Thanks again for joining,</p>
+<br />
+Lunar Sway
+Redirected to http://0.0.0.0:3000/mailing_list_items/thank_you
+Completed in 4.33352 (0 reqs/sec) | DB: 0.27910 (6%) | 302 Found [http://0.0.0.0/mailing_list_items]
+
+
+Processing MailingListItemsController#thank_you (for 127.0.0.1 at 2009-05-17 13:04:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTVlZmI5ZjVkMjg4YWMwNDM1ODRjM2ZiMmRlODE1%0AOTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--412ba31b0c63da9d24897d90030985e48fb3be80
+  Parameters: {"action"=>"thank_you", "controller"=>"mailing_list_items"}
+Rendering template within layouts/standard-layout
+Rendering mailing_list_items/thank_you
+Rendered /home/_logged_in (0.00187)
+Completed in 0.09100 (10 reqs/sec) | Rendering: 0.03882 (42%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/mailing_list_items/thank_you]
