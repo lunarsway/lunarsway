@@ -1,0 +1,18 @@
+%p= link_to "&laquo; Back to YouTube Videos", admin_you_tube_videos_url
+
+%p.title New YouTube Video
+
+%p= error_messages_for :you_tube_video
+
+- form_for(@you_tube_video, :url => admin_you_tube_videos_url) do |f|
+  %p
+    %b Title
+    %br/
+    = f.text_field :title, :class => "text"
+
+  %p
+    %b Embed code
+    %br/
+    = f.text_area :embed_code, :rows => 5, :cols => 75
+
+  %p= f.submit "Create"

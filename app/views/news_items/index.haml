@@ -1,21 +1,26 @@
-%h1 News
+.news-items
+  %p.title Lunar News
 
-- for news_item in @news_items
-  .news_item
-    .title
-      = news_item.created_at.strftime("%B %d, %Y")
-      =h news_item.title
-    .posted_by
-      by
-      =h news_item.author
-      at
-      = news_item.created_at.strftime("%I:%M %p")
-    .body
-      = truncate nl2br(news_item.body), 300
-      %br/
-      = link_to '(read more)', news_item
-      - if logged_in?
-        - if current_user.has_role?('administrator')
-          %br/
-          = link_to "(edit)", edit_news_item_path(news_item)
-          = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
+  - for news_item in @news_items
+    .news-item
+      .title= "#{news_item.created_at.strftime("%m/%e")} - #{news_item.title}"
+      .info= "by #{news_item.author} at #{news_item.created_at.strftime("%I:%M %p")}"
+      .body
+        = news_item.body
+        = link_to "(read more)", news_item
+
+
+- content_for :header_css do
+  %style{:type => "text/css"}
+    :sass
+      .news-items
+        .news-item
+          .title
+            :font-size 16px
+          .info
+            :font-size 10px
+          .body
+            :margin-top 10px
+            :padding-bottom 10px
+            :margin-bottom 15px
+            :border-bottom dashed #858585 1px

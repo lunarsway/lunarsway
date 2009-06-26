@@ -1,0 +1,18 @@
+%p.title Lunar Media
+
+
+%p.subtitle Video
+- for video in @you_tube_videos
+  .you-tube-video= video.embed_code
+.clear
+  
+%p.subtitle Gallery
+
+
+- content_for :header_css do
+  %style{:type => "text/css"}
+    :sass
+      .you-tube-video
+        :float left
+        :margin-right 35px
+        :margin-bottom 20px

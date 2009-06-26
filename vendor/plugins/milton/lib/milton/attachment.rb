@@ -1,277 +1,202 @@
 require 'ftools'
 require 'fileutils'
+require 'milton/derivatives/derivative'
 
-module Citrusbyte
-  module Milton
-    module Attachment      
-      def self.included(base)
-        base.class_inheritable_accessor :milton_options
-        base.milton_options = {}
-        base.extend Citrusbyte::Milton::Attachment::AttachmentMethods
+module Milton
+  module Attachment
+    # Call is_attachment with your options in order to add attachment
+    # functionality to your ActiveRecord model.
+    # 
+    # TODO: list options
+    def is_attachment(options={})
+      # Check to see that it hasn't already been extended so that subclasses
+      # can redefine is_attachment from their superclasses and overwrite 
+      # options w/o losing the superclass options.
+      unless respond_to?(:has_attachment_methods)
+        extend Milton::Attachment::AttachmentMethods
+        class_inheritable_accessor :milton_options
+      end
+      has_attachment_methods(options)
+    end
+    
+    module AttachmentMethods        
+      def require_column(column, message)
+        begin
+          raise message unless column_names.include?(column)
+        rescue ActiveRecord::StatementInvalid => i
+          # table doesn't exist yet, i.e. hasn't been migrated in...
+        end
       end
       
-      module AttachmentMethods
-        def require_column(column, message)
-          begin
-            raise message unless column_names.include?(column)
-          rescue ActiveRecord::StatementInvalid => i
-            # table doesn't exist yet, i.e. hasn't been migrated in...
+      def has_attachment_methods(options={})
+        require_column 'filename', "Milton requires a filename column on #{class_name} table"
+        
+        # It's possible that this is being included from a class and a sub
+        # class of that class, in which case we need to merge the existing
+        # options up.
+        self.milton_options ||= {}
+        milton_options.merge!(options)
+        
+        # Character used to seperate a filename from its derivative options, this
+        # character will be stripped from all incoming filenames and replaced by
+        # replacement
+        milton_options[:separator]        ||= '.'
+        milton_options[:replacement]      ||= '-'          
+        milton_options[:tempfile_path]    ||= File.join(Rails.root, "tmp", "milton")
+        milton_options[:storage]          ||= :disk
+        milton_options[:storage_options]  ||= {}
+        milton_options[:processors]       ||= {}
+        milton_options[:uploading]        ||= true
+        
+        # Set to true to allow on-demand processing of derivatives. This can
+        # be rediculously slow because it requires that the existance of the
+        # derivative is checked each time it's requested -- throw in S3 and
+        # that becomes a huge lag. Reccommended only for prototyping.
+        milton_options[:postproccess]     ||= false
+        
+        # TODO: Write about recipes
+        #   * They're refered to by name in #path
+        #   * They're an order of derivations to make against this attachment
+        #   * They run in the order defined
+        #   * They are created and run when the AR model is created
+        #   * They're necessary when +:postprocessing+ is turned off
+        milton_options[:recipes]          ||= {}
+        milton_options[:recipes].each do |name, steps|
+          steps = [steps] unless steps.is_a?(Array)
+          steps.each do |step|
+            step.each { |processor, options| Milton.try_require "milton/derivatives/#{processor}", "No '#{processor}' processor found for Milton" }
           end
         end
-        
-        def has_attachment_methods(options={})
-          require_column 'filename', "Milton requires a filename column on #{class_name} table"
-          
-          # character used to seperate a filename from its derivative options, this
-          # character will be stripped from all incoming filenames and replaced by
-          # replacement
-          options[:separator]        ||= '.'
-          options[:replacement]      ||= '-'
-          
+
+        # TODO: Write about storage options
+        #   * Late binding (so right_aws is only req'd if you use S3)
+        Milton.try_require "milton/storage/#{milton_options[:storage]}_file", "No '#{milton_options[:storage]}' storage found for Milton"
+
+        # TODO: initialize these options in DiskFile
+        if milton_options[:storage] == :disk
           # root of where the underlying files are stored (or will be stored)
           # on the file system
-          options[:file_system_path] ||= File.join(RAILS_ROOT, "public", table_name)
-          
+          milton_options[:storage_options][:root]  ||= File.join(Rails.root, "public", table_name)
+          milton_options[:storage_options][:root]    = File.expand_path(milton_options[:storage_options][:root])
           # mode to set on stored files and created directories
-          options[:chmod]            ||= 0755
-          
-          self.milton_options.merge!(options)
-          
-          validates_presence_of :filename
-          
-          before_destroy :destroy_attached_file
-          
-          include Citrusbyte::Milton::Attachment::InstanceMethods
+          milton_options[:storage_options][:chmod] ||= 0755
         end
-      end
-      
-      # These get mixed in to your model when you use Milton
-      module InstanceMethods
-        # Sets the filename to the given filename (sanitizes the given filename
-        # as well)
-        #
-        # TODO: change the filename on the underlying file system on save so as
-        # not to orphan the file
-        def filename=(name)
-          write_attribute :filename, AttachableFile.sanitize_filename(name, self.milton_options)
-        end
-
-        # Simple helper, same as path except returns the directory from
-        # .../public/ on, i.e. for showing images in your views.
-        #
-        #   @asset.path        => /var/www/site/public/assets/000/000/001/313/milton.jpg
-        #   @asset.public_path => /assets/000/000/001/313/milton.jpg
-        #
-        # Can send a different base path than public if you want to give the
-        # path from that base on, useful if you change your root path to
-        # somewhere else.
-        def public_path(options={}, base='public')
-          path(options).gsub(/.*?\/#{base}/, '')
-        end
+                  
+        validates_presence_of :filename
         
-        # The path to the file, takes an optional hash of options which can be
-        # used to determine a particular derivative of the file desired
-        def path(options={})
-          attached_file.path(options)
+        after_destroy :destroy_attached_file
+        after_create :create_derivatives
+
+        include Milton::Attachment::InstanceMethods
+        
+        if milton_options[:uploading]
+          require 'milton/uploading'
+          extend  Milton::Uploading::ClassMethods
+          include Milton::Uploading::InstanceMethods
         end
-                
-        protected
-          # A reference to the attached file, this is probably what you want to
-          # overwrite to introduce a new behavior
-          #
-          # i.e. 
-          #   have attached_file return a ResizeableFile, or a TranscodableFile
-          def attached_file
-            @attached_file ||= AttachableFile.new(self, filename)
-          end
-          
-          # Clean the file from the filesystem
-          def destroy_attached_file
-            attached_file.destroy
-          end
-      end
+      end        
     end
-
-    # AttachableFile is what Milton uses to interface between your model and
-    # the underlying file. Rather than just pushing a whole bunch of methods
-    # into your model, you get a reference to an AttachableFile (or something
-    # that extends AttachableFile).
-    class AttachableFile
-      class << self
-      # Sanitizes the given filename, removes pathnames and the special chars
-      # needed for options seperation for derivatives
-      def sanitize_filename(filename, options)
-        File.basename(filename, File.extname(filename)).gsub(/^.*(\\|\/)/, '').
-          gsub(/[^\w]|#{Regexp.escape(options[:separator])}/, options[:replacement]).
-          strip + File.extname(filename)
+    
+    # These get mixed in to your model when you use Milton
+    module InstanceMethods
+      # Sets the filename to the given filename (sanitizes the given filename
+      # as well)
+      #
+      # TODO: change the filename on the underlying file system on save so as
+      # not to orphan the file
+      def filename=(name)
+        write_attribute :filename, Storage::StoredFile.sanitize_filename(name, self.class.milton_options)
       end
 
-      # Creates the given directory and sets it to the mode given in
-      # options[:chmod]
-      def recreate_directory(directory, options)
-        return true if File.exists?(directory)
-        FileUtils.mkdir_p(directory)
-        File.chmod(options[:chmod], directory)
-      end
-        
-        # Partitioner that takes an id, pads it up to 12 digits then splits
-        # that into 4 folders deep, each 3 digits long.
-        # 
-        # i.e.
-        #   000/000/012/139
-        # 
-        # Scheme allows for 1000 billion files while never storing more than
-        # 1000 files in a single folder.
-        #
-        # Can overwrite this method to provide your own partitioning scheme.
-        def partition(id)
-          # TODO: there's probably some fancy 1-line way to do this...
-          padded = ("0"*(12-id.to_s.size)+id.to_s).split('')
-          File.join(*[0, 3, 6, 9].collect{ |i| padded.slice(i, 3).join })
-        end
+      # Returns the content_type of this attachment, tries to determine it if
+      # hasn't been determined yet or is not saved to the database
+      def content_type
+        return self[:content_type] unless self[:content_type].blank?
+        self.content_type = attached_file.mime_type
       end
       
-      attr_accessor :filename
-      attr_accessor :attachment
-      
-      # TODO: can probably fanagle a way to only pass a reference to the model
-      # and not need the filename (or better yet just the filename and 
-      # decouple)
-      def initialize(attachment, filename)
-        @attachment = attachment
-        @filename   = filename
-      end
-      
-      # Returns the milton options on the associated attachment.
-      def milton_options
-        self.attachment.class.milton_options
+      # Sets the content type to the given type
+      def content_type=(type)
+        write_attribute :content_type, type.to_s.strip
       end
 
-      # Returns the full path and filename to the file with the given options.
-      # If no options are given then returns the path and filename to the
-      # original file.
-      def path(options={})
-        options.empty? ? File.join(dirname, filename) : Derivative.new(filename, options).path
-      end
-            
-      # Returns the full directory path up to the file, w/o the filename.
-      def dirname
-        File.join(root_path, partitioned_path)
-      end
-      
-      # Returns true if the file exists on the underlying file system.
-      def exists?
-        File.exist?(path)
+      # Simple helper, same as path except returns the directory from
+      # .../public/ on, i.e. for showing images in your views.
+      #
+      #   @asset.path        => /var/www/site/public/assets/000/000/001/313/milton.jpg
+      #   @asset.public_path => /assets/000/000/001/313/milton.jpg
+      #
+      # Can send a different base path than public if you want to give the
+      # path from that base on, useful if you change your root path to
+      # somewhere else.
+      def public_path(options={}, base='public')
+        path(options).gsub(/.*?\/#{base}/, '')
       end
       
-      # Removes the file from the underlying file system and any derivatives of
-      # the file.
-      def destroy
-        destroy_file
+      # The path to the file.
+      def path(options=nil)
+        return attached_file.path if options.nil?
+        process(options).path
       end
       
       protected
-        # Returns the file as a File object opened for reading.
-        def file_reference
-          File.new(path)
-        end
+      
+      # Meant to be used as an after_create filter -- loops over all the
+      # recipes and processes them to create the derivatives.
+      def create_derivatives
+        milton_options[:recipes].each{ |name, recipe| process(name, true) } if milton_options[:recipes].any?
+      end
+      
+      # Process the given options to produce a final derivative. +options+
+      # takes a Hash of options to process or the name of a pre-defined
+      # recipe which will be looked up and processed.
+      # 
+      # Pass +force = true+ to force processing regardless of if 
+      # +:postprocessing+ is turned on or not.
+      # 
+      # Returns the final Derivative of all processors in the recipe.
+      def process(options, force=false)
+        options = milton_options[:recipes][options] unless options.is_a?(Hash)
+        options = [options] unless options.is_a?(Array)
         
-        # Returns the partitioned path segment based on the id of the model
-        # this file is attached to.
-        def partitioned_path
-          self.class.partition(self.attachment.id)
-        end
-
-        # The full path to the root of where files will be stored on disk.
-        def root_path
-          milton_options[:file_system_path]
-        end
-
-        # Creates the directory this file will be stored in.
-        # Also creates the root path where all attachments are stored if it
-        # doesn't exist yet.
-        def recreate_directory
-          self.class.recreate_directory(dirname, milton_options)
-        end
-        
-        # Removes the containing directory from the filesystem (and hence the
-        # file and any derivatives)
-        def destroy_file
-          FileUtils.rm_rf dirname if File.exists?(dirname)
-        end
-        
-        # Returns an array of Derivatives of this AttachableFile.
-        def derivatives
-          Dir.glob(dirname + '/*').reject{ |filename| filename == self.filename }.collect do |filename|
-            Derivative.from_filename(filename)
+        source = attached_file
+        options.each do |recipe|
+          recipe.each do |processor, opts|
+            source = Derivative.factory(processor, source, opts, self.class.milton_options).process_if(process? || force).file
           end
         end
-    end
-
-    # Represents a file created on the file system that is a derivative of the
-    # one referenced by the model, i.e. a thumbnail of an image, or a transcode
-    # of a video.
-    # 
-    # Provides a container for options and a uniform API to dealing with
-    # passing options for the creation of derivatives.
-    # 
-    # Files created as derivatives have their creation options appended into
-    # their filenames so it can be checked later if a file w/ the given
-    # options already exists (so as not to create it again).
-    #
-    class Derivative
-      attr_reader :options
-      
-      class << self
-        # Given a string of attachment options, splits them out into a hash,
-        # useful for things that take options on the query string or from
-        # filenames
-        def options_from(string)
-          Hash[*(string.split('_').collect { |option| 
-            key, value = option.split('=')
-            [ key.to_sym, value ]
-          }).flatten]
-        end
-
-        # Given a filename (presumably with options embedded in it) parses out
-        # the options and returns them as a hash.
-        def extract_options_from(filename)
-          File.basename(filename, File.extname(filename))[(filename.rindex(AttachableFile.options[:separator]) + 1)..-1]
-        end
-        
-        # Creates a new Derivative from the given filename by extracting the
-        # options.
-        def from_filename(filename)
-          Derivative.new(filename, options_from(extract_options_from(filename)))
-        end
+        source
+      end
+              
+      # Returns true if derivaties of the attachment should be processed,
+      # returns false if no processing should be done when a derivative is
+      # requested.
+      # 
+      # No processing also means the derivative won't be checked for
+      # existance (since that can be slow) so w/o postprocessing things will
+      # be much faster but #path will happily return the paths to Derivatives
+      # which don't exist.
+      # 
+      # It is highly recommended that you turn +:postprocessing+ off for
+      # anything but prototyping, and instead use recipes and refer to them
+      # via #path. +:postprocessing+ relies on checking for existance which
+      # will kill any real application.
+      def process?
+        self.class.milton_options[:postprocessing]
       end
       
-      # Instantiate a new Derivative, takes a reference to the AttachableFile
-      # (or specialization class) that this will be a derivative of, and a hash
-      # of the options defining the derivative.
-      def initialize(file, options)
-        @file    = file
-        @options = options
+      # A reference to the attached file, this is probably what you want to
+      # overwrite to introduce a new behavior
+      #
+      # i.e. 
+      #   have attached_file return a ResizeableFile, or a TranscodableFile
+      def attached_file
+        @attached_file ||= Storage::StoredFile.adapter(self.class.milton_options[:storage]).new(filename, id, self.class.milton_options)
       end
       
-      # The resulting filename of this Derivative with embedded options.
-      def filename
-        filename = @file.path
-        append   = options.collect{ |k, v| "#{k}=#{v}" }.sort.join('_')
-        
-        File.basename(filename, File.extname(filename)) + 
-        (append.blank? ? '' : "#{@file.milton_options[:separator]}#{append}") + 
-        File.extname(filename)
-      end
-      
-      # The full path and filename to this Derivative.
-      def path
-        File.join(@file.dirname, filename)
-      end
-      
-      # Returns true if the file resulting from this Derivative exists.
-      def exists?
-        File.exists?(path)
+      # Clean the file from the filesystem
+      def destroy_attached_file
+        attached_file.destroy
       end
     end
   end

@@ -1,27 +1,21 @@
-%h1 Tour Dates
+%p.title Tour Dates
 
-- if logged_in?
-  - if current_user.has_role?('administrator')
-    %ul
-      %li= link_to "Create New Tour Date", new_tour_date_path
+.upcoming-shows
+  - for tour_date in TourDate.recent
+    .tour-date
+      .venue= link_to tour_date.location, tour_date
+      .date= tour_date.show_date.strftime("%m/%e")
+      .info= nl2br tour_date.description
+  
+.clear
 
-- for tour_date in @tour_dates
-  .tour_date
-    .title
-      = tour_date.show_date.strftime("%m/%d/%Y")
-      = "-"
-      = link_to tour_date.title, tour_date
-      %span.location
-        = tour_date.location
-    .ticket_prices
-      - unless tour_date.price_ahead.empty? or tour_date.price_ahead.nil?
-        Ahead:
-        = tour_date.price_ahead
-      - unless tour_date.price_door.empty? or tour_date.price_door.nil?
-        Door:
-        = tour_date.price_door
-    - if logged_in?
-      - if current_user.has_role?('administrator')
-        = link_to '(edit)', edit_tour_date_path(tour_date)
-        = link_to '(delete)', tour_date, :confirm => 'Are you sure?', :method => :delete
-
+- content_for :header_css do
+  %style{:type => "text/css"}
+    :sass
+      .upcoming-shows
+        :padding-left 5px
+        .tour-date
+          :margin-bottom 15px
+          .venue
+            a
+              :font-size 16px

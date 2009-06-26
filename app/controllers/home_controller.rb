@@ -10,4 +10,7 @@ class HomeController < ApplicationController
     @auth_token = authenticity_token_from_session_id
     
   end
+  
+  def contact
+  end
 end

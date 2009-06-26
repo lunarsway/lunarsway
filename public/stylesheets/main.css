@@ -9,8 +9,9 @@
 @import url(wall.css);
 body {
   background-color: #000000;
-  color: #dddddd;
-  font-size: 16px; }
+  color: #252525;
+  font-size: 13px;
+  font-family: "Andale Mono", monospace; }
 
 input.text {
   border: solid gray 1px;
@@ -23,14 +24,17 @@ textarea {
 a {
   font-size: 14px;
   text-decoration: underline;
-  color: #eeeeee; }
+  color: #576653; }
   a:hover {
     color: #555555;
-    opacity: .5;
+    opacity: .75;
     text-decoration: none; }
 
 ul {
   list-style-type: disc; }
+
+.title {
+  font-size: 24px; }
 
 a.tiny_link {
   font-size: 9px;

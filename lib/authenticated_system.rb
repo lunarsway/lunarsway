@@ -52,6 +52,10 @@ module AuthenticatedSystem
     def login_required
       authorized? || access_denied
     end
+
+    def admin_login_required
+      authorized? and current_user.has_role?('administrator') || access_denied
+    end
     
     def not_logged_in_required
       !logged_in? || permission_denied

@@ -1,67 +1,48 @@
+.news-items
+  %p.title Latest News
 
-.floatl{:style => "width: 570px;"}
-  %object.floatl{:width => 360, :height => 265}
-    %param{:name => "movie", :value => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999"}
-    %param{:name => "allowFullScreen", :value => true}
-    %param{:name => "allowscriptaccess", :value => "always"}
-    %embed{:src => "http://www.youtube.com/v/vNKT7F6OQL8&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999", :type => "application/x-shockwave-flash", :allowscriptaccess => "always", :allowfullscreen => true, :width => 360, :height => 265}
-  .floatl{:style => "margin-left: 5px;"}= image_tag Photo.find(47).public_path(:size => "265x265")
-  .clear
-  %h3 Recent News
-
-  .home_news
-    - for news_item in @news_items
-      .news_item
-        %span.date= news_item.created_at.strftime("%B %d, %Y")
-        %br/
-        %span.title=h news_item.title
-        .posted_by
-          by
-          =h news_item.author
-          at
-          = news_item.created_at.strftime("%I:%M %p")
-        .body
-          = truncate nl2br(news_item.body), 100
-          = link_to '(read more)', news_item
-          - if logged_in?
-            - if current_user.has_role?('administrator')
-              = link_to "(edit)", edit_news_item_path(news_item)
-              = link_to "(delete)", news_item, :confirm => 'Are you sure?', :method => :delete
-.floatr
-  .home_releases
-    .releases_content
-      %h4 Lunar Releases  
-      .lunar_release
-        .title
-          %span.date December 12th, 2008 -
-          %span.song Progress
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "Progress"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/progress.mp3&autostart=true"}
-      .lunar_release
-        .title
-          %span.date November 13th, 2008 -
-          %span.song Just an Illusion
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "JustAnIllusion"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/just_an_illusion.mp3&autostart=false"}
-      .lunar_release
-        .title
-          %span.date October 14th, 2008 -
-          %span.song Goodbye Beautiful Day
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "GoodbyeBeautifulDay"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/goodbye_beautiful_day_lo.mp3&autostart=false"}
-      .lunar_release
-        .title
-          %span.date September 15, 2008 -
-          %span.song Dashboard Lights
-          = link_to "(lyrics)", {:controller => "/lyrics", :action => "DashboardLights"}, :class => "tiny_link"
-        .embed
-          %embed{:src => "/swf/mediaplayer.swf", :width => "225", :height => "18", :allowscriptaccess => "always", :allowfullscreen => "true", :flashvars => "file=/play/dashboard_lights_lo.mp3&autostart=false"}
-      %p.talignr= link_to "More Lunar Releases &raquo;", releases_url
+  - for news_item in NewsItem.recent
+    .news-item
+      .title= "#{news_item.created_at.strftime("%m/%e")} - #{news_item.title}"
+      .info= "by #{news_item.author} at #{news_item.created_at.strftime("%I:%M %p")}"
+      .body
+        = news_item.body
+        = link_to "(read more)", news_item
+  .talignr= link_to "Past News...", news_items_url
+  
+.upcoming-shows
+  %p.title Upcoming Shows
+  
+  - for tour_date in TourDate.recent
+    .tour-date
+      .venue= link_to tour_date.location, tour_date
+      .date= tour_date.show_date.strftime("%m/%e")
+  
 .clear
 
-- content_for :js_header do
-  :javascript
-    $(')
+- content_for :header_css do
+  %style{:type => "text/css"}
+    :sass
+      .news-items
+        :width 425px
+        :float left
+        .news-item
+          .title
+            :font-size 16px
+          .info
+            :font-size 10px
+          .body
+            :margin-top 10px
+            :padding-bottom 10px
+            :margin-bottom 15px
+            :border-bottom dashed #858585 1px
+      .upcoming-shows
+        :text-align right
+        :float left
+        :width 295px
+        :padding-left 5px
+        .tour-date
+          :margin-bottom 15px
+          .venue
+            a
+              :font-size 16px

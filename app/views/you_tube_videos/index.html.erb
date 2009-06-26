@@ -1,0 +1,24 @@
+<h1>Listing you_tube_videos</h1>
+
+<table>
+  <tr>
+    <th>Position</th>
+    <th>Title</th>
+    <th>Embed code</th>
+  </tr>
+
+<% for you_tube_video in @you_tube_videos %>
+  <tr>
+    <td><%=h you_tube_video.position %></td>
+    <td><%=h you_tube_video.title %></td>
+    <td><%=h you_tube_video.embed_code %></td>
+    <td><%= link_to 'Show', you_tube_video %></td>
+    <td><%= link_to 'Edit', edit_you_tube_video_path(you_tube_video) %></td>
+    <td><%= link_to 'Destroy', you_tube_video, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New you_tube_video', new_you_tube_video_path %>

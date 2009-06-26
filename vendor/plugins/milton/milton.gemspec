@@ -1,39 +1,39 @@
 Gem::Specification.new do |s|
-  s.name        = "milton"
-  s.version     = "0.2.4"
-  s.date        = "2008-02-16"
-  
-  s.summary     = "Asset handling Rails plugin that makes few assumptions and is highly extensible."
-  s.description = ""
-
-  s.authors     = [ "Ben Alavi" ]
-  s.email       = "ben.alavi@citrusbyte.com"
-  s.homepage    = "http://labs.citrusbyte.com/milton"
-
-  s.has_rdoc    = true
-  
-  s.files       = %w(
-    INSTALL
-    MIT-LICENSE
-    README
-    CHANGELOG.rdoc
-    init.rb
-    lib/milton.rb
-    lib/milton/attachment.rb
-    lib/milton/is_image.rb
-    lib/milton/is_resizeable.rb
-    lib/milton/is_uploadable.rb
-    spec/schema.rb
-    spec/spec.opts
-    spec/spec_helper.rb
-    spec/fixtures/big-milton.jpg
-    spec/fixtures/milton.jpg
-    spec/fixtures/mini-milton.jpg
-    spec/fixtures/unsanitary\ .milton.jpg
-    spec/milton/attachment_spec.rb
-    spec/milton/is_image_spec.rb
-    spec/milton/is_resizeable_spec.rb
-    spec/milton/is_uploadable_spec.rb
-    spec/milton/milton_spec.rb
-  )
+  s.name              = 'milton'
+  s.rubyforge_project = 'milton'
+  s.summary           = "Rails file and upload handling plugin built for extensibility. Supports Amazon S3 and resizes images."
+  s.description       = "Rails file and upload handling plugin built for extensibility. Supports Amazon S3 and resizes images."
+  s.version           = '0.3.4'
+  s.date              = %q{2009-06-16}
+  s.author            = "Ben Alavi"
+  s.email             = "ben.alavi@citrusbyte.com"
+  s.homepage          = "http://labs.citrusbyte.com/projects/milton"
+  s.files             = [
+    		'README.markdown',
+		'MIT-LICENSE',
+		'Rakefile',
+		'init.rb',
+		'lib/milton/attachment.rb',
+		'lib/milton/core/file.rb',
+		'lib/milton/core/tempfile.rb',
+		'lib/milton/derivatives/derivative.rb',
+		'lib/milton/derivatives/thumbnail/crop_calculator.rb',
+		'lib/milton/derivatives/thumbnail/image.rb',
+		'lib/milton/derivatives/thumbnail.rb',
+		'lib/milton/storage/disk_file.rb',
+		'lib/milton/storage/s3_file.rb',
+		'lib/milton/storage/stored_file.rb',
+		'lib/milton/uploading.rb',
+		'lib/milton.rb',
+		'test/fixtures/big-milton.jpg',
+		'test/fixtures/milton.jpg',
+		'test/fixtures/mini-milton.jpg',
+		'test/fixtures/unsanitary .milton.jpg',
+		'test/milton/attachment_test.rb',
+		'test/milton/milton_test.rb',
+		'test/milton/resizing_test.rb',
+		'test/s3_helper.rb',
+		'test/schema.rb',
+		'test/test_helper.rb'
+  ]
 end

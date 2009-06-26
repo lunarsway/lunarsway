@@ -1,0 +1,26 @@
+<h1>New you_tube_video</h1>
+
+<%= error_messages_for :you_tube_video %>
+
+<% form_for(@you_tube_video) do |f| %>
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Embed code</b><br />
+    <%= f.text_area :embed_code %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', you_tube_videos_path %>

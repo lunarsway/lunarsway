@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :you_tube_videos
+
   map.resources :videos
 
   map.resources :profile_photos
@@ -30,6 +32,11 @@ ActionController::Routing::Routes.draw do |map|
   }
   map.resources :news_items
 
+  map.namespace :admin do |admin|
+    admin.home '/home', :controller => "home", :action => "index"
+    admin.resources :you_tube_videos, :collection => {:update_positions => :get}
+  end
+
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
@@ -37,6 +44,8 @@ ActionController::Routing::Routes.draw do |map|
   map.forgot_password '/forgot_password', :controller => 'passwords', :action => 'new'
   map.reset_password '/reset_password/:id', :controller => 'passwords', :action => 'edit'
   map.change_password '/change_password', :controller => 'accounts', :action => 'edit'
+
+  map.media '/media', :controller => "/media", :action => "index"
   
   # See how all your routes lay out with "rake routes"
   map.resources :pages
@@ -52,6 +61,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '', :controller => "/home"
   map.home "/", :controller => "/home"
   map.news "/news", :controller => "/news_items"
+  map.contact '/contact', :controller => "home", :action => "contact"
   map.downloads "/downloads", :controller => "/home", :action => "downloads"
   map.releases "/releases", :controller => "/home", :action => "releases"
   # map.video "/video", :controller => "/home", :action => "video"

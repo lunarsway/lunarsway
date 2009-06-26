@@ -1,0 +1,33 @@
+%p.title Manage YouTube Videos
+
+%p= link_to "Add a new YouTube Video", new_admin_you_tube_video_url
+
+.you-tube-videos#sortable
+  - for video in @you_tube_videos
+    .you-tube-video{:id => "div_#{video.id}"}= video.embed_code
+  .clear
+  
+- content_for :header_js do
+  = javascript_include_tag "jquery-1.3.2.min.js"
+  = javascript_include_tag "jquery-ui-1.7.1.custom.min.js"
+  :javascript
+    $(function() {
+      $('#sortable').sortable({
+        update: function(event, ui) {
+          $.get("#{update_positions_admin_you_tube_videos_url}", $('#sortable').sortable('serialize'), function(data) {
+            // do nothing
+          });
+        }
+      });
+    });
+  
+  
+- content_for :header_css do
+  %style{:type => "text/css"}
+    :sass
+      .you-tube-videos
+        .you-tube-video
+          :float left
+          :padding 10px
+          :border dashed gray 1px
+          :margin-left 10px

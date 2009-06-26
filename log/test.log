@@ -1,0 +1,183 @@
+  [4;36;1mSQL (0.000500)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002050)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.001254)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000734)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateNewsItems (1)
+  [4;35;1mSQL (0.001842)[0m   [0mCREATE TABLE news_items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "author" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001661)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000911)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreatePhotos (2)
+  [4;36;1mSQL (0.001941)[0m   [0;1mCREATE TABLE photos ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "caption" varchar(255) DEFAULT NULL, "credit" varchar(255) DEFAULT NULL, "description" text DEFAULT NULL, "position" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001750)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000849)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateLinks (3)
+  [4;35;1mSQL (0.002351)[0m   [0mCREATE TABLE links ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "url" varchar(255) DEFAULT NULL, "description" text DEFAULT NULL, "position" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001420)[0m   [0;1mUPDATE schema_info SET version = 3[0m
+  [4;35;1mSQL (0.000679)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateTourDates (4)
+  [4;36;1mSQL (0.005563)[0m   [0;1mCREATE TABLE tour_dates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "location" varchar(255) DEFAULT NULL, "description" text DEFAULT NULL, "address" varchar(255) DEFAULT NULL, "price_ahead" varchar(255) DEFAULT NULL, "price_door" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002486)[0m   [0mUPDATE schema_info SET version = 4[0m
+  [4;36;1mSQL (0.000656)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePages (5)
+  [4;35;1mSQL (0.002063)[0m   [0mCREATE TABLE pages ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001985)[0m   [0;1mUPDATE schema_info SET version = 5[0m
+  [4;35;1mSQL (0.000747)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateUsers (6)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: users: DROP TABLE users[0m
+  [4;35;1mSQL (0.003169)[0m   [0mCREATE TABLE users ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "crypted_password" varchar(40) DEFAULT NULL, "salt" varchar(40) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL, "remember_token" varchar(255) DEFAULT NULL, "remember_token_expires_at" datetime DEFAULT NULL, "activation_code" varchar(40) DEFAULT NULL, "activated_at" datetime DEFAULT NULL, "password_reset_code" varchar(40) DEFAULT NULL, "enabled" boolean DEFAULT 't') [0m
+  [4;36;1mSQL (0.001849)[0m   [0;1mUPDATE schema_info SET version = 6[0m
+  [4;35;1mSQL (0.001274)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateRoles (7)
+  [4;36;1mSQL (0.002149)[0m   [0;1mCREATE TABLE roles ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rolename" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.004924)[0m   [0mUPDATE schema_info SET version = 7[0m
+  [4;36;1mSQL (0.002037)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePermissions (8)
+  [4;35;1mSQL (0.002010)[0m   [0mCREATE TABLE permissions ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mRole Create (0.000845)[0m   [0;1mINSERT INTO roles ("updated_at", "rolename", "created_at") VALUES('2009-06-25 22:17:38', 'administrator', '2009-06-25 22:17:38')[0m
+  [4;35;1mUser Create (0.000904)[0m   [0mINSERT INTO users ("salt", "activated_at", "updated_at", "crypted_password", "activation_code", "remember_token_expires_at", "enabled", "password_reset_code", "remember_token", "login", "created_at", "email") VALUES('983a933d4f1250b03aa4f2e29c78dcbc43bcfeb7', NULL, '2009-06-25 22:17:38', 'ab97a2fff30a83d826d9ac5e890de477aaf1762f', '97a7729ded8d5dab0dd3af6e642e28b1958887d3', NULL, 't', NULL, NULL, 'admin', '2009-06-25 22:17:38', 'preston@prestonpope.com')[0m
+Sent mail:
+ Date: Thu, 25 Jun 2009 22:17:38 -0700
+From: info@lunarsway.com
+To: preston@prestonpope.com
+Subject: LunarSway.com - Thanks for joining Lunar Sway online community!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your Lunar Sway community account has been created!
+
+  Username: admin
+  Password: admin
+
+Visit this url to activate your Lunar Sway community account!
+
+  Please activate your account! 
+
+http://localhost:3000/activate/97a7729ded8d5dab0dd3af6e642e28b1958887d3
+  [4;36;1mUser Update (0.001510)[0m   [0;1mUPDATE users SET "created_at" = '2009-06-25 22:17:38', "email" = 'preston@prestonpope.com', "activated_at" = '2009-06-26 05:17:38', "remember_token" = NULL, "login" = 'admin', "password_reset_code" = NULL, "enabled" = 't', "remember_token_expires_at" = NULL, "activation_code" = '97a7729ded8d5dab0dd3af6e642e28b1958887d3', "crypted_password" = 'ab97a2fff30a83d826d9ac5e890de477aaf1762f', "updated_at" = '2009-06-25 22:17:38', "salt" = '983a933d4f1250b03aa4f2e29c78dcbc43bcfeb7' WHERE "id" = 1[0m
+Sent mail:
+ Date: Thu, 25 Jun 2009 22:17:38 -0700
+From: info@lunarsway.com
+To: preston@prestonpope.com
+Subject: LunarSway.com - Your Lunar Sway community account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+admin, your account has been activated.  You may now start adding your plugins:
+
+  Login at http://www.lunarsway.com/login/
+  [4;35;1mRole Load (0.001230)[0m   [0mSELECT * FROM roles WHERE (roles."rolename" = 'administrator') LIMIT 1[0m
+  [4;36;1mUser Load (0.002338)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'admin') LIMIT 1[0m
+  [4;35;1mPermission Create (0.003266)[0m   [0mINSERT INTO permissions ("updated_at", "role_id", "user_id", "created_at") VALUES('2009-06-25 22:17:38', 1, 1, '2009-06-25 22:17:38')[0m
+  [4;36;1mSQL (0.001606)[0m   [0;1mUPDATE schema_info SET version = 8[0m
+  [4;35;1mSQL (0.000637)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMailingListItems (9)
+  [4;36;1mSQL (0.001912)[0m   [0;1mCREATE TABLE mailing_list_items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) DEFAULT NULL, "last_name" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001500)[0m   [0mUPDATE schema_info SET version = 9[0m
+  [4;36;1mSQL (0.000783)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateLunarReleases (10)
+  [4;35;1mSQL (0.002153)[0m   [0mCREATE TABLE lunar_releases ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001573)[0m   [0;1mUPDATE schema_info SET version = 10[0m
+  [4;35;1mSQL (0.000866)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to TourDatesAddShowDate (11)
+  [4;36;1mSQL (0.001894)[0m   [0;1mALTER TABLE tour_dates ADD "show_date" datetime[0m
+  [4;35;1mSQL (0.025602)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002546)[0m   [0;1mUPDATE schema_info SET version = 11[0m
+  [4;35;1mSQL (0.001403)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to RolesAddLunarnaut (12)
+  [4;36;1mRole Create (0.001026)[0m   [0;1mINSERT INTO roles ("updated_at", "id", "rolename", "created_at") VALUES('2009-06-25 22:17:38', 2, 'lunarnaut', '2009-06-25 22:17:38')[0m
+  [4;35;1mSQL (0.002244)[0m   [0mUPDATE schema_info SET version = 12[0m
+  [4;36;1mSQL (0.000708)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to UsersAddNameInfo (13)
+  [4;35;1mSQL (0.002248)[0m   [0mALTER TABLE users ADD "first_name" varchar(255) DEFAULT ''[0m
+  [4;36;1mSQL (0.008400)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003218)[0m   [0mALTER TABLE users ADD "last_name" varchar(255) DEFAULT ''[0m
+  [4;36;1mSQL (0.029625)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.011306)[0m   [0mUPDATE schema_info SET version = 13[0m
+  [4;36;1mSQL (0.000921)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateWallMessages (14)
+  [4;35;1mSQL (0.002923)[0m   [0mCREATE TABLE wall_messages ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text DEFAULT NULL, "user_id" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001726)[0m   [0;1mUPDATE schema_info SET version = 14[0m
+  [4;35;1mSQL (0.000705)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateWallPhotos (15)
+  [4;36;1mSQL (0.002151)[0m   [0;1mCREATE TABLE wall_photos ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "caption" varchar(255) DEFAULT NULL, "user_id" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001468)[0m   [0mUPDATE schema_info SET version = 15[0m
+  [4;36;1mSQL (0.000710)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateProfilePhotos (16)
+  [4;35;1mSQL (0.002292)[0m   [0mCREATE TABLE profile_photos ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001674)[0m   [0;1mUPDATE schema_info SET version = 16[0m
+  [4;35;1mSQL (0.000633)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateVideos (17)
+  [4;36;1mSQL (0.006077)[0m   [0;1mCREATE TABLE videos ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer DEFAULT NULL, "title" varchar(255) DEFAULT NULL, "embed" text DEFAULT NULL, "url" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.019529)[0m   [0mUPDATE schema_info SET version = 17[0m
+  [4;36;1mSQL (0.000668)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to MigratePhotoToMilton (18)
+  [4;35;1mSQL (0.002049)[0m   [0mALTER TABLE photos ADD "filename" varchar(255)[0m
+  [4;36;1mSQL (0.012166)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003229)[0m   [0mALTER TABLE photos ADD "content_type" varchar(255)[0m
+  [4;36;1mSQL (0.009157)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002366)[0m   [0mUPDATE schema_info SET version = 18[0m
+  [4;36;1mSQL (0.001223)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.003823)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mPRAGMA index_list(links)[0m
+  [4;35;1mSQL (0.000199)[0m   [0mPRAGMA index_list(lunar_releases)[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mPRAGMA index_list(mailing_list_items)[0m
+  [4;35;1mSQL (0.000194)[0m   [0mPRAGMA index_list(news_items)[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mPRAGMA index_list(pages)[0m
+  [4;35;1mSQL (0.000211)[0m   [0mPRAGMA index_list(permissions)[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mPRAGMA index_list(photos)[0m
+  [4;35;1mSQL (0.000196)[0m   [0mPRAGMA index_list(profile_photos)[0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mPRAGMA index_list(roles)[0m
+  [4;35;1mSQL (0.000204)[0m   [0mPRAGMA index_list(tour_dates)[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mPRAGMA index_list(users)[0m
+  [4;35;1mSQL (0.000187)[0m   [0mPRAGMA index_list(videos)[0m
+  [4;36;1mSQL (0.000434)[0m   [0;1mPRAGMA index_list(wall_messages)[0m
+  [4;35;1mSQL (0.000258)[0m   [0mPRAGMA index_list(wall_photos)[0m
+  [4;36;1mSQL (0.000552)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000657)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000664)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000770)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000602)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000599)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000717)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000586)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000687)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.001092)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000838)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000654)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000607)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000609)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000627)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000596)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000598)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000605)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000610)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000614)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateYouTubeVideos (19)
+  [4;36;1mSQL (0.002243)[0m   [0;1mCREATE TABLE you_tube_videos ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer DEFAULT NULL, "title" varchar(255) DEFAULT NULL, "embed_code" text DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001751)[0m   [0mUPDATE schema_info SET version = 19[0m
+  [4;36;1mSQL (0.000690)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.004088)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mPRAGMA index_list(links)[0m
+  [4;35;1mSQL (0.000193)[0m   [0mPRAGMA index_list(lunar_releases)[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mPRAGMA index_list(mailing_list_items)[0m
+  [4;35;1mSQL (0.000389)[0m   [0mPRAGMA index_list(news_items)[0m
+  [4;36;1mSQL (0.000916)[0m   [0;1mPRAGMA index_list(pages)[0m
+  [4;35;1mSQL (0.000366)[0m   [0mPRAGMA index_list(permissions)[0m
+  [4;36;1mSQL (0.000300)[0m   [0;1mPRAGMA index_list(photos)[0m
+  [4;35;1mSQL (0.000296)[0m   [0mPRAGMA index_list(profile_photos)[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mPRAGMA index_list(roles)[0m
+  [4;35;1mSQL (0.000221)[0m   [0mPRAGMA index_list(tour_dates)[0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mPRAGMA index_list(users)[0m
+  [4;35;1mSQL (0.000238)[0m   [0mPRAGMA index_list(videos)[0m
+  [4;36;1mSQL (0.000673)[0m   [0;1mPRAGMA index_list(wall_messages)[0m
+  [4;35;1mSQL (0.000213)[0m   [0mPRAGMA index_list(wall_photos)[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mPRAGMA index_list(you_tube_videos)[0m

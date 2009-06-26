@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         current_user.remember_me unless current_user.remember_token?
         cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
       end
-      redirect_back_or_default('/') if current_user.has_role?('administrator')
+      redirect_to admin_home_url if current_user.has_role?('administrator')
       redirect_to my_community_url if current_user.has_role?('lunarnaut')
       flash[:notice] = "Logged in successfully"
     else

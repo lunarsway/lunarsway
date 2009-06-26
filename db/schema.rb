@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 18) do
+ActiveRecord::Schema.define(:version => 19) do
 
   create_table "links", :force => true do |t|
     t.string   "title"
@@ -128,6 +128,14 @@ ActiveRecord::Schema.define(:version => 18) do
   create_table "wall_photos", :force => true do |t|
     t.string   "caption"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "you_tube_videos", :force => true do |t|
+    t.integer  "position"
+    t.string   "title"
+    t.text     "embed_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
