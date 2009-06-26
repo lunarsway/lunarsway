@@ -1,7 +1,7 @@
 - if logged_in?
   logged in as
   - if current_user.has_role?('administrator')
-    = link_to "admin", admin_session_url
+    = link_to "admin", admin_home_url
     |
     = link_to "logout", logout_url
   - else

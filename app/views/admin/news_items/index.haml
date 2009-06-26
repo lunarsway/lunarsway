@@ -1,0 +1,12 @@
+%p= link_to "&laquo; Back to Admin Panel", admin_home_url
+
+%p.title Manage News Items
+
+%p= link_to "Create a new News Item", new_admin_news_item_url
+
+%ul.news-items
+  - for item in @news_items
+    %li.news-item
+      = link_to "#{item.created_at.strftime("%m/%d")} - #{item.title}", edit_admin_news_item_url(item)
+      = link_to "[delete]", admin_news_item_url(item), :method => :delete
+  .clear

@@ -1,0 +1,56 @@
+%p
+  = link_to "&laquo; Back to Admin Panel", admin_home_url
+  = link_to "&laquo; Manage Tour Dates", admin_tour_dates_url
+%p.title Editing Tour Date
+
+= error_messages_for :tour_date
+
+- form_for(@tour_date, :url => admin_tour_date_url(@tour_date)) do |f| 
+  %p
+    %b Title
+    %br/
+    = f.text_field :title, :class => "text"
+
+  %p
+    %b Show Date
+    %br/
+    = f.text_field :show_date, :class => "text", :id => 'show-date'
+
+  %p
+    %b Location
+    %br/
+    = f.text_field :location, :class => "text"
+
+  %p
+    %b Description
+    %br/
+    = f.text_area :description, :rows => "5", :cols => "45", :class => "text"
+
+  %p
+    %b Address
+    %br/
+    = f.text_field :address, :class => "text"
+
+  %p
+    %b Price ahead
+    %br/
+    = f.text_field :price_ahead, :class => "text"
+
+  %p
+    %b Price door
+    %br/
+    = f.text_field :price_door, :class => "text"
+
+  %p
+    = f.submit "Update"
+
+- content_for :header_css do
+  = stylesheet_link_tag "datepicker"
+
+- content_for :header_js do
+  = javascript_include_tag "jquery-1.3.2.min.js"
+  = javascript_include_tag "jquery-ui-1.7.1.custom.min.js"
+  :javascript
+    $(function() {
+      $('#show-date').datepicker();
+    });

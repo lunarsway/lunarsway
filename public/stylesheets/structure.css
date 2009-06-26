@@ -3,10 +3,16 @@
   background-color: #000000;
   margin-left: auto;
   margin-right: auto;
-  height: 50px; }
+  height: 60px;
+  color: white; }
+  #main-nav .mailing-list {
+    float: left;
+    padding-top: 10px;
+    width: 400px; }
   #main-nav .content {
     float: right;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-top: 10px; }
     #main-nav .content a {
       float: left;
       display: block; }
@@ -25,7 +31,7 @@
   margin-right: auto; }
   #main-page .main-content {
     padding: 15px;
-    height: 650px; }
+    min-height: 650px; }
     #main-page .main-content .facebook {
       position: absolute;
       top: 600px; }
@@ -46,3 +52,6 @@
       top: 10px;
       left: 435px;
       width: 725px; }
+      #main-page .main-content .content .logged-in {
+        text-align: right;
+        margin-bottom: 10px; }

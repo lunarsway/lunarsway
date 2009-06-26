@@ -35,6 +35,9 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.home '/home', :controller => "home", :action => "index"
     admin.resources :you_tube_videos, :collection => {:update_positions => :get}
+    admin.resources :news_items
+    admin.resources :tour_dates
+    admin.resources :photos, :collection => {:update_positions => :get}
   end
 
   map.signup '/signup', :controller => 'users', :action => 'new'

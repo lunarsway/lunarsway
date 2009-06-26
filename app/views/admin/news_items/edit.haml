@@ -1,0 +1,26 @@
+%p
+  = link_to "&laquo; Back to Admin Panel", admin_home_url
+  = link_to "&laquo; Manage News Items", admin_news_items_url
+  
+%p.title Edit News Item
+
+= error_messages_for :news_item
+
+- form_for(@news_item, :url => admin_news_items_url) do |f|
+  %p
+    %b Title
+    %br/
+    = f.text_field :title, :class => "text"
+  
+  %p
+    %b Author
+    %br/
+    = f.text_field :author, :class => "text"
+
+  %p
+    %b Body
+    %br/
+    = f.text_area :body, :rows => "7", :cols => "45"
+
+  %p
+    = f.submit "Update"

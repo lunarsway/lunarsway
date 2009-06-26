@@ -10,6 +10,7 @@
     
   %body
     #main-nav
+      .mailing-list= render :partial => "/home/join_mailing_list"
       .content= render :partial => "/home/nav"
       .clear
     #main-page
@@ -18,5 +19,7 @@
         .twitter= link_to image_tag("/images/structure/twitter.png"), "http://twitter.com/lunarsway", :target => "_blank"
         .myspace= link_to image_tag("/images/structure/myspace.png"), "http://www.myspace.com/lunarsway", :target => "_blank"
         .main-logo= image_tag "/images/structure/logo.jpg"
-        .content= @content_for_layout
+        .content
+          .logged-in= render :partial => "/home/logged_in"
+          = @content_for_layout
         .clear

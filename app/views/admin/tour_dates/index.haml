@@ -1,0 +1,12 @@
+%p= link_to "&laquo; Back to Admin Panel", admin_home_url
+
+%p.title Manage Tour Dates
+
+%p= link_to "Create a new Tour Date", new_admin_tour_date_url
+
+%ul.news-items
+  - for tour_date in @tour_dates
+    %li.news-item
+      = link_to "#{tour_date.created_at.strftime("%m/%d")} - #{tour_date.title}", edit_admin_tour_date_url(tour_date)
+      = link_to "[delete]", admin_tour_date_url(tour_date), :method => :delete
+  .clear

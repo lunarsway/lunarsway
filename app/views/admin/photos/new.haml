@@ -1,8 +1,11 @@
-%h1 New Photo
+%p  
+  = link_to "&laquo; Back to Admin Panel", admin_home_url
+  = link_to "&laquo; Manage Photos", admin_photos_url
+%p Upload a New Photo
 
 = error_messages_for :photo
 
-- form_for(Photo.new, :html => {:enctype => 'multipart/form-data'}) do |f|
+- form_for(Photo.new, :url => admin_photos_url, :html => {:enctype => 'multipart/form-data'}) do |f|
   %p
     %b Upload Image
     %br/
@@ -11,12 +14,12 @@
     %p
       %b Caption
       %br/
-      = f.text_field :caption
+      = f.text_field :caption, :class => "text"
 
     %p
       %b Credit
       %br/
-      = f.text_field :credit
+      = f.text_field :credit, :class => "text"
   .floatl
     %p
       %b Description
@@ -25,5 +28,3 @@
   .clear
   %p
     = f.submit "Create"
-
-= link_to 'Back', photos_path
