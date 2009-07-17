@@ -1,3 +1,5 @@
+%embed{:src => "mp3player/player-viral.swf", :width => "720", :height => "200", :allowscriptaccess => "always", :allowfullscreen => "false", :flashvars => "file=mp3player/playlist.xml&playlist=bottom&controlbar=bottom"}/
+
 .news-items
   %p.title Latest News
 
@@ -19,6 +21,7 @@
       .date= tour_date.show_date.strftime("%m/%e")
   
 .clear
+
 
 - content_for :header_css do
   %style{:type => "text/css"}

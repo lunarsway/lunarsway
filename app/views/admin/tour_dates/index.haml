@@ -7,6 +7,6 @@
 %ul.news-items
   - for tour_date in @tour_dates
     %li.news-item
-      = link_to "#{tour_date.created_at.strftime("%m/%d")} - #{tour_date.title}", edit_admin_tour_date_url(tour_date)
+      = link_to "#{tour_date.show_date.strftime("%m/%d")} - #{tour_date.title}", edit_admin_tour_date_url(tour_date)
       = link_to "[delete]", admin_tour_date_url(tour_date), :method => :delete
   .clear

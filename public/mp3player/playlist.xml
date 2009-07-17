@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<playlist version='1' xmlns='http://xspf.org/ns/0/'>
+  <trackList>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>Where the Birds Don't Fly</title>
+      <location>/birds_ep/birds.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>The Enemy is Me</title>
+      <location>/birds_ep/enemy.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>Backsliding</title>
+      <location>/birds_ep/backsliding.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>Comfortable Silence</title>
+      <location>/birds_ep/comfortablesilence.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>St. Mark's Square</title>
+      <location>/birds_ep/stmarks.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Re-released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+    <track>
+      <creator>Lunar Sway</creator>
+      <title>Progress</title>
+      <location>/birds_ep/progress.mp3</location>
+			<album>Where the Birds Don't Fly EP</album>
+			<image>/birds_ep_cover.jpg</image>
+			<link>http://www.lunarsway.com</link>
+			<annotation>Released 2009 on the "Where the Birds Don't Fly" EP</annotation>
+    </track>
+  </trackList>
+</playlist>
