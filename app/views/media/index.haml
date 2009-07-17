@@ -1,6 +1,10 @@
 %p.title Lunar Media
 
 
+%p.subtitle Audio
+%embed{:src => "mp3player/player-viral.swf", :width => "100%", :height => "200", :allowscriptaccess => "always", :allowfullscreen => "false", :flashvars => "file=mp3player/playlist.xml&playlist=bottom&controlbar=bottom"}/
+
+
 %p.subtitle Video
 - for video in @you_tube_videos
   .you-tube-video= video.embed_code
