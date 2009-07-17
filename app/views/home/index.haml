@@ -9,7 +9,6 @@
       .info= "by #{news_item.author} at #{news_item.created_at.strftime("%I:%M %p")}"
       .body
         = news_item.body
-        = link_to "(read more)", news_item
   .talignr= link_to "Past News...", news_items_url
   
 .upcoming-shows
