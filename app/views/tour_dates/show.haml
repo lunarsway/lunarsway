@@ -1,0 +1,25 @@
+%p= link_to "&laquo; Back to Tour Dates", tour_dates_url
+
+.title= @tour_date.title
+
+
+%p
+  Venue:
+  = @tour_date.location
+%p
+  Show Time:
+  = @tour_date.doors_open
+%p
+  Address:
+  = @tour_date.address
+
+%p
+  Tickets Ahead:
+  = @tour_date.price_ahead
+%p
+  Tickets @ Door:
+  = @tour_date.price_ahead
+%p= @tour_date.description
+
+
+
