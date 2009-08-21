@@ -31,7 +31,10 @@
   margin-right: auto; }
   #main-page .main-content {
     padding: 15px;
-    min-height: 650px; }
+    min-height: 650px;
+    background-image: url(/images/structure/bg-silouhette.png);
+    background-repeat: no-repeat;
+    background-position: 750px 50px; }
     #main-page .main-content .facebook {
       position: absolute;
       top: 600px; }
@@ -45,7 +48,7 @@
       margin-left: 200px; }
     #main-page .main-content .main-logo {
       top: 0px;
-      left: 585px;
+      left: 515px;
       position: relative; }
     #main-page .main-content .content {
       position: relative;

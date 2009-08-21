@@ -44581,3 +44581,180 @@ ActionController::RoutingError (No route matches "/fckeditor/editor/fckeditor.ht
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:15:01) [GET]
+  [4;36;1mNewsItem Load (10.7ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.2ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:15:02') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (281.5ms)
+Rendered home/_nav (9.2ms)
+Rendered home/_logged_in (3.6ms)
+Completed in 550ms (View: 497, DB: 12) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:23:01) [GET]
+  [4;35;1mNewsItem Load (3.7ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.3ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:23:01') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (14.3ms)
+Rendered home/_nav (2.8ms)
+Rendered home/_logged_in (0.6ms)
+Completed in 72ms (View: 51, DB: 5) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:23:59) [GET]
+  [4;36;1mNewsItem Load (3.2ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.3ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:23:59') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (18.4ms)
+Rendered home/_nav (2.2ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 79ms (View: 58, DB: 4) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:24:17) [GET]
+  [4;35;1mNewsItem Load (2.7ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.3ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:24:17') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (14.3ms)
+Rendered home/_nav (2.0ms)
+Rendered home/_logged_in (1.3ms)
+Completed in 67ms (View: 45, DB: 4) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:25:08) [GET]
+  [4;36;1mNewsItem Load (3.3ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (3.1ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:25:08') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (13.2ms)
+Rendered home/_nav (3.9ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 79ms (View: 58, DB: 6) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:30:34) [GET]
+  [4;35;1mNewsItem Load (9.2ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.1ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:30:34') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (28.9ms)
+Rendered home/_nav (2.7ms)
+Rendered home/_logged_in (0.6ms)
+Completed in 342ms (View: 313, DB: 10) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:31:06) [GET]
+  [4;36;1mNewsItem Load (3.8ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.2ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:31:06') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (16.1ms)
+Rendered home/_nav (2.0ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 72ms (View: 46, DB: 5) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:31:30) [GET]
+  [4;35;1mNewsItem Load (5.7ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.2ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:31:30') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (20.4ms)
+Rendered home/_nav (2.7ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 78ms (View: 48, DB: 7) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:32:31) [GET]
+  [4;36;1mNewsItem Load (16.5ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.1ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:32:31') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (12.9ms)
+Rendered home/_nav (2.2ms)
+Rendered home/_logged_in (0.4ms)
+Completed in 84ms (View: 52, DB: 18) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:32:51) [GET]
+  [4;35;1mNewsItem Load (3.5ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.2ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:32:51') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (16.7ms)
+Rendered home/_nav (3.4ms)
+Rendered home/_logged_in (0.7ms)
+Completed in 75ms (View: 53, DB: 5) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:32:58) [GET]
+  [4;36;1mNewsItem Load (8.5ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.2ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:32:59') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (17.2ms)
+Rendered home/_nav (2.5ms)
+Rendered home/_logged_in (0.6ms)
+Completed in 250ms (View: 219, DB: 10) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:33:05) [GET]
+  [4;35;1mNewsItem Load (12.9ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mTourDate Load (1.2ms)[0m   [0mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:33:05') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (25.5ms)
+Rendered home/_nav (2.1ms)
+Rendered home/_logged_in (0.4ms)
+Completed in 83ms (View: 53, DB: 14) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-21 13:33:27) [GET]
+  [4;36;1mNewsItem Load (2.9ms)[0m   [0;1mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+Rendering template within layouts/standard-layout
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mTourDate Load (1.1ms)[0m   [0;1mSELECT * FROM "tour_dates" WHERE (show_date > '2009-08-21 13:33:27') ORDER BY show_date ASC[0m
+Rendered home/_join_mailing_list (32.3ms)
+Rendered home/_nav (2.6ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 92ms (View: 72, DB: 4) | 200 OK [http://0.0.0.0/]
+
+
+Processing NewsItemsController#index (for 127.0.0.1 at 2009-08-21 13:35:55) [GET]
+  [4;35;1mNewsItem Load (12.9ms)[0m   [0mSELECT * FROM "news_items" ORDER BY created_at DESC[0m
+Rendering template within layouts/standard-layout
+Rendering news_items/index
+Rendered home/_join_mailing_list (15.8ms)
+Rendered home/_nav (1.9ms)
+Rendered home/_logged_in (0.7ms)
+Completed in 106ms (View: 78, DB: 13) | 200 OK [http://0.0.0.0/news_items]
+
+
+Processing MediaController#index (for 127.0.0.1 at 2009-08-21 13:36:04) [GET]
+  [4;36;1mYouTubeVideo Load (2.8ms)[0m   [0;1mSELECT * FROM "you_tube_videos" ORDER BY position ASC[0m
+Rendering template within layouts/standard-layout
+Rendering media/index
+  [4;35;1mPhoto Load (2.0ms)[0m   [0mSELECT * FROM "photos" ORDER BY position ASC[0m
+Rendered home/_join_mailing_list (22.9ms)
+Rendered home/_nav (2.0ms)
+Rendered home/_logged_in (0.5ms)
+Completed in 207ms (View: 182, DB: 5) | 200 OK [http://0.0.0.0/media]
